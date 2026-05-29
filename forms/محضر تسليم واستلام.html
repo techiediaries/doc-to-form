@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>محضر تسليم واستلام</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">محضر تسليم واستلام</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">محضر تسليم واستلام</p>
+<p class="doc-line" dir="rtl">حُرِّر هذا المحضر بمدينة <input type="text" id="f1" name="f1" class="field"> بتاريخ <input type="text" id="f2" name="f2" class="field"> / <input type="text" id="f3" name="f3" class="field"> / <input type="text" id="f4" name="f4" class="field"></p>
+<p class="doc-line" dir="rtl">بين الطرفين:</p>
+<p class="doc-line" dir="rtl">المُسَلِّم: السيد/ة <input type="text" id="f5" name="f5" class="field">، ب.ت.و رقم: <input type="text" id="f6" name="f6" class="field"></p>
+<p class="doc-line" dir="rtl">المُسَلَّم إليه: السيد/ة <input type="text" id="f7" name="f7" class="field">، ب.ت.و رقم: <input type="text" id="f8" name="f8" class="field"></p>
+<p class="doc-line" dir="rtl">موضوع التسليم:</p>
+<p class="doc-line" dir="rtl">تمَّ تسليم واستلام: <input type="text" id="f9" name="f9" class="field"></p>
+<p class="doc-line" dir="rtl">الكائن/ة بـ: <input type="text" id="f10" name="f10" class="field"></p>
+<p class="doc-line" dir="rtl">ملاحظات حول الحالة: <input type="text" id="f11" name="f11" class="field"></p>
+<p class="doc-line" dir="rtl"><input type="text" id="f12" name="f12" class="field"></p>
+<p class="doc-line" dir="rtl">أقر الطرفان بصحة ما جاء في هذا المحضر وتسلُّم نسخة منه.</p>
+<p class="doc-line" dir="rtl">توقيع المُسَلِّم:                                        توقيع المُسَلَّم إليه:</p>
+<p class="doc-line" dir="rtl"><input type="text" id="f13" name="f13" class="field">                                    <input type="text" id="f14" name="f14" class="field"></p>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('محضر تسليم واستلام')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "text", "label": ""}, {"id": "f2", "type": "text", "label": ""}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "text", "label": ""}, {"id": "f5", "type": "text", "label": ""}, {"id": "f6", "type": "text", "label": ""}, {"id": "f7", "type": "text", "label": ""}, {"id": "f8", "type": "text", "label": ""}, {"id": "f9", "type": "text", "label": ""}, {"id": "f10", "type": "text", "label": ""}, {"id": "f11", "type": "text", "label": ""}, {"id": "f12", "type": "text", "label": ""}, {"id": "f13", "type": "text", "label": ""}, {"id": "f14", "type": "text", "label": ""}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

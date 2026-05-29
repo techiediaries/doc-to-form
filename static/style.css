@@ -113,7 +113,72 @@ button:hover { background: #1d4ed8; }
 .field-count { color: #888; font-size: 13px; }
 
 @media print {
-  .actions { display: none; }
-  .container { box-shadow: none; padding: 20px; }
-  .field { border: none; border-bottom: 1px solid #333; background: white; }
+  /* A4: 210×297mm — standard paper in Morocco */
+  @page {
+    size: A4 portrait;
+    margin: 2.5cm 2cm 2.5cm 2cm;
+  }
+
+  body {
+    background: white;
+    font-size: 13pt;
+    line-height: 2;
+    color: #000;
+  }
+
+  .container {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  h1.doc-title {
+    font-size: 14pt;
+    border-bottom: 1pt solid #000;
+    margin-bottom: 16pt;
+    padding-bottom: 8pt;
+  }
+
+  /* Hide all UI chrome */
+  .actions { display: none !important; }
+  button { display: none !important; }
+
+  /* Fields: look like underlines, not interactive inputs */
+  .field {
+    border: none;
+    border-bottom: 1pt solid #000;
+    background: transparent;
+    color: #000;
+    font-size: 13pt;
+    font-family: inherit;
+    border-radius: 0;
+    padding: 0 4pt;
+    min-width: 80pt;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  /* Hide date picker icon and spin buttons */
+  input[type="date"]::-webkit-calendar-picker-indicator { display: none; }
+  input[type="date"]::-webkit-inner-spin-button { display: none; }
+  input[type="date"] { -webkit-appearance: textfield; }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button { display: none; }
+
+  /* Tables: keep borders visible for printed forms */
+  .doc-table { border-collapse: collapse; width: 100%; }
+  .doc-table td {
+    border: 0.5pt solid #555;
+    padding: 4pt 6pt;
+    min-height: 20pt;
+  }
+  .cell-field { border-bottom: none; min-width: 0; width: 100%; }
+
+  /* Avoid page breaks inside a paragraph */
+  .doc-line { page-break-inside: avoid; }
+
+  /* Signature area: push to bottom of last page */
+  .doc-body { margin-bottom: 0; }
 }

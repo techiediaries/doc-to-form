@@ -1,0 +1,158 @@
+{
+  "_comment": "Field detection and rendering spec for doc-to-form. Pin templates to a spec version so rule changes never break existing forms.",
+  "version": "1",
+  "semver": "1.0.0",
+  "released": "2026-05-29",
+
+  "field_types": {
+    "text": {
+      "description": "Single-line free text input",
+      "html_input": "<input type=\"text\" id=\"{id}\" name=\"{id}\" placeholder=\"{label}\" class=\"field\">",
+      "print_style": "border-bottom: 1pt solid #000; min-width: 80pt;"
+    },
+    "date": {
+      "description": "Calendar date — rendered as date picker on screen, plain underline on print",
+      "html_input": "<input type=\"date\" id=\"{id}\" name=\"{id}\" class=\"field date-field\">",
+      "print_style": "border-bottom: 1pt solid #000; min-width: 100pt; -webkit-appearance: textfield;"
+    },
+    "currency": {
+      "description": "Monetary amount in MAD (Moroccan dirham)",
+      "html_input": "<input type=\"number\" id=\"{id}\" name=\"{id}\" placeholder=\"0.00\" step=\"0.01\" class=\"field currency-field\"> درهم",
+      "print_style": "border-bottom: 1pt solid #000; min-width: 60pt;"
+    },
+    "cin": {
+      "description": "Moroccan National ID — format: letter + 6 digits (e.g. B123456)",
+      "html_input": "<input type=\"text\" id=\"{id}\" name=\"{id}\" placeholder=\"B123456\" pattern=\"[A-Z]{1,2}[0-9]{6}\" maxlength=\"8\" class=\"field cin-field\">",
+      "print_style": "border-bottom: 1pt solid #000; min-width: 70pt; font-family: monospace;"
+    },
+    "phone": {
+      "description": "Moroccan phone number — 10 digits starting with 06 or 07",
+      "html_input": "<input type=\"tel\" id=\"{id}\" name=\"{id}\" placeholder=\"06XXXXXXXX\" pattern=\"0[67][0-9]{8}\" maxlength=\"10\" class=\"field phone-field\">",
+      "print_style": "border-bottom: 1pt solid #000; min-width: 80pt;"
+    },
+    "checkbox": {
+      "description": "Boolean yes/no option",
+      "html_input": "<input type=\"checkbox\" id=\"{id}\" name=\"{id}\" class=\"field-checkbox\">",
+      "print_style": "border: 1pt solid #000; width: 12pt; height: 12pt; display: inline-block;"
+    },
+    "textarea": {
+      "description": "Multi-line free text for longer content",
+      "html_input": "<textarea id=\"{id}\" name=\"{id}\" rows=\"3\" class=\"field textarea-field\"></textarea>",
+      "print_style": "border-bottom: 1pt solid #000; display: block; width: 100%; min-height: 40pt;"
+    },
+    "select": {
+      "description": "Dropdown — options defined per-field in template manifest",
+      "html_input": "<select id=\"{id}\" name=\"{id}\" class=\"field select-field\">{options}</select>",
+      "print_style": "border-bottom: 1pt solid #000; min-width: 100pt;"
+    }
+  },
+
+  "detection_rules": [
+    {
+      "_comment": "Rules applied IN ORDER. First match wins. More specific patterns must come before broader ones.",
+      "priority": 1,
+      "name": "word_formfield_text",
+      "source": "docx_xml",
+      "trigger": "w:fldChar + w:instrText contains FORMTEXT",
+      "output_type": "text",
+      "label": "from_bookmark_or_surrounding_text"
+    },
+    {
+      "priority": 2,
+      "name": "word_formfield_checkbox",
+      "source": "docx_xml",
+      "trigger": "w:fldChar + w:instrText contains FORMCHECKBOX",
+      "output_type": "checkbox",
+      "label": "from_surrounding_text"
+    },
+    {
+      "priority": 3,
+      "name": "underlined_whitespace",
+      "source": "docx_run",
+      "trigger": "run.underline == true AND run.text.strip() == ''",
+      "output_type": "text",
+      "label": ""
+    },
+    {
+      "priority": 4,
+      "name": "underlined_dots",
+      "source": "docx_run",
+      "trigger": "run.underline == true AND set(run.text.strip()) <= {'.', '_'}",
+      "output_type": "text",
+      "label": ""
+    },
+    {
+      "priority": 5,
+      "name": "empty_table_cell",
+      "source": "docx_table",
+      "trigger": "cell.text.strip() == '' OR set(cell.text.strip()) <= {'.', '_', ' ', '،', ','}",
+      "output_type": "text",
+      "label": ""
+    },
+    {
+      "priority": 6,
+      "name": "date_slash_pattern",
+      "source": "text_regex",
+      "pattern": "[\\s\\.]{2,}/[\\s\\.]{2,}/[\\s\\.]{4,}",
+      "output_type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "priority": 7,
+      "name": "cin_pattern",
+      "source": "text_regex",
+      "pattern": "ب\\.ت\\.و\\s+رقم[:\\s]+[\\.\\s]{6,}",
+      "output_type": "cin",
+      "label": "رقم بطاقة التعريف"
+    },
+    {
+      "priority": 8,
+      "name": "bracket_placeholder",
+      "source": "text_regex",
+      "pattern": "\\[([^\\]]{1,50})\\]",
+      "output_type": "text",
+      "label": "from_capture_group_1"
+    },
+    {
+      "priority": 9,
+      "name": "paren_placeholder",
+      "source": "text_regex",
+      "pattern": "\\(([^)]{3,50})\\)",
+      "min_label_length": 3,
+      "exclude_if_digits_only": true,
+      "output_type": "text",
+      "label": "from_capture_group_1"
+    },
+    {
+      "priority": 10,
+      "name": "dot_blank",
+      "source": "text_regex",
+      "pattern": "\\.{5,}",
+      "output_type": "text",
+      "label": ""
+    },
+    {
+      "priority": 11,
+      "name": "underscore_blank",
+      "source": "text_regex",
+      "pattern": "_{4,}",
+      "output_type": "text",
+      "label": ""
+    }
+  ],
+
+  "upgrade_policy": {
+    "note": "When adding new rules or changing existing ones, increment the version. Templates manifest declares which spec version they were built against. The converter loads the spec version declared in the template — old templates are never affected by new rules.",
+    "backwards_compatible_changes": [
+      "Adding a new field_type",
+      "Adding a new detection_rule at lower priority",
+      "Changing html_input or print_style for a type"
+    ],
+    "breaking_changes": [
+      "Removing a field_type",
+      "Changing priority of existing detection_rules",
+      "Changing pattern of an existing rule"
+    ],
+    "on_breaking_change": "Bump major version (v1 → v2). Keep field-spec.v1.json unchanged forever."
+  }
+}

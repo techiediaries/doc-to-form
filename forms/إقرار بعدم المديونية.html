@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إقرار بعدم المديونية</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">إقرار بعدم المديونية</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">إقرار بعدم المديونية</p>
+<p class="doc-line" dir="rtl">أنا الموقع أدناه السيد/ة: <input type="text" id="f1" name="f1" placeholder="" class="field">، الحامل/ة لبطاقة التعريف الوطنية رقم: <input type="text" id="f2" name="f2" placeholder="" class="field"></p>
+<p class="doc-line" dir="rtl">المقيم/ة بـ: <input type="text" id="f3" name="f3" placeholder="" class="field"></p>
+<p class="doc-line" dir="rtl">أُقِرُّ بموجب هذه الوثيقة، وعن كامل إرادتي، بأنني لا أمتلك أي ديون مستحقة الأداء أو</p>
+<p class="doc-line" dir="rtl">التزامات مالية تجاه السيد/ة: <input type="text" id="f4" name="f4" placeholder="" class="field">، الحامل/ة لبطاقة التعريف الوطنية رقم: <input type="text" id="f5" name="f5" placeholder="" class="field"></p>
+<p class="doc-line" dir="rtl">وذلك اعتباراً من تاريخ تحرير هذا الإقرار، وأن جميع الحسابات قد صُفِّيت بيننا بشكل كامل</p>
+<p class="doc-line" dir="rtl">ونهائي دون أي تحفظ أو قيد.</p>
+<p class="doc-line" dir="rtl">وهذا إقراري أُمضيه طوعاً وتصريحاً بالحق، وليُعمَل به فيما يُستوجب.</p>
+<p class="doc-line" dir="rtl">حُرِّر بـ<input type="text" id="f6" name="f6" placeholder="" class="field"> بتاريخ  <input type="text" id="f7" name="f7" placeholder="" class="field"> /  <input type="text" id="f8" name="f8" placeholder="" class="field"> /  <input type="text" id="f9" name="f9" placeholder="" class="field"></p>
+<p class="doc-line" dir="rtl">توقيع المُقِر: <input type="text" id="f10" name="f10" placeholder="" class="field">                 توقيع الشاهد: <input type="text" id="f11" name="f11" placeholder="" class="field"></p>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('إقرار بعدم المديونية')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "text", "label": ""}, {"id": "f2", "type": "text", "label": ""}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "text", "label": ""}, {"id": "f5", "type": "text", "label": ""}, {"id": "f6", "type": "text", "label": ""}, {"id": "f7", "type": "text", "label": ""}, {"id": "f8", "type": "text", "label": ""}, {"id": "f9", "type": "text", "label": ""}, {"id": "f10", "type": "text", "label": ""}, {"id": "f11", "type": "text", "label": ""}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

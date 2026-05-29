@@ -1,0 +1,150 @@
+{
+  "_comment": "Registry of all templates. Each entry pins to a spec_version. Add entries here when adding new templates — the UI index is generated from this file.",
+  "manifest_version": "1",
+  "updated": "2026-05-29",
+
+  "categories": {
+    "declarations": { "ar": "إقرارات", "fr": "Déclarations" },
+    "contracts":    { "ar": "عقود",    "fr": "Contrats" },
+    "agency":       { "ar": "توكيلات", "fr": "Procurations" },
+    "company":      { "ar": "شركات",   "fr": "Sociétés" },
+    "receipts":     { "ar": "وصولات",  "fr": "Reçus" },
+    "real_estate":  { "ar": "عقارات",  "fr": "Immobilier" },
+    "other":        { "ar": "متنوع",   "fr": "Divers" }
+  },
+
+  "templates": [
+
+    {
+      "id": "iqrar-adam-madiyuniya",
+      "title": { "ar": "إقرار بعدم المديونية", "fr": "Déclaration de non-endettement" },
+      "file": "إقرار بعدم المديونية",
+      "category": "declarations",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+    {
+      "id": "tawkil-khas",
+      "title": { "ar": "توكيل خاص", "fr": "Procuration spéciale" },
+      "file": "توكيل خاص",
+      "category": "agency",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+    {
+      "id": "wasl-istihlam",
+      "title": { "ar": "وصل استلام مبلغ مالي", "fr": "Reçu de paiement" },
+      "file": "وصل استلام مبلغ مالي",
+      "category": "receipts",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+    {
+      "id": "aqd-ijar-sakani",
+      "title": { "ar": "عقد إيجار سكني", "fr": "Contrat de bail résidentiel" },
+      "file": "عقد إيجار سكني",
+      "category": "real_estate",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": "Articles 627–688 DOC (dahir des obligations et contrats)"
+    },
+    {
+      "id": "iqrar-iqama",
+      "title": { "ar": "إقرار بالإقامة", "fr": "Déclaration de résidence" },
+      "file": "إقرار بالإقامة",
+      "category": "declarations",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+    {
+      "id": "iqrar-husn-sira",
+      "title": { "ar": "إقرار بحسن السيرة والسلوك", "fr": "Attestation de bonne conduite" },
+      "file": "إقرار بحسن السيرة والسلوك",
+      "category": "declarations",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+    {
+      "id": "aqd-bay-markaba",
+      "title": { "ar": "عقد بيع مركبة", "fr": "Contrat de vente de véhicule" },
+      "file": "عقد بيع مركبة",
+      "category": "contracts",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+    {
+      "id": "iqrar-hala-aila",
+      "title": { "ar": "إقرار بالحالة العائلية", "fr": "Déclaration de situation familiale" },
+      "file": "إقرار بالحالة العائلية",
+      "category": "declarations",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+    {
+      "id": "itifaqiya-shiraka",
+      "title": { "ar": "اتفاقية شراكة تجارية", "fr": "Accord de partenariat commercial" },
+      "file": "اتفاقية شراكة تجارية",
+      "category": "company",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+    {
+      "id": "mahdar-taslim",
+      "title": { "ar": "محضر تسليم واستلام", "fr": "Procès-verbal de remise" },
+      "file": "محضر تسليم واستلام",
+      "category": "other",
+      "spec_version": "1",
+      "source": "generated",
+      "language": "ar",
+      "notes": ""
+    },
+
+    {
+      "id": "iqrar-ibra-kafil",
+      "title": { "ar": "اقرار بابراء الكفيل من الكفالة", "fr": "Décharge de caution" },
+      "file": "اقرار بابراء الكفيل من الكفالة",
+      "category": "declarations",
+      "spec_version": "1",
+      "source": "drive_import",
+      "language": "ar",
+      "notes": "Imported from original Drive folder"
+    },
+    {
+      "id": "iqrar-bay-saydalia",
+      "title": { "ar": "بيع صيدلية", "fr": "Vente de pharmacie" },
+      "file": "بيع صيدلية",
+      "category": "contracts",
+      "spec_version": "1",
+      "source": "drive_import",
+      "language": "ar",
+      "notes": "Imported from original Drive folder"
+    },
+    {
+      "id": "aqd-ibtidai-sharikat",
+      "title": { "ar": "العقد الابتدائي والنظام الأساسي", "fr": "Acte constitutif et statuts" },
+      "file": "العقد الابتدائي والنظام الأساسي",
+      "category": "company",
+      "spec_version": "1",
+      "source": "drive_import",
+      "language": "ar",
+      "notes": "Imported from original Drive folder — 130 fields"
+    }
+  ]
+}
