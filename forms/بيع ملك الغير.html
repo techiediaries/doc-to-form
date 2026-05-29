@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بيع ملك الغير</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">بيع ملك الغير</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">بيع ملك الغير</p>
+<p class="doc-line" dir="rtl"><input type="text" id="f1" name="f1" placeholder="المواد 466 -468 مدني" class="field"> </p>
+<p class="doc-line" dir="rtl">تنويه : فى الحالات التى لا يقر البائع  فيها أنه يبيع ملك الغير ، وإنما يتصرف على أساس انه المالك ، فان النماذج السابقة تكون سارية ، وحينئذ لا يكون البيع ساريا فى حق المالك إلا إذا أجازه ، ذلك أن الاجازة اللاحقة كالوكالة السابقة ، فإن جاءت الاجازة مطلقة سرى البيع بكافة بنوده أما ان جاءت مقيدة تعين الالتزام بهذا العقد ، ولا يلزم أن تكون الاجازة رسمية إذ تكفى الاجازة العرفية سواء كانت صريحة أو ضمنية .</p>
+<p class="doc-line" dir="rtl">أجازة المالك فى بيع ملك الغير </p>
+<p class="doc-line" dir="rtl">اقر أنا 		باننى علمت بتصرف السيد /</p>
+<p class="doc-line" dir="rtl">فى العقار المملوك لى رقم    شارع        قسم          محافظة    </p>
+<p class="doc-line" dir="rtl">للسيد/                      بالبيع بموجب العقد المحرر بينهما بتاريخ<input type="date" id="f2" name="f2" class="field date-field">وبعد قبضى لمقدم الثمن بالكامل فاننى أجيز هذا العقد بكافة بنوده واعتبر البائع له فى كافة ما ينشأ عنه من حقوق والتزامات منذ إبرامه . </p>
+<p class="doc-line" dir="rtl">أجازة المالك مع تعديل بعض البنود</p>
+<p class="doc-line" dir="rtl">تنقل الصيغة السابقة حتى عبارة " فأننى أجيز هذا العقد " ثم يضاف فيما عدا البند رقم      فيعدل إلى </p>
+<p class="doc-line" dir="rtl">       وكذلك البند رقم         فيعدل إلى          وفى حالة موافقة المشترى على ذلك يكون البيع نافذا في حقى من تاريخ إبرامه فيما يتعلق بكافة الحقوق والالتزامات المترتبة عليه .</p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f3" name="f3" class="field date-field"><input type="text" id="f4" name="f4" placeholder="المالك" class="field"> </p>
+<p class="doc-line" dir="rtl">أقر أنا               المشترى للعقار المملوك للسيد/          باننى أوافق على جميع الشروط التي علق المالك عليها اجازته للعقد المحرر بينى وبين السيد/                ويعتبر هذا تعديلا له ملزما لى وملغيا للبندين رقمى    ،                الواردتين به </p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f5" name="f5" class="field date-field"><input type="text" id="f6" name="f6" placeholder="المشترى" class="field"></p>
+<br>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('بيع ملك الغير')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "text", "label": "المواد 466 -468 مدني"}, {"id": "f2", "type": "date", "label": "تاريخ"}, {"id": "f3", "type": "date", "label": "تاريخ"}, {"id": "f4", "type": "text", "label": "المالك"}, {"id": "f5", "type": "date", "label": "تاريخ"}, {"id": "f6", "type": "text", "label": "المشترى"}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

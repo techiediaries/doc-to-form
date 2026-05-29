@@ -11,7 +11,13 @@
   <h1 class="doc-title">sample1</h1>
   <form id="doc-form" autocomplete="off">
     <div class="doc-body">
-<p class="doc-line" dir="rtl">اقرار بابراء الكفيل من الكفالة أقر أنا ...." الدائن " بأن السيد/ <input type="text" id="f4" name="f4" class="field"> قد كفل المدين السيد/<input type="text" id="f5" name="f5" class="field"> فى مبلغ <input type="text" id="f6" name="f6" class="field"> فقط <input type="text" id="f7" name="f7" class="field"> جنيه بموجب عقد القرض المبرم فيما بيننا بتاريخ<input type="date" id="f1" name="f1" class="field date-field">وأقر بأننى أبرأته من هذه الكفالة ويعتبر هذا اسقاطا لحقى قبله المترتب على التزامه الذى تضمنه العقد المشار اليه وليس لى الرجوع فيما اسقت حقه فيه بمطالبة الكفيل بالدين إذا حل أجل استحقاقه دون يام المدين بالوفاء به .وهذا اقرار منى بذلك ، تحريرا فى<input type="date" id="f2" name="f2" class="field date-field"><input type="text" id="f3" name="f3" placeholder="المقر" class="field"> ملاحظة :</p>
+<p class="doc-line" dir="rtl">اقرار بابراء الكفيل من الكفالة </p>
+<p class="doc-line" dir="rtl">أقر أنا ...." الدائن " بأن السيد/ <input type="text" id="f2" name="f2" class="field"> قد كفل المدين السيد/<input type="text" id="f3" name="f3" class="field"> فى مبلغ <input type="text" id="f4" name="f4" class="field"> فقط <input type="text" id="f5" name="f5" class="field"> جنيه بموجب عقد القرض المبرم فيما بيننا بتاريخ<input type="date" id="f1" name="f1" class="field date-field">وأقر بأننى أبرأته من هذه الكفالة ويعتبر هذا اسقاطا لحقى قبله المترتب على التزامه الذى تضمنه العقد المشار اليه وليس لى الرجوع فيما اسقت حقه فيه بمطالبة الكفيل بالدين إذا حل أجل استحقاقه دون يام المدين بالوفاء به .</p>
+<p class="doc-line" dir="rtl">وهذا اقرار منى بذلك ، </p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f6" name="f6" class="field date-field"><input type="text" id="f7" name="f7" placeholder="المقر" class="field"> </p>
+<p class="doc-line" dir="rtl">ملاحظة : </p>
+<p class="doc-line" dir="rtl">قد يعلق الابراء على شرط موقف ، فلا يقع الابراء الا بتحققه ومتى تحقق تسقط الكفالة ولا يكون للدائن الرجوع فيما أسقط حقه فيه .</p>
+<br>
     </div>
     <div class="actions">
       <button type="button" onclick="exportForm('sample1')">تصدير كنص</button>
@@ -21,13 +27,12 @@
   </form>
 </div>
 <script>
-const fields = [{"id": "f1", "type": "date", "label": "تاريخ"}, {"id": "f2", "type": "date", "label": "تاريخ"}, {"id": "f3", "type": "text", "label": "المقر"}, {"id": "f4", "type": "text", "label": ""}, {"id": "f5", "type": "text", "label": ""}, {"id": "f6", "type": "text", "label": ""}, {"id": "f7", "type": "text", "label": ""}];
-
+const fields = [{"id": "f1", "type": "date", "label": "تاريخ"}, {"id": "f2", "type": "text", "label": ""}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "text", "label": ""}, {"id": "f5", "type": "text", "label": ""}, {"id": "f6", "type": "date", "label": "تاريخ"}, {"id": "f7", "type": "text", "label": "المقر"}];
 function exportForm(name) {
   let out = '';
   fields.forEach(f => {
     const el = document.getElementById(f.id);
-    const val = el ? el.value : '';
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
     out += (f.label || f.id) + ': ' + val + '\n';
   });
   const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});

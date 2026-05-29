@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صيغة إجازة العقد</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">صيغة إجازة العقد</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">صيغة إجازة العقد</p>
+<p class="doc-line" dir="rtl">أقر أنا ... الطرف الأول في هذا العقد إنني اطلعت عليه وتسلمت نسخة منه وبعد دراستي لها أجزته ووافقت على كل بنوده وقبضت كامل الثمن الوارد به . </p>
+<p class="doc-line" dir="rtl">(يمكن الإشارة إلى البنود التي لم يوافق عليها الطرف الأول ثم استبدالها ببنود أخرى ينص عليها من صيغة الإجازة ، وحينئذ لا ينفذ العقد إلا إذا وافق الطرف الثاني على هذا التعديل ، فأن وافق تعين التوقيع على الإجازة المتضمنة التعديل من الطرفين ) .</p>
+<p class="doc-line" dir="rtl">ملاحظة : بيع النائب لنفسه ما نيط به بيعه يكون معلقا على شرط واقف هو إجازة الأصيل وفقا لنص المادتين 479 و481 من القانون المدني وإلا كان غير نافذ فى حق الأصيل .</p>
+<br>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('صيغة إجازة العقد')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

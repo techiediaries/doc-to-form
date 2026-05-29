@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اقرار من الدائن بوفاء الكفيل له بالدين وتخالص</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">اقرار من الدائن بوفاء الكفيل له بالدين وتخالص</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">اقرار من الدائن بوفاء الكفيل له بالدين وتخالص </p>
+<p class="doc-line" dir="rtl">أقر أنا <input type="text" id="f2" name="f2" class="field">" الدائن " بان الكفيل السيد/<input type="text" id="f3" name="f3" class="field"> قد قام بالوفاء لى مباشرة بمبلغ .... فقط <input type="text" id="f4" name="f4" class="field"> جنيه الذى كفله بموجب عقد القرض  المبرم بتاريخ<input type="date" id="f1" name="f1" class="field date-field">فيما بينى وبين السيد/ <input type="text" id="f5" name="f5" class="field"> وكفيلة الذى قام بالوفاء على النحو المتقدم ، ويعتبر هذا اثباتا لهذا الوفاء وقد سلمت للكفيل عقد القرض مؤشرا عليه منى وبتوقيعى بما يدل على وفائه لى بمبلغ القرض ، وذلك للرجوع به على المدين وأقر بحلوله محلى فى ذلك </p>
+<p class="doc-line" dir="rtl">وهذا اقرار منى بذلك ،</p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f6" name="f6" class="field date-field"><input type="text" id="f7" name="f7" placeholder="المقر" class="field"> </p>
+<p class="doc-line" dir="rtl">ملاحظة : </p>
+<p class="doc-line" dir="rtl">يجب على الكفيل ان يخطر المدين قبل ان يقوم بوفاء الدين والا سقط حقه فى الرجوع على المدين غذا كان هذا قد وفى الدين أو كانت عنده وقت الاستحقاق اسباب تقضى ببطلان الدين أو بقضائه ، فإذا لم يعارض المدين فى الوفاء بقى للكفيل حقه فى الرجوع عليه ولو كان المدين قد دفع الدين أو كانت لديه اسباب  تقضى ببطلانه أو بانقضائه .</p>
+<br>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('اقرار من الدائن بوفاء الكفيل له بالدين وتخالص')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "date", "label": "تاريخ"}, {"id": "f2", "type": "text", "label": ""}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "text", "label": ""}, {"id": "f5", "type": "text", "label": ""}, {"id": "f6", "type": "date", "label": "تاريخ"}, {"id": "f7", "type": "text", "label": "المقر"}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

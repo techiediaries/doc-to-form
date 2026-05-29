@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اقرار باسترداد المودع للوديعة</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">اقرار باسترداد المودع للوديعة</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">اقرار باسترداد المودع للوديعة </p>
+<p class="doc-line" dir="rtl">أقر أنا <input type="text" id="f1" name="f1" class="field">" المودع" بأننى تسلمت اليوم <input type="text" id="f2" name="f2" class="field"> " الوديعة " من السيد/<input type="text" id="f3" name="f3" class="field"> " المودع لديه " وكانت حالتها جيدة وليست لى ثمت ملاحظات على ذلك وقد قام الأخير بتنفيذ التزامه بالحفظ على نحو ما تضمنه عقد الوديعة ولا يحق من بعد الرجوع عليه بشئ يتعلق بهذا الالتزام .</p>
+<p class="doc-line" dir="rtl">وهذا اقرار منى بذلك ،</p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f4" name="f4" class="field date-field"><input type="text" id="f5" name="f5" placeholder="المقر" class="field"> </p>
+<br>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('اقرار باسترداد المودع للوديعة')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "text", "label": ""}, {"id": "f2", "type": "text", "label": ""}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "date", "label": "تاريخ"}, {"id": "f5", "type": "text", "label": "المقر"}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

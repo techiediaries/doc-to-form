@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اقرار بتنحى وكيل</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">اقرار بتنحى وكيل</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">اقرار بتنحى وكيل</p>
+<p class="doc-line" dir="rtl">أقر أنا <input type="text" id="f3" name="f3" class="field">" الوكيل" بأننى لا أرغب فى الاستمرار فى أعمال الوكالة التى أناطها بى السيد / <input type="text" id="f4" name="f4" class="field"> " الموكل" بموجب عقد الوكالة الموثق بمكتب <input type="text" id="f5" name="f5" class="field"> تحت رقم <input type="text" id="f6" name="f6" class="field"> بتاريخ<input type="date" id="f1" name="f1" class="field date-field">وقد أخطرته بذلك اليوم على أن ينفذ التنحى اعتبارا من<input type="date" id="f2" name="f2" class="field date-field"></p>
+<p class="doc-line" dir="rtl">وهذا اقرار منى بذلك ،</p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f7" name="f7" class="field date-field"><input type="text" id="f8" name="f8" placeholder="المقر" class="field"> </p>
+<p class="doc-line" dir="rtl">ملاحظة : يجب أن يتم التنحى فى وقت مناسب بعد انجاز الاعمال المعلقة ، ولا يجوز التنحى اذا كانت الوكالة لصالح أجنبى عن الطرفين الا اذا وجدت اسباب جدية مع اخطار الاجنبى ومنحه الوقت الكافى لتدبير أموره . </p>
+<br>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('اقرار بتنحى وكيل')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "date", "label": "تاريخ"}, {"id": "f2", "type": "date", "label": "تاريخ"}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "text", "label": ""}, {"id": "f5", "type": "text", "label": ""}, {"id": "f6", "type": "text", "label": ""}, {"id": "f7", "type": "date", "label": "تاريخ"}, {"id": "f8", "type": "text", "label": "المقر"}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

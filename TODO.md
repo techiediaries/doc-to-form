@@ -1,13 +1,17 @@
 ## Current
-- [ ] Verify if Drive folder is public (try gdown on folder ID)
-- [ ] Download 2-3 sample .doc files and inspect field patterns
+- [ ] Run download.py to download all 50+ docs from the Drive folder
+- [ ] Run convert.py on all downloaded docs to generate complete form library
 
 ## Backlog
-- [ ] Write download.py — batch download all .doc from Drive folder
-- [ ] Write convert.py — .doc → HTML form with detected fields
-- [ ] Write server.py — minimal Flask server to list/open/fill forms
-- [ ] Export: filled form → plain text or .docx output
+- [ ] Fix: date pattern /   / (spaces not dots) needs tuning per actual docs
+- [ ] Add: export filled form back to .docx (Phase 2)
+- [ ] Add: Flask server for hosted version (Phase 2)
+- [ ] Add: form validation (required fields)
 
 ## Done
 - [x] Feasibility analysis written — 2026-05-29
 - [x] Project folder created — 2026-05-29
+- [x] download.py written — gdown, public folder, no OAuth — 2026-05-29
+- [x] convert.py written — olefile + UTF-16LE + 4 field patterns — 2026-05-29
+- [x] static/style.css — RTL Arabic form layout — 2026-05-29
+- [x] 3 sample .doc files tested, 7 fields detected in sample1 — 2026-05-29

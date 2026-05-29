@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صيغة اشهار وصية</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">صيغة اشهار وصية</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">اشهار وصية </p>
+<p class="doc-line" dir="rtl">عن أطيان زراعية كائنة بناحية <input type="text" id="f1" name="f1" class="field"> مركز <input type="text" id="f2" name="f2" class="field"> محافظة <input type="text" id="f3" name="f3" class="field"></p>
+<p class="doc-line" dir="rtl">المسطح      اسم الحوض ورقمه 	رقم اللوحة 		رقم القطعة	الحدود </p>
+<p class="doc-line" dir="rtl">س  ط   ف                                                     مفرزة أو مشاعا فى القطعة </p>
+<p class="doc-line" dir="rtl">								رقم <input type="text" id="f4" name="f4" class="field">البالغ مساحتها</p>
+<p class="doc-line" dir="rtl">الحد البحرى : القطعة رقم <input type="text" id="f5" name="f5" class="field">باسم <input type="text" id="f6" name="f6" class="field"></p>
+<p class="doc-line" dir="rtl"> الحد القبلى : القطعة رقم <input type="text" id="f7" name="f7" class="field">باسم <input type="text" id="f8" name="f8" class="field"></p>
+<p class="doc-line" dir="rtl">الحد الشرقى : القطعة رقم <input type="text" id="f9" name="f9" class="field">باسم <input type="text" id="f10" name="f10" class="field"></p>
+<p class="doc-line" dir="rtl">الحد الغربى : القطعة رقم <input type="text" id="f11" name="f11" class="field">باسم <input type="text" id="f12" name="f12" class="field"></p>
+<p class="doc-line" dir="rtl">-   -   4 فقط أربعة أفدنة ضمن المكلفة رقم <input type="text" id="f13" name="f13" class="field">بالكشف الرسمى رقم <input type="text" id="f14" name="f14" class="field"> والضريبة المقررة مبلغ <input type="text" id="f15" name="f15" class="field"> جنيها سنويا .</p>
+<p class="doc-line" dir="rtl">بيانات الوصية : </p>
+<p class="doc-line" dir="rtl">توفى المرحوم <input type="text" id="f16" name="f16" class="field"> بتاريخ   /  / وقد أوصى بهذه الاطيان للطالب <input type="text" id="f17" name="f17" class="field"> بموجب وصية مصدق على توقيع الموصى فيها بمحضر التوثيق رقم <input type="text" id="f18" name="f18" class="field"> لسنة <input type="text" id="f19" name="f19" class="field"> توثيق <input type="text" id="f20" name="f20" class="field"> بتاريخ    /  /   ، وتخرج هذه الاطيان من ثلث التركة وفقا للاقرار الصادر من ورثة الموصى الذين تضمنهم اعلام الوراثة رقم <input type="text" id="f21" name="f21" class="field"> لسنة      وراثات <input type="text" id="f22" name="f22" class="field">المرفق ضمن مستندات الطالب وهم <input type="text" id="f23" name="f23" class="field"> ، <input type="text" id="f24" name="f24" class="field"> ، <input type="text" id="f25" name="f25" class="field"></p>
+<p class="doc-line" dir="rtl">وقد تملك الموصى هذا القدر بالعقد المسجل رقم <input type="text" id="f26" name="f26" class="field"> لسنة        توثيق <input type="text" id="f27" name="f27" class="field"> ولم ترد فى شأنه اية حقوق عينية تبعية .</p>
+<p class="doc-line" dir="rtl">وتم الافراج عنه بموجب شهادة افراج صادرة من مأمورية ضرائب التركات المختصة بتاريخ<input type="date" id="f28" name="f28" class="field date-field">برقم <input type="text" id="f29" name="f29" class="field"> ومرفقة ضمن مستندات الطالب ، وذلك بعد سداد الضريب المستحقة وقدرها ....</p>
+<p class="doc-line" dir="rtl">ملاحظة : يتعين تقديم طالب الى مأمورية الشهر العقارى الكئان بدائرتها الاطيان الموصى بها متضمنا البيانات السابقة للحصول على البيانات المساحية اللازمة لاشهار الوصية .</p>
+<br>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('صيغة اشهار وصية')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "text", "label": ""}, {"id": "f2", "type": "text", "label": ""}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "text", "label": ""}, {"id": "f5", "type": "text", "label": ""}, {"id": "f6", "type": "text", "label": ""}, {"id": "f7", "type": "text", "label": ""}, {"id": "f8", "type": "text", "label": ""}, {"id": "f9", "type": "text", "label": ""}, {"id": "f10", "type": "text", "label": ""}, {"id": "f11", "type": "text", "label": ""}, {"id": "f12", "type": "text", "label": ""}, {"id": "f13", "type": "text", "label": ""}, {"id": "f14", "type": "text", "label": ""}, {"id": "f15", "type": "text", "label": ""}, {"id": "f16", "type": "text", "label": ""}, {"id": "f17", "type": "text", "label": ""}, {"id": "f18", "type": "text", "label": ""}, {"id": "f19", "type": "text", "label": ""}, {"id": "f20", "type": "text", "label": ""}, {"id": "f21", "type": "text", "label": ""}, {"id": "f22", "type": "text", "label": ""}, {"id": "f23", "type": "text", "label": ""}, {"id": "f24", "type": "text", "label": ""}, {"id": "f25", "type": "text", "label": ""}, {"id": "f26", "type": "text", "label": ""}, {"id": "f27", "type": "text", "label": ""}, {"id": "f28", "type": "date", "label": "تاريخ"}, {"id": "f29", "type": "text", "label": ""}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

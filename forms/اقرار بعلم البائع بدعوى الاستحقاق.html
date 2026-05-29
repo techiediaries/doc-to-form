@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اقرار بعلم البائع بدعوى الاستحقاق</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">اقرار بعلم البائع بدعوى الاستحقاق</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">اقرار بعلم البائع بدعوى الاستحقاق </p>
+<p class="doc-line" dir="rtl">أقر أنا <input type="text" id="f3" name="f3" class="field">بأن السيد/<input type="text" id="f4" name="f4" class="field">"المشترى" قد أخطرنى بتاريخ اليوم برفع دعوى من السيد/<input type="text" id="f5" name="f5" class="field"> باستحقاق الاخير للعقار المبيع وقد تحدد لها جلسة<input type="date" id="f1" name="f1" class="field date-field">وفقا لما تضمنه الاعلان المسلم للمشترى سالف الذكر ، ويكون له كافة الحقوق التى يرتبها القانون على اخطارى بدعوى الاستحقاق وكذلك التزامى بالضمان حسبما ينص عليه عقد البيع المبرم فيما بينى وبينه بتاريخ<input type="date" id="f2" name="f2" class="field date-field">متعلقا بالعقار المبيع رقم  <input type="text" id="f6" name="f6" class="field">الكائن <input type="text" id="f7" name="f7" class="field"> .</p>
+<p class="doc-line" dir="rtl">وهذا اقرار منى بذلك ،</p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f8" name="f8" class="field date-field"><input type="text" id="f9" name="f9" placeholder="المقر" class="field"> </p>
+<br>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('اقرار بعلم البائع بدعوى الاستحقاق')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "date", "label": "تاريخ"}, {"id": "f2", "type": "date", "label": "تاريخ"}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "text", "label": ""}, {"id": "f5", "type": "text", "label": ""}, {"id": "f6", "type": "text", "label": ""}, {"id": "f7", "type": "text", "label": ""}, {"id": "f8", "type": "date", "label": "تاريخ"}, {"id": "f9", "type": "text", "label": "المقر"}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

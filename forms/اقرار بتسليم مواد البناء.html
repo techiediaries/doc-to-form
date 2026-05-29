@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اقرار بتسليم مواد البناء</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="doc-title">اقرار بتسليم مواد البناء</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line" dir="rtl">اقرار بتسليم مواد البناء</p>
+<p class="doc-line" dir="rtl">اقر أنا ..." المقاول" بأننى تسلمت من السيد/<input type="text" id="f2" name="f2" class="field"> " رب العمل " مواد البناء اللازمة لتنفيذ الاعمال المنصوص عليها فى عقد المقاولة المبرم فيما بيننا بتاريخ<input type="date" id="f1" name="f1" class="field date-field">وهى عبارة عن <input type="text" id="f3" name="f3" class="field"> وأتعهد بالمحافظة عليها باذلا فى ذلك عناية المقاول الحريص متكفلا بما يلزم من نفقات لهذا الحفظ ، على ان استخدمها طبقا للاصول الفنية المتبعة فى المهنة وأن أقدم حسابا عما اسعملته منها ملتزما برد ما يتبقى منها بالحالة التى كانت عليها وقت الاستلام ، وإذا تبين اثناء العمل وجود عيب بالمواد لإانى التزم باخطار رب العمل فورا به وفى نفس يوم اكتشافه مع توقفى عن العمل أن لم يوجد من المواد ما يكفى لاستمراره ، وفى جميع الحالات تسرى بنود العقد المتعلقة بذلك .</p>
+<p class="doc-line" dir="rtl">وهذا اقرار منى بذلك ،</p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f4" name="f4" class="field date-field"><input type="text" id="f5" name="f5" placeholder="المقر" class="field"> </p>
+<br>
+    </div>
+    <div class="actions">
+      <button type="button" onclick="exportForm('اقرار بتسليم مواد البناء')">تصدير كنص</button>
+      <button type="button" onclick="window.print()">طباعة</button>
+      <a href="../index.html">← العودة للقائمة</a>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "date", "label": "تاريخ"}, {"id": "f2", "type": "text", "label": ""}, {"id": "f3", "type": "text", "label": ""}, {"id": "f4", "type": "date", "label": "تاريخ"}, {"id": "f5", "type": "text", "label": "المقر"}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+</body>
+</html>

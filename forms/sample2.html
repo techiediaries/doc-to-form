@@ -11,7 +11,11 @@
   <h1 class="doc-title">sample2</h1>
   <form id="doc-form" autocomplete="off">
     <div class="doc-body">
-<p class="doc-line" dir="rtl">اقرار باجراء الترميمات الضرورية أقر انا ...."المؤجر" بأن الترميمات التى تتطلب اصلاح تنحصر فى <input type="text" id="f1" name="f1" class="field"> التزم بالقيام بها فى خلال اسبوعين من تاريخه ، و</p>
+<p class="doc-line" dir="rtl">اقرار باجراء الترميمات الضرورية </p>
+<p class="doc-line" dir="rtl">أقر انا ...."المؤجر" بأن الترميمات التى تتطلب اصلاح تنحصر فى <input type="text" id="f1" name="f1" class="field"> التزم بالقيام بها فى خلال اسبوعين من تاريخه ، وفى حالة تأخرى عن هذا الموعد يكون للمستأجر السيد/<input type="text" id="f2" name="f2" class="field"> المطالبة بذلك قضاء واستصدار حكم باجرائها بمعرفته خصما من الاجرة . </p>
+<p class="doc-line" dir="rtl">وهذا اقرار منى بذلك ،</p>
+<p class="doc-line" dir="rtl">تحريرا فى<input type="date" id="f3" name="f3" class="field date-field"><input type="text" id="f4" name="f4" placeholder="المقر" class="field"> </p>
+<br>
     </div>
     <div class="actions">
       <button type="button" onclick="exportForm('sample2')">تصدير كنص</button>
@@ -21,13 +25,12 @@
   </form>
 </div>
 <script>
-const fields = [{"id": "f1", "type": "text", "label": ""}];
-
+const fields = [{"id": "f1", "type": "text", "label": ""}, {"id": "f2", "type": "text", "label": ""}, {"id": "f3", "type": "date", "label": "تاريخ"}, {"id": "f4", "type": "text", "label": "المقر"}];
 function exportForm(name) {
   let out = '';
   fields.forEach(f => {
     const el = document.getElementById(f.id);
-    const val = el ? el.value : '';
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
     out += (f.label || f.id) + ': ' + val + '\n';
   });
   const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
