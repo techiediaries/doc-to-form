@@ -2,35 +2,71 @@
 
 ## Backlog
 
+### ARCHITECTURE — fix before adding features (structural, expensive to change later)
+- [ ] Stable opaque slugs for ALL ~50 drive-imported templates in manifest (IDs are permanent identity)
+- [ ] Shell renderer: one `forms/shell.html?id=bay-saydalia` + `static/renderer.js` + `templates/{id}.json`
+      — eliminates re-rendering all HTML when spec or layout changes
+- [ ] Namespaced localStorage keys: `dtf:v1:draft:{template.id}` — collision-proof, versionable
+- [ ] No inline `<script>` in generated HTML — move to `<template type="application/json">` + external renderer.js (CSP)
+- [ ] Build script (`build.py`): generates `static/search-index.json` from manifest at build time
+
+### ARCHITECTURE — before first deploy
+- [ ] Content-hash assets: `style.a3f9c2d1.css`, `renderer.b7e1d2a0.js` — cache busting
+- [ ] Cache-Control strategy in Cloudflare config:
+      `manifest.json` + `search-index.json` → no-cache
+      `templates/*.json` → immutable (content never changes once published)
+- [ ] Add `required: true/false` to every field in template JSONs
+
+### VALIDATION — document rejection prevention
+- [ ] Add validator declarations to field-spec.v1.json:
+      CIN: pattern `[A-Z]{1,2}[0-9]{6}`
+      Phone: pattern `0[67][0-9]{8}`
+      Date: not empty, valid calendar date
+      Currency: numeric, > 0
+- [ ] Cross-field validators per template in manifest:
+      `end_date > start_date` (rental, partnership)
+      `parties_differ` — signer CIN ≠ receiver CIN
+      `amount_words_match` — تفقيط: words match digits (critical: courts reject if mismatch)
+- [ ] Write `validate.js` — client-side validator that reads field declarations from template JSON,
+      runs all validators before enabling print button
+- [ ] Write `validate.py` — same logic server-side for CI/template authoring checks
+- [ ] `content_version` + `legal_review.status` fields in manifest — track which templates have been
+      reviewed by a lawyer; show "draft, not legally reviewed" badge on unreviewed ones
+- [ ] Draft invalidation: if stored draft's `content_version` < current → warn user on form open
+
+### VALIDATION — template authoring quality (catch issues at generation time not runtime)
+- [ ] Write `audit_template.py` — runs on every .docx in converted/:
+      checks field count > 0, required fields present, no empty title, date fields detected,
+      CIN fields detected where "ب.ت.و" appears in text
+- [ ] Add `audit_template.py` to batch_convert.sh — runs after every conversion, prints warnings
+
 ### Print & export
-- [ ] PDF export button (html2pdf.js) — courts accept PDF; avoids needing a printer
+- [ ] Native print-to-PDF button (`window.print()`) — NOT html2pdf.js (Arabic reshaping is broken in html2pdf)
 - [ ] Auto-fill today's date in all date fields on form open
 - [ ] Signature + witness block at bottom of every printed form
-
-### Field quality
-- [ ] Required field validation — block print if critical fields are empty
-- [ ] CIN field format validation (B123456 pattern)
-- [ ] Fix اوراق الضد + صيغة إجازة العقد — 0 fields detected (inspect manually)
+- [ ] Required field check before print: highlight empty required fields, block print
 
 ### UX
-- [ ] Search/filter on index page — 50+ forms is unwieldy
-- [ ] Sector categories on index (real estate, company, loans, agency, gift/inheritance)
-- [ ] Bilingual field labels (Arabic + French per field)
-- [ ] Save draft to localStorage — resume filling without losing data
-- [ ] Auto-fill today's date in all date fields on page load
+- [ ] Search/filter on index page using pre-built search-index.json
+- [ ] Category grouping on index (real estate, company, loans, agency, declarations)
+- [ ] Bilingual field labels (Arabic + French per field, declared in template JSON)
+- [ ] "Template updated" warning if user's saved draft is older than current content_version
 
 ### Content
-- [ ] French version of each form (acte sous seing privé bilingual)
-- [ ] Add more form categories beyond the 50 downloaded
+- [ ] Add French title + field labels to all 10 generated templates
+- [ ] Add more templates beyond the 50 downloaded
 
-### Intelligence
-- [ ] LLM fill mode — user describes situation in plain Arabic → fields auto-populate
-  e.g. "استلمت 50,000 درهم قرضاً من محمد الأمين اليوم" → fills all fields
-  This is the moat: turns form viewer into a legal document assistant
+### Intelligence (NLP — see decision note below)
+- [ ] Rule-based entity extractor: regex + dictionary for CIN, phone, amount, date from Arabic text
+      → pre-populate fields without any model (handles 70% of cases)
+- [ ] Template router: keyword matching (no model needed) — "إيجار" → rental, "بيع" → sale
+      → suggest top 3 matching templates from user's free-text description
+- [ ] Slot-filling UI: user types description → extracted entities shown as chips → user confirms → fields filled
+- [ ] Evaluate AraBERT/CAMeL-BERT NER for name/entity extraction (phase 2, after rule-based proves insufficient)
 
 ### Infrastructure
-- [ ] Deploy as hosted web app (Cloudflare Pages — static, zero cost)
-- [ ] Add more docs from other Drive folders or legal sources
+- [ ] Deploy to Cloudflare Pages (static, zero cost, CDN edge)
+- [ ] Add more docs from other Drive folders or Moroccan legal sources
 
 ## Done
 - [x] Feasibility analysis written — 2026-05-29
