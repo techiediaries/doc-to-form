@@ -1,0 +1,315 @@
+{
+  "id": "عقد بيع مركبة",
+  "title": "عقد بيع مركبة",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f14",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f15",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f16",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f17",
+      "type": "text",
+      "label": ""
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "عقد بيع مركبة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الطرف البائع: السيد/ة"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "، ب.ت.و رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المقيم/ة بـ:"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الطرف المشتري: السيد/ة"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "، ب.ت.و رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المقيم/ة بـ:"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "بيانات المركبة:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "النوع:"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "الماركة:"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "السنة:"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "رقم التسجيل:"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        },
+        {
+          "type": "text",
+          "value": "رقم الهيكل (VIN):"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "عدد الكيلومترات:"
+        },
+        {
+          "type": "field",
+          "id": "f12"
+        },
+        {
+          "type": "text",
+          "value": "اللون:"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "ثمن البيع:"
+        },
+        {
+          "type": "field",
+          "id": "f14"
+        },
+        {
+          "type": "text",
+          "value": "درهماً مغربياً ("
+        },
+        {
+          "type": "field",
+          "id": "f15"
+        },
+        {
+          "type": "text",
+          "value": ")"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أُقِرُّ أنا البائع بأن المركبة المذكورة ملكي الخالص وخالية من أي رهن أو تعقيد قانوني،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وأُقِرُّ المشتري باستلام المركبة والثمن المذكور كاملاً."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "توقيع البائع:                                          توقيع المشتري:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f16"
+        },
+        {
+          "type": "field",
+          "id": "f17"
+        }
+      ]
+    }
+  ]
+}

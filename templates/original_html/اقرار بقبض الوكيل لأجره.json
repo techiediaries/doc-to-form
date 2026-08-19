@@ -1,0 +1,143 @@
+{
+  "id": "اقرار بقبض الوكيل لأجره",
+  "title": "اقرار بقبض الوكيل لأجره",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار بقبض الوكيل لأجره"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقر انا"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "\" الوكيل\" بأننى قبضت اليوم من السيد/"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "\" الموكل\" مبلغا وقدره ... فقط"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "جنيه قيمة الاجر المستحق لى فى ذمته مقابل قيامى بالاعمال التى تضمنتها سند الوكالة الصادرة منه لى والموثق بمكتب توثيق"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "تحت رقم"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "ويعتبر هذا مخالصة بهذا الاجر ، مع استمرار التزامى بالقيام بهذه الاعمال على خير وجه ووفقا لما هو مقرر قانونا وعرفا فى هذا الصدد"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

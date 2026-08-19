@@ -1,0 +1,78 @@
+
+{
+  "id": "legal-representation-authorization",
+  "title": "وكالة خاصة للتمثيل أمام القضاء",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للموكل" },
+    { "id": "f3", "type": "text", "label": "اسم الوكيل (المحامي)" },
+    { "id": "f4", "type": "text", "label": "رقم هيئة المحامين" },
+    { "id": "f5", "type": "text", "label": "موضوع القضية" },
+    { "id": "f6", "type": "text", "label": "المحكمة المختصة" },
+    { "id": "f7", "type": "text", "label": "الخصم في القضية" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة للتمثيل أمام القضاء" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أوكل بموجب هذه الوكالة الخاصة، الأستاذ(ة)" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، المحامي(ة) بهيئة" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "لينوب عني في قضية" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "، المرفوعة أمام" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "، ضد" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وللوكيل المذكور أوسع الصلاحيات للدفاع عن مصالحي، وتقديم المذكرات، وحضور الجلسات، والقيام بكل الإجراءات القانونية اللازمة." }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

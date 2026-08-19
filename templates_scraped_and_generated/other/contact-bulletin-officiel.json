@@ -1,0 +1,16 @@
+{
+  "id": "contact-bulletin-officiel",
+  "title": "Contact Bulletin Officiel",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Le Bulletin officiel du Maroc ( الجريدة الرسمية للمملكة المغربية) d’annonces légales judiciaires et administratifs, BOAL, est éditée en arabe par le Secrétariat général du gouvernement et assure la publicité des actes enregistrés au registre du commerce (RC), de la création à la radiation de l’entreprise : ventes et cessions, procédures collectives, dépôt des comptes …."
+        }
+      ]
+    }
+  ]
+}

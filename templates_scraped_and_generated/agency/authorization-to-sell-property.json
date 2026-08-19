@@ -1,0 +1,68 @@
+
+{
+  "id": "authorization-to-sell-property",
+  "title": "وكالة خاصة لبيع عقار",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للموكل" },
+    { "id": "f3", "type": "text", "label": "اسم الوكيل" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للوكيل" },
+    { "id": "f5", "type": "textarea", "label": "وصف العقار" },
+    { "id": "f6", "type": "text", "label": "رقم الرسم العقاري" },
+    { "id": "f7", "type": "number", "label": "أدنى سعر للبيع (إن وجد)" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة لبيع عقار" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، أوكل بموجب هذه الوكالة السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لينوب عني في بيع العقار التالي:" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، ذو الرسم العقاري عدد" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وللوكيل الحق في إبرام وعد بالبيع، وتوقيع عقد البيع النهائي، وقبض الثمن، على ألا يقل عن" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "درهم." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

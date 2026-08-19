@@ -1,0 +1,66 @@
+
+{
+  "id": "waiver-of-preemptive-right",
+  "title": "تنازل عن حق الأفضلية",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشريك المتنازل" },
+    { "id": "f2", "type": "text", "label": "اسم الشركة" },
+    { "id": "f3", "type": "text", "label": "اسم الشريك البائع للحصص" },
+    { "id": "f4", "type": "text", "label": "اسم المشتري الجديد" },
+    { "id": "f5", "type": "number", "label": "عدد الحصص موضوع التفويت" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التنازل" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تنازل عن حق الأفضلية في شراء حصص" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، بصفتي شريك في شركة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بموجبه أنني قد أُبلغت بنية الشريك السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، بيع حصصه البالغة" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": " حصة، إلى السيد/ة" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وعليه، أتنازل بشكل كامل ونهائي عن حقي في الأفضلية لشراء هذه الحصص." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الشريك المتنازل" }
+        ]
+    }
+  ]
+}

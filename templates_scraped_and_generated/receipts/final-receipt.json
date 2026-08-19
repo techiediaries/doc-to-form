@@ -1,0 +1,86 @@
+
+{
+  "id": "final-receipt",
+  "title": "مخالصة نهائية وتصفية حساب",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الطرف الأول" },
+    { "id": "f2", "type": "text", "label": "اسم الطرف الثاني" },
+    { "id": "f3", "type": "textarea", "label": "موضوع العلاقة التعاقدية (عمل, كراء, ...)" },
+    { "id": "f4", "type": "date", "label": "تاريخ انتهاء العلاقة" },
+    { "id": "f5", "type": "number", "label": "المبلغ المدفوع (إن وجد)" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "مخالصة نهائية وتصفية حساب" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول: السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني: السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "بموجب هذه المخالصة، يقر الطرفان بإنهاء العلاقة التي كانت تربطهما بخصوص" },
+          { "type": "field", "id": "f3" },
+          { "type": "text", "value": "، وذلك اعتباراً من تاريخ" },
+          { "type": "field", "id": "f4" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يقر الطرف الأول بأنه قد توصل بجميع مستحقاته المالية، بما في ذلك مبلغ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "درهم، ويبرئ ذمة الطرف الثاني إبراءً شاملاً ونهائياً." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بالمقابل، يقر الطرف الثاني بعدم وجود أي التزامات متبقية تجاه الطرف الأول." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الطرف الأول" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الطرف الثاني" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+
+{
+  "id": "donation-agreement",
+  "title": "عقد هبة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الواهب" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للواهب" },
+    { "id": "f3", "type": "text", "label": "اسم الموهوب له" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للموهوب له" },
+    { "id": "f5", "type": "textarea", "label": "وصف الشيء الموهوب" },
+    { "id": "f6", "type": "textarea", "label": "شروط الهبة (إن وجدت)" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد هبة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (الواهب): السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (الموهوب له): السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: موضوع الهبة" },
+        { "type": "text", "value": "وهب الطرف الأول للطرف الثاني، الذي قبل، الشيء التالي وصفه:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: القبول والحيازة" },
+        { "type": "text", "value": "يقر الموهوب له بأنه قبل هذه الهبة وحاز الشيء الموهوب حيازة قانونية وفعلية." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: الشروط" },
+        { "type": "text", "value": "تمت هذه الهبة دون عوض وبدون شروط، أو بالشروط التالية:" },
+        { "type": "field", "id": "f6" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الواهب" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الموهوب له" }
+        ]
+    }
+  ]
+}

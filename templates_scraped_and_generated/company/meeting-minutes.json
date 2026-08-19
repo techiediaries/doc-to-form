@@ -1,0 +1,103 @@
+
+{
+  "id": "meeting-minutes",
+  "title": "محضر اجتماع",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة/الجمعية" },
+    { "id": "f2", "type": "date", "label": "تاريخ الاجتماع" },
+    { "id": "f3", "type": "text", "label": "مكان الاجتماع" },
+    { "id": "f4", "type": "textarea", "label": "قائمة الحاضرين" },
+    { "id": "f5", "type": "textarea", "label": "قائمة الغائبين" },
+    { "id": "f6", "type": "textarea", "label": "جدول الأعمال" },
+    { "id": "f7", "type": "textarea", "label": "النقاط التي تمت مناقشتها" },
+    { "id": "f8", "type": "textarea", "label": "القرارات المتخذة" },
+    { "id": "f9", "type": "text", "label": "اسم كاتب المحضر" },
+    { "id": "f10", "type": "date", "label": "تاريخ تحرير المحضر" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "محضر اجتماع" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الشركة/الجمعية:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "في يوم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، وعلى الساعة" },
+        { "type": "text", "value": "، تم عقد اجتماع بمقر الشركة/الجمعية الكائن بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "قائمة الحاضرين:" },
+          { "type": "field", "id": "f4" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "قائمة الغائبين (بعذر أو بدون):" },
+          { "type": "field", "id": "f5" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "جدول الأعمال:" },
+          { "type": "field", "id": "f6" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بعد التأكد من اكتمال النصاب القانوني، تم افتتاح الجلسة ومناقشة النقاط التالية:" },
+        { "type": "field", "id": "f7" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "القرارات المتخذة:" },
+        { "type": "field", "id": "f8" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "رفعت الجلسة في تمام الساعة" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر هذا المحضر بواسطة" },
+          { "type": "field", "id": "f9" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f10" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع كاتب المحضر" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الرئيس" }
+        ]
+    }
+  ]
+}

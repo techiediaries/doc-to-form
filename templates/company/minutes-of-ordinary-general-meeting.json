@@ -1,0 +1,74 @@
+
+{
+  "id": "minutes-of-ordinary-general-meeting",
+  "title": "محضر الجمعية العامة العادية",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة" },
+    { "id": "f2", "type": "date", "label": "تاريخ الاجتماع" },
+    { "id": "f3", "type": "textarea", "label": "قائمة الحاضرين" },
+    { "id": "f4", "type": "textarea", "label": "جدول الأعمال" },
+    { "id": "f5", "type": "textarea", "label": "القرارات المتخذة" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "محضر اجتماع الجمعية العامة العادية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لشركة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "في يوم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": ", عقدت الجمعية العامة العادية اجتماعها بحضور:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تمت مناقشة جدول الأعمال التالي:" },
+          { "type": "field", "id": "f4" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وبعد التداول، اتخذت القرارات التالية:" },
+          { "type": "field", "id": "f5" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "رفعت الجلسة في تمام الساعة ..." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع رئيس الجلسة" }
+        ]
+    }
+  ]
+}

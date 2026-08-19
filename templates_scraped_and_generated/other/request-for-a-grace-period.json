@@ -1,0 +1,85 @@
+
+{
+  "id": "request-for-a-grace-period",
+  "title": "طلب مهلة للأداء",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المدين" },
+    { "id": "f2", "type": "text", "label": "اسم الدائن" },
+    { "id": "f3", "type": "number", "label": "مبلغ الدين" },
+    { "id": "f4", "type": "date", "label": "تاريخ الاستحقاق الأصلي" },
+    { "id": "f5", "type": "textarea", "label": "أسباب طلب المهلة" },
+    { "id": "f6", "type": "date", "label": "التاريخ الجديد المقترح للأداء" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ الطلب" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "طلب مهلة للأداء" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: طلب مهلة إضافية لسداد دين" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بالإشارة إلى الدين الذي بذمتي والبالغ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "درهم، والذي كان من المقرر أداؤه بتاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "نظراً لظروف قاهرة تتمثل في:" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، فإني أجد صعوبة في الوفاء بالتزامي في الوقت المحدد." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "لذا، ألتمس منكم منحي مهلة إضافية إلى تاريخ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": " لأداء ما بذمتي." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المدين" }
+        ]
+    }
+  ]
+}

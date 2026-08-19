@@ -1,0 +1,80 @@
+
+{
+  "id": "report-of-the-board-of-directors",
+  "title": "تقرير مجلس الإدارة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة" },
+    { "id": "f2", "type": "date", "label": "تاريخ الاجتماع" },
+    { "id": "f3", "type": "text", "label": "السنة المالية" },
+    { "id": "f4", "type": "textarea", "label": "ملخص نشاط الشركة خلال السنة" },
+    { "id": "f5", "type": "textarea", "label": "النتائج المالية المحققة" },
+    { "id": "f6", "type": "textarea", "label": "الاقتراحات المقدمة للجمعية العامة" },
+    { "id": "f7", "type": "text", "label": "اسم رئيس مجلس الإدارة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التقرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تقرير مجلس الإدارة إلى الجمعية العامة العادية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عن السنة المالية المنتهية في" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "السادة المساهمون،" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "يتشرف مجلس الإدارة بأن يقدم لكم تقريره عن نشاط شركة" },
+          { "type": "field", "id": "f1" },
+          { "type": "text", "value": " ونتائجها المالية." }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "1. ملخص النشاط:" },
+        { "type": "field", "id": "f4" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "2. النتائج المالية:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "3. اقتراحات للمصادقة:" },
+          { "type": "field", "id": "f6" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "رئيس مجلس الإدارة،" },
+          { "type": "field", "id": "f7" }
+        ]
+    }
+  ]
+}

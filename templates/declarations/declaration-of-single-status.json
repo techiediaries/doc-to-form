@@ -1,0 +1,81 @@
+
+{
+  "id": "declaration-of-single-status",
+  "title": "شهادة العزوبة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "الاسم الكامل" },
+    { "id": "f2", "type": "date", "label": "تاريخ الميلاد" },
+    { "id": "f3", "type": "text", "label": "مكان الميلاد" },
+    { "id": "f4", "type": "text", "label": "اسم الأب" },
+    { "id": "f5", "type": "text", "label": "اسم الأم" },
+    { "id": "f6", "type": "text", "label": "العنوان" },
+    { "id": "f7", "type": "text", "label": "رقم بطاقة التعريف الوطنية" },
+    { "id": "f8", "type": "text", "label": "الجهة التي ستقدم لها الشهادة" },
+    { "id": "f9", "type": "text", "label": "المدينة" },
+    { "id": "f10", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "شهادة العزوبة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، المزداد(ة) بتاريخ" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "ابن/ابنة" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "و" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، والساكن(ة) بـ" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، وحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "أصرح بشرفي أنني أعزب(عزباء) ولم يسبق لي الزواج." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذه الشهادة قصد تقديمها إلى" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f9" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f10" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

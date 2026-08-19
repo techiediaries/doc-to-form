@@ -1,0 +1,314 @@
+{
+  "id": "بيع حق متنازع فيه مضمون بتأمين عيني",
+  "title": "بيع حق متنازع فيه مضمون بتأمين عيني",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": "المواد 469 – 472 مدني"
+    },
+    {
+      "id": "f2",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": "طرف أول"
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": "طرف ثان"
+    },
+    {
+      "id": "f5",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": "البند الأول"
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": "البند الثاني"
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": "البند الثالث"
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": "البند الرابع"
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": "البند الخامس"
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": "البند السادس"
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": "الطرف الأول"
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": "الطرف الثاني"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "بيع حق متنازع فيه مضمون بتأمين عيني"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f1"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أنه في يوم \t\tالموافق"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تم تحرير هذا العقد بين كل من :"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "1- السيد/ \t\t\t\tمصري الجنسية مقيم برقم"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "قسم \t\tمحافظة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "يحمل بطاقة عائلية رقم"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "سجل مدني"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "2- السيد/ \t\t\t\tمصري الجنسية مقيم برقم"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "قسم \t\tمحافظة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "يحمل بطاقة عائلية رقم"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "سجل مدنى"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f4"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "يقر المتعاقدان بأهليتهما للتعاقد ، وقد اتفقا على ما يلي :"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "الطرف الأول دائن للسيد/           مبلغ           بموجب سند تنفيذ أخذ به حق اختصاص على عقاره مشهر برقم        بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "توثيق         وقد نازع المدين في هذا الدين وأقام الدعوى رقم        لسنة       مدني كلى        بطلب إبطال السند الذي أخذ الاختصاص بموجبه ولم يتم الفصل فيها بعد ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "باع الطرف الأول للطرف الثاني الحق المتنازع عليه بتوابعه ومنها حق الاختصاص المشار اليه بثمن قدره         قبضه الطرف الأول بمجلس هذا العقد ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "يلتزم الطرف الأول بالتوقيع فى الشهر العقاري لنقل حق الاختصاص الضامن للدين إلى الطرف الثاني حتى يتمكن الأخير من إجراء التأشير على هامش قيد هذا الحق ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "text",
+          "value": "لا يجوز لاى من طرفي العقد الرجوع فيه ، أو الرجوع على الأخر بعد الفصل فى النزاع ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f10"
+        },
+        {
+          "type": "text",
+          "value": "يقر الطرف الثاني انه اشترى الحق محل هذا العقد ساقط الخيار مما لا يجوز معه الرجوع على الطرف الأول بشئ ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f11"
+        },
+        {
+          "type": "text",
+          "value": "حرر هذا العقد من نسختين ، لكل طرف نسخة ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f12"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

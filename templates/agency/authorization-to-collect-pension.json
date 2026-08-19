@@ -1,0 +1,65 @@
+
+{
+  "id": "authorization-to-collect-pension",
+  "title": "وكالة خاصة لسحب المعاش",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل (صاحب المعاش)" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للموكل" },
+    { "id": "f3", "type": "text", "label": "اسم الوكيل" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للوكيل" },
+    { "id": "f5", "type": "text", "label": "صندوق المعاش (CIMR, CNSS...)" },
+    { "id": "f6", "type": "text", "label": "رقم الانخراط أو المعاش" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة لسحب المعاش" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، أوكل بموجب هذه الوكالة السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لينوب عني في سحب معاشي من" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، تحت رقم" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وللوكيل الحق في التوقيع على جميع الوثائق اللازمة لذلك." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "نموذج-قفل-التصفية",
+  "title": "نموذج  قفل التصفية",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "-قفل تصفية الشركة"
+        }
+      ]
+    }
+  ]
+}

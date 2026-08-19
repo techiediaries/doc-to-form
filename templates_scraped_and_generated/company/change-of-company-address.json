@@ -1,0 +1,75 @@
+
+{
+  "id": "change-of-company-address",
+  "title": "محضر نقل المقر الاجتماعي للشركة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة" },
+    { "id": "f2", "type": "date", "label": "تاريخ الجمعية العامة" },
+    { "id": "f3", "type": "text", "label": "العنوان القديم" },
+    { "id": "f4", "type": "text", "label": "العنوان الجديد" },
+    { "id": "f5", "type": "text", "label": "المادة المعدلة في النظام الأساسي" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "محضر اجتماع الجمعية العامة غير العادية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لشركة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "في يوم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": ", قررت الجمعية العامة غير العادية نقل المقر الاجتماعي للشركة." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "العنوان القديم:" },
+          { "type": "field", "id": "f3" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "العنوان الجديد:" },
+          { "type": "field", "id": "f4" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بناءً على ذلك، يتم تعديل المادة" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "من النظام الأساسي لتعكس العنوان الجديد." }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المسير" }
+        ]
+    }
+  ]
+}

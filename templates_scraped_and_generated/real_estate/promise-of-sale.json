@@ -1,0 +1,109 @@
+
+{
+  "id": "promise-of-sale",
+  "title": "وعد بالبيع",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الواعد (البائع)" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للواعد" },
+    { "id": "f3", "type": "text", "label": "اسم الموعود له (المشتري)" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للموعود له" },
+    { "id": "f5", "type": "textarea", "label": "وصف العقار" },
+    { "id": "f6", "type": "number", "label": "الثمن المتفق عليه (بالأرقام)" },
+    { "id": "f7", "type": "text", "label": "الثمن المتفق عليه (بالحروف)" },
+    { "id": "f8", "type": "number", "label": "مبلغ العربون" },
+    { "id": "f9", "type": "date", "label": "آخر أجل لإتمام البيع" },
+    { "id": "f10", "type": "text", "label": "المدينة" },
+    { "id": "f11", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وعد بالبيع" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الواعد (البائع): السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الموعود له (المشتري): السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يلتزم الواعد بأن يبيع للموعود له، الذي يقبل الشراء، العقار التالي وصفه:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تم تحديد ثمن البيع الإجمالي في مبلغ" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": ")." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "دفع الموعود له للواعد مبلغ عربون قدره" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "درهم، سيتم خصمه من ثمن البيع عند إتمامه." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "يلتزم الطرفان بإتمام عقد البيع النهائي في أجل أقصاه" },
+          { "type": "field", "id": "f9" },
+          { "type": "text", "value": ". في حالة عدم إتمام البيع بسبب المشتري، يفقد العربون. وفي حالة كان السبب هو البائع، يلتزم برد ضعف مبلغ العربون." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f10" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f11" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الواعد" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الموعود له" }
+        ]
+    }
+  ]
+}

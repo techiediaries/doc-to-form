@@ -1,0 +1,238 @@
+{
+  "id": "اقرار بعزل وكيل",
+  "title": "اقرار بعزل وكيل",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": "المقر"
+    },
+    {
+      "id": "f7",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": "الموثق"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار بعزل وكيل"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر انا"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "\" الموكل \" بأننى قمت بعزل السيد /"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "من كافة أعمال الوكالة التى كنت قد عهدت اليه بالقيام بها بموجب عقد الوكالة الصادر منى له والموثق بمكتب"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "تحت رقم"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ      /  / وأصبح من اليوم لا صفة له فى النيابة عنى فى أى عمل من الاعمال ، وقد اخطرته بذلك لكيف عنها ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "محضر تصديق رقم .. لسنة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "انه فى يوم \t\tالموافق     /  /"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "حضر أمامنا نحن      الموثق بالمكتب المذكور للسيد/"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "مصرى الجنسية مسلم الديانة يقيم"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "text",
+          "value": "يوحمل بطاقة عائلية رقم"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "سجل مدنى"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        },
+        {
+          "type": "text",
+          "value": "ووقع على التوكيل عاليه ، وبذلك ، فقد تم التصديق ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f12"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "ملاحظة : لا يجوز العزل إذا كان للوكيل أو للغير مصلحة فى الوكالة ."
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

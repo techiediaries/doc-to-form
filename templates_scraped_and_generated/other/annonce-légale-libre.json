@@ -1,0 +1,34 @@
+{
+  "id": "annonce-légale-libre",
+  "title": "Annonce Légale Libre",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Personne a contacter:\nMrMmeMelle\nE-mail:\n\nTéléphone:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "A publier dans :\nJournalJournal + Bulletin OfficielBulletin Officiel uniquement\nNombre de journaux:\nPDF2 Journaux3 Journaux4 Journaux\nDénomination Sociale :"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "En envoyant ce formulaire, vous acceptez notre politique de confidentialité."
+        }
+      ]
+    }
+  ]
+}

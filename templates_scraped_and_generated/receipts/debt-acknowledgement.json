@@ -1,0 +1,87 @@
+
+{
+  "id": "debt-acknowledgement",
+  "title": "إقرار بدين",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المقر (المدين)" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للمدين" },
+    { "id": "f3", "type": "text", "label": "اسم الدائن" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للدائن" },
+    { "id": "f5", "type": "number", "label": "مبلغ الدين (بالأرقام)" },
+    { "id": "f6", "type": "text", "label": "مبلغ الدين (بالحروف)" },
+    { "id": "f7", "type": "date", "label": "تاريخ استحقاق الدين" },
+    { "id": "f8", "type": "text", "label": "سبب الدين" },
+    { "id": "f9", "type": "text", "label": "المدينة" },
+    { "id": "f10", "type": "date", "label": "تاريخ الإقرار" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إقرار بدين" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أقر وأعترف بأنني مدين للسيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، بمبلغ مالي قدره" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": ")." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "هذا الدين ناتج عن" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وألتزم بسداد هذا المبلغ كاملاً في موعد أقصاه" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وهذا إقرار مني بكامل الوعي والإدراك، وموقع عليه." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f9" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f10" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المقر (المدين)" }
+        ]
+    }
+  ]
+}

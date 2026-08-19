@@ -1,0 +1,130 @@
+{
+  "id": "اقرار بقبول الوكالة",
+  "title": "اقرار بقبول الوكالة",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار بقبول الوكالة \" القبول الصريح للوكالة \""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر أنا"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "\" الوكيل \" بأننى اقبل الوكالة الصادرة من السيد/"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "\" الموكل\" بتوكيلى فى القيام بكافة الاعمال التى تضمنها سند الوكالة الموثق امام مكتب التوثيق"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "تحت رقم"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "وذلك بعد اطلاعى عليه وأتعهد بتنفيذ هذه الاعمال على خير وجه والتزم بكل ما يفرضه على القانون كوكيل وفقا للاحكام المتعلقة بذلك ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

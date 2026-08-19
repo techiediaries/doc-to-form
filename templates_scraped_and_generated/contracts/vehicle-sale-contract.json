@@ -1,0 +1,119 @@
+
+{
+  "id": "vehicle-sale-contract",
+  "title": "عقد بيع سيارة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم البائع" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للبائع" },
+    { "id": "f3", "type": "text", "label": "اسم المشتري" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للمشتري" },
+    { "id": "f5", "type": "text", "label": "نوع السيارة" },
+    { "id": "f6", "type": "text", "label": "ماركة السيارة" },
+    { "id": "f7", "type": "text", "label": "رقم التسجيل (اللوحة)" },
+    { "id": "f8", "type": "text", "label": "رقم الهيكل (VIN)" },
+    { "id": "f9", "type": "number", "label": "سنة الصنع" },
+    { "id": "f10", "type": "number", "label": "عدد الكيلومترات" },
+    { "id": "f11", "type": "number", "label": "ثمن البيع (بالأرقام)" },
+    { "id": "f12", "type": "text", "label": "ثمن البيع (بالحروف)" },
+    { "id": "f13", "type": "text", "label": "المدينة" },
+    { "id": "f14", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد بيع سيارة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "البائع: السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المشتري: السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على بيع السيارة التالية:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "النوع:" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، الماركة:" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، سنة الصنع:" },
+        { "type": "field", "id": "f9" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "رقم التسجيل:" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "، رقم الهيكل:" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "، عدد الكيلومترات:" },
+        { "type": "field", "id": "f10" },
+        { "type": "text", "value": "كم." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تم هذا البيع بثمن إجمالي قدره" },
+        { "type": "field", "id": "f11" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f12" },
+        { "type": "text", "value": "). يقر البائع بتسلمه المبلغ كاملاً." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "يقر المشتري بأنه عاين السيارة وقبلها بالحالة التي هي عليها." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f13" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f14" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع البائع" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المشتري" }
+        ]
+    }
+  ]
+}

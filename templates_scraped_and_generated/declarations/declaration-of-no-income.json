@@ -1,0 +1,78 @@
+
+{
+  "id": "declaration-of-no-income",
+  "title": "تصريح بعدم العمل أو الدخل",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "الاسم الكامل للمصرح" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف الوطنية" },
+    { "id": "f3", "type": "text", "label": "العنوان" },
+    { "id": "f4", "type": "text", "label": "الجهة التي سيقدم لها التصريح" },
+    { "id": "f5", "type": "text", "label": "المدينة" },
+    { "id": "f6", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بالشرف بعدم العمل أو مزاولة أي نشاط مهني" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "السيد/ة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الحامل(ة) لبطاقة التعريف الوطنية رقم:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الساكن(ة) بـ:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "أصرح بشرفي أنني لا أعمل حالياً ولا أزاول أي نشاط مهني أو تجاري مدر للدخل." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذا التصريح قصد تقديمه إلى" },
+          { "type": "field", "id": "f4" },
+          { "type": "text", "value": "، وأتحمل كامل المسؤولية في حالة ثبوت عكس ذلك." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f6" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+
+{
+  "id": "waiver-of-right",
+  "title": "تنازل عن حق",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المتنازل" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للمتنازل" },
+    { "id": "f3", "type": "text", "label": "اسم المتنازل له" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للمتنازل له" },
+    { "id": "f5", "type": "textarea", "label": "وصف الحق المتنازل عنه" },
+    { "id": "f6", "type": "text", "label": "العوض (إن وجد)" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التنازل" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بالتنازل عن حق" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أقر وأعترف بأنني قد تنازلت طوعاً وبكامل إرادتي عن حقي في" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وذلك لفائدة السيد/ة" },
+          { "type": "field", "id": "f3" },
+          { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+          { "type": "field", "id": "f4" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تم هذا التنازل بعوض قدره" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": " / أو بدون عوض." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وهذا التنازل نهائي لا رجعة فيه، وأبرئ ذمة المتنازل له من أي مطالبة مستقبلية بخصوص هذا الحق." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المتنازل" }
+        ]
+    }
+  ]
+}

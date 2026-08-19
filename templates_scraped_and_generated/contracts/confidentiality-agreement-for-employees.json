@@ -1,0 +1,65 @@
+
+{
+  "id": "confidentiality-agreement-for-employees",
+  "title": "التزام بالسرية المهنية للموظف",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموظف" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للموظف" },
+    { "id": "f3", "type": "text", "label": "اسم الشركة" },
+    { "id": "f4", "type": "text", "label": "منصب الموظف" },
+    { "id": "f5", "type": "textarea", "label": "أمثلة على المعلومات السرية" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التوقيع" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "التزام بالسرية المهنية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، وبصفتي موظف(ة) في شركة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "في منصب" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "ألتزم بالحفاظ على السرية التامة لجميع المعلومات التي أطلع عليها بحكم عملي، والتي تعتبر ملكاً للشركة، ومنها على سبيل المثال لا الحصر:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وأتعهد بعدم إفشاء هذه المعلومات لأي طرف ثالث، سواء أثناء فترة عملي أو بعدها." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموظف" }
+        ]
+    }
+  ]
+}

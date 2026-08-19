@@ -1,0 +1,156 @@
+{
+  "id": "اقرار بمد اجل الوفاء بقرض",
+  "title": "اقرار بمد اجل الوفاء بقرض",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f3",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار بمد اجل الوفاء بقرض"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر أنا"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "\" الدائن المقرض\" باننى قابل لمد اجل الوفاء المحدد بالعقد المبرم فيما بينى وبين السيد /"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "\" المدين المقترض\" بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "والمتضمن التزام الاخير بالوفاء لى بمبلغ القرض وقدره"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "جنيه فى يوم"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "يجعل تاريخ الوفاء يوم"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "ويعتبر هذا التاريخ آخر مهلة للوفاء ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

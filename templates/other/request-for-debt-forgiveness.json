@@ -1,0 +1,84 @@
+
+{
+  "id": "request-for-debt-forgiveness",
+  "title": "طلب إبراء ذمة من دين",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المدين" },
+    { "id": "f2", "type": "text", "label": "اسم الدائن" },
+    { "id": "f3", "type": "number", "label": "المبلغ الإجمالي للدين" },
+    { "id": "f4", "type": "text", "label": "مصدر الدين" },
+    { "id": "f5", "type": "textarea", "label": "أسباب طلب إبراء الذمة" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ الطلب" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "طلب إبراء ذمة من دين" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": " (المدين)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": " (الدائن)" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: طلب إبراء ذمة" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بالإشارة إلى الدين المترتب بذمتي لفائدتكم، والبالغ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "درهم، الناتج عن" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "ونظراً لظروفي الصعبة المتمثلة في:" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، فإني ألتمس من سيادتكم التكرم بإبراء ذمتي من هذا الدين كلياً أو جزئياً." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "راجياً منكم أخذ طلبي هذا بعين العطف والاعتبار." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المدين" }
+        ]
+    }
+  ]
+}

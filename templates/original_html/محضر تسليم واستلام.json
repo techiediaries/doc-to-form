@@ -1,0 +1,263 @@
+{
+  "id": "محضر تسليم واستلام",
+  "title": "محضر تسليم واستلام",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f14",
+      "type": "text",
+      "label": ""
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "محضر تسليم واستلام"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "حُرِّر هذا المحضر بمدينة"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "بين الطرفين:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المُسَلِّم: السيد/ة"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "، ب.ت.و رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المُسَلَّم إليه: السيد/ة"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "، ب.ت.و رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "موضوع التسليم:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تمَّ تسليم واستلام:"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الكائن/ة بـ:"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "ملاحظات حول الحالة:"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f12"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر الطرفان بصحة ما جاء في هذا المحضر وتسلُّم نسخة منه."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "توقيع المُسَلِّم:                                        توقيع المُسَلَّم إليه:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f13"
+        },
+        {
+          "type": "field",
+          "id": "f14"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+
+{
+  "id": "general-power-of-attorney",
+  "title": "توكيل عام",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للموكل" },
+    { "id": "f3", "type": "text", "label": "عنوان الموكل" },
+    { "id": "f4", "type": "text", "label": "اسم الوكيل" },
+    { "id": "f5", "type": "text", "label": "رقم بطاقة التعريف للوكيل" },
+    { "id": "f6", "type": "text", "label": "عنوان الوكيل" },
+    { "id": "f7", "type": "textarea", "label": "صلاحيات الوكيل (إذا كانت محددة)" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "توكيل عام" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، والساكن(ة) بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "أوكل بموجب هذا التوكيل العام والشامل، السيد/ة" },
+          { "type": "field", "id": "f4" },
+          { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "، والساكن(ة) بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لينوب عني ويقوم مقامي في جميع أموري المالية والإدارية والقانونية، وفي إدارة جميع ممتلكاتي من عقارات ومنقولات، بيعاً وشراءً، وفي إجراء جميع المعاملات لدى جميع الإدارات العمومية والخاصة، وفي التوقيع على جميع الوثائق والعقود المتعلقة بذلك." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وهذا التوكيل يمنح الوكيل صلاحيات واسعة للتصرف دون تحديد، ويمكن تحديد صلاحياته في الحالات التالية:" },
+        { "type": "field", "id": "f7" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وكل ما يقوم به وكيلي في حدود هذا التوكيل يكون نافذاً في حقي كما لو صدر مني شخصياً." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

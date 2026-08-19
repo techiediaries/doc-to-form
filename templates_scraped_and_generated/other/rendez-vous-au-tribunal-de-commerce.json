@@ -1,0 +1,34 @@
+{
+  "id": "rendez-vous-au-tribunal-de-commerce",
+  "title": "Rendez-Vous au tribunal de commerce",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Avant de se rendre au tribunal de commerce pour faire le dépôt légale des documents de votre entreprise il faut Prendre un Rendez-Vous en ligne sur le site du ministère de la justice sur un des liens suivant :"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "En français :  RDV Tribunal de Commerce ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "En arabe     :  RDV Tribunal de Commerce"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+
+{
+  "id": "parental-consent-for-passport",
+  "title": "موافقة أبوبة للحصول على جواز سفر",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الأب/الولي" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للأب/الولي" },
+    { "id": "f3", "type": "text", "label": "اسم القاصر(ة)" },
+    { "id": "f4", "type": "date", "label": "تاريخ ميلاد القاصر(ة)" },
+    { "id": "f5", "type": "text", "label": "صلة القرابة" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "موافقة أبوبة للحصول على جواز سفر" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بصفتي الولي الشرعي على ابني/ابنتي القاصر(ة):" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الاسم الكامل:" },
+          { "type": "field", "id": "f3" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المزداد(ة) بتاريخ:" },
+        { "type": "field", "id": "f4" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "صلة القرابة:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "أوافق بموجب هذه الوثيقة موافقة تامة لا رجعة فيها على منحه(ا) جواز سفر مغربي، والسماح له(ا) بالسفر إلى خارج أرض الوطن." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "هذه الموافقة صالحة للإدلاء بها لدى المصالح الإدارية المختصة." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الأب/الولي" }
+        ]
+    }
+  ]
+}

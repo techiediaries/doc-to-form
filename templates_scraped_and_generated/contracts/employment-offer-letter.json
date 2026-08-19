@@ -1,0 +1,95 @@
+
+{
+  "id": "employment-offer-letter",
+  "title": "رسالة عرض عمل",
+  "fields": [
+    { "id": "f1", "type": "date", "label": "تاريخ العرض" },
+    { "id": "f2", "type": "text", "label": "اسم المرشح" },
+    { "id": "f3", "type": "text", "label": "عنوان المرشح" },
+    { "id": "f4", "type": "text", "label": "اسم الشركة" },
+    { "id": "f5", "type": "text", "label": "المنصب المقترح" },
+    { "id": "f6", "type": "date", "label": "تاريخ بدء العمل المتوقع" },
+    { "id": "f7", "type": "number", "label": "الراتب الشهري الإجمالي" },
+    { "id": "f8", "type": "textarea", "label": "المزايا الأخرى (تأمين, نقل...)" },
+    { "id": "f9", "type": "date", "label": "آخر أجل لقبول العرض" },
+    { "id": "f10", "type": "text", "label": "اسم مدير الموارد البشرية" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "التاريخ:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "العنوان:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: عرض عمل" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يسر شركة" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "أن تقدم لكم عرضاً لشغل منصب" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "لدينا." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تاريخ بدء العمل المتوقع هو" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، براتب شهري إجمالي قدره" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "درهم." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "بالإضافة إلى المزايا التالية:" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "هذا العرض صالح حتى تاريخ" },
+          { "type": "field", "id": "f9" },
+          { "type": "text", "value": ". نرجو منكم إشعارنا بقراركم." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "مع خالص التقدير،" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "field", "id": "f10" },
+          { "type": "text", "value": "، مدير الموارد البشرية" }
+        ]
+    }
+  ]
+}

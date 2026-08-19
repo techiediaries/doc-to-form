@@ -1,0 +1,139 @@
+
+{
+  "id": "statutes-sarl",
+  "title": "النظام الأساسي لشركة ذات مسؤولية محدودة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "تسمية الشركة" },
+    { "id": "f2", "type": "text", "label": "مقر الشركة" },
+    { "id": "f3", "type": "textarea", "label": "غرض الشركة" },
+    { "id": "f4", "type": "number", "label": "رأس مال الشركة (بالأرقام)" },
+    { "id": "f5", "type": "text", "label": "رأس مال الشركة (بالحروف)" },
+    { "id": "f6", "type": "number", "label": "عدد الحصص" },
+    { "id": "f7", "type": "number", "label": "القيمة الاسمية لكل حصة" },
+    { "id": "f8", "type": "textarea", "label": "قائمة الشركاء وحصصهم" },
+    { "id": "f9", "type": "text", "label": "مدة الشركة (بالسنوات)" },
+    { "id": "f10", "type": "text", "label": "اسم المسير (أو المسيرين)" },
+    { "id": "f11", "type": "date", "label": "تاريخ بداية السنة المالية" },
+    { "id": "f12", "type": "date", "label": "تاريخ نهاية السنة المالية" },
+    { "id": "f13", "type": "text", "label": "المدينة" },
+    { "id": "f14", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "النظام الأساسي لشركة ذات مسؤولية محدودة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الباب الأول: التأسيس" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل 1: التسمية" },
+        { "type": "text", "value": "تحمل الشركة تسمية:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل 2: المقر الاجتماعي" },
+        { "type": "text", "value": "حدد مقر الشركة في:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل 3: غرض الشركة" },
+        { "type": "text", "value": "غرض الشركة هو:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل 4: المدة" },
+        { "type": "text", "value": "مدة الشركة محددة في" },
+        { "type": "field", "id": "f9" },
+        { "type": "text", "value": "سنة، ما لم يتم حلها أو تمديدها." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الباب الثاني: رأس المال والحصص" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل 5: رأس المال" },
+        { "type": "text", "value": "حدد رأس مال الشركة في مبلغ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": ")." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل 6: الحصص" },
+        { "type": "text", "value": "رأس المال مقسم إلى" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "حصة، بقيمة اسمية قدرها" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "درهم للحصة الواحدة. وتوزيع الحصص بين الشركاء هو كالتالي:" },
+        { "type": "field", "id": "f8" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الباب الثالث: الإدارة والسنة المالية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل 7: التسيير" },
+        { "type": "text", "value": "يتم تسيير الشركة من طرف السيد/ة" },
+        { "type": "field", "id": "f10" },
+        { "type": "text", "value": "، الذي يتمتع بجميع الصلاحيات اللازمة لإدارة الشركة." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل 8: السنة المالية" },
+        { "type": "text", "value": "تبدأ السنة المالية في" },
+        { "type": "field", "id": "f11" },
+        { "type": "text", "value": "وتنتهي في" },
+        { "type": "field", "id": "f12" },
+        { "type": "text", "value": "من كل سنة." }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f13" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f14" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الشركاء" }
+        ]
+    }
+  ]
+}

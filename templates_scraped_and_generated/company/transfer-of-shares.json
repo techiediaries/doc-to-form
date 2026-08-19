@@ -1,0 +1,95 @@
+
+{
+  "id": "transfer-of-shares",
+  "title": "عقد تفويت حصص في شركة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المتنازل (البائع)" },
+    { "id": "f2", "type": "text", "label": "اسم المتنازل له (المشتري)" },
+    { "id": "f3", "type": "text", "label": "اسم الشركة" },
+    { "id": "f4", "type": "number", "label": "عدد الحصص المتنازل عنها" },
+    { "id": "f5", "type": "number", "label": "الثمن الإجمالي للحصص" },
+    { "id": "f6", "type": "text", "label": "الثمن الإجمالي (بالحروف)" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد تفويت حصص" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (المتنازل): السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (المتنازل له): السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بموجب هذا العقد، يفوت ويتنازل الطرف الأول للطرف الثاني، الذي يقبل، عن" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "حصة يملكها في شركة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تم هذا التفويت بثمن إجمالي قدره" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "). يقر المتنازل بتسلمه المبلغ كاملاً." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يحل المتنازل له محل المتنازل في جميع حقوقه والتزاماته المتعلقة بالحصص المتنازل عنها." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المتنازل" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المتنازل له" }
+        ]
+    }
+  ]
+}

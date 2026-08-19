@@ -1,0 +1,64 @@
+
+{
+  "id": "declaration-of-non-remarriage",
+  "title": "تصريح بعدم الزواج (خاص بالأرامل)",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المصرح(ة)" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف الوطنية" },
+    { "id": "f3", "type": "text", "label": "اسم الزوج(ة) المتوفى(ة)" },
+    { "id": "f4", "type": "date", "label": "تاريخ الوفاة" },
+    { "id": "f5", "type": "text", "label": "الجهة التي سيقدم لها التصريح" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بالشرف بعدم الزواج" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، أرمل(ة) المرحوم(ة)" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، المتوفى(ة) بتاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بشرفي أنني لم أتزوج مرة أخرى منذ تاريخ وفاة زوجي (زوجتي) المذكور(ة) أعلاه." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذا التصريح قصد تقديمه إلى" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+
+{
+  "id": "declaration-of-cohabitation",
+  "title": "شهادة السكنى المشتركة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم مالك/مكتري المسكن" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للمالك/المكتري" },
+    { "id": "f3", "type": "text", "label": "اسم الشخص الذي يسكن معه" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للشخص الثاني" },
+    { "id": "f5", "type": "text", "label": "العنوان المشترك" },
+    { "id": "f6", "type": "date", "label": "تاريخ بدء السكن المشترك" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بالشرف يتعلق بالسكنى المشتركة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بشرفي أن السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، يسكن معي بالعنوان التالي:" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، وذلك منذ تاريخ" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "أدليت بهذا التصريح للاستدلال به عند الحاجة." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

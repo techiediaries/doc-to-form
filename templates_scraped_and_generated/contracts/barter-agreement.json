@@ -1,0 +1,95 @@
+
+{
+  "id": "barter-agreement",
+  "title": "عقد مقايضة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الطرف الأول" },
+    { "id": "f2", "type": "text", "label": "اسم الطرف الثاني" },
+    { "id": "f3", "type": "textarea", "label": "وصف الشيء الذي قدمه الطرف الأول" },
+    { "id": "f4", "type": "textarea", "label": "وصف الشيء الذي قدمه الطرف الثاني" },
+    { "id": "f5", "type": "number", "label": "مبلغ المعدل (إن وجد)" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد مقايضة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول: السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني: السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: موضوع المقايضة" },
+        { "type": "text", "value": "يقايض الطرف الأول، الذي يملك" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، بالشيء الذي يملكه الطرف الثاني، وهو" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: المعدل (إن وجد)" },
+        { "type": "text", "value": "لتعديل الفرق في القيمة، يدفع الطرف (الأول/الثاني) للآخر مبلغاً قدره" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "درهم." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: التسليم" },
+        { "type": "text", "value": "يقر كل طرف بأنه قد تسلم الشيء المقايض عليه من الطرف الآخر." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الطرف الأول" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الطرف الثاني" }
+        ]
+    }
+  ]
+}

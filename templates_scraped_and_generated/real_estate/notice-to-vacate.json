@@ -1,0 +1,80 @@
+
+{
+  "id": "notice-to-vacate",
+  "title": "إشعار بالإفراغ",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المكري (المالك)" },
+    { "id": "f2", "type": "text", "label": "اسم المكتري (المستأجر)" },
+    { "id": "f3", "type": "text", "label": "عنوان العقار" },
+    { "id": "f4", "type": "date", "label": "تاريخ عقد الكراء" },
+    { "id": "f5", "type": "textarea", "label": "سبب طلب الإفراغ" },
+    { "id": "f6", "type": "date", "label": "تاريخ الإفراغ المطلوب" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ الإشعار" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إشعار بالإفراغ" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": " (المكري)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": " (المكتري)" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: إشعار بضرورة إفراغ العقار الكائن بـ" },
+          { "type": "field", "id": "f3" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بناء على عقد الكراء الموقع بتاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، وبسبب" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، فإنني أشعركم بضرورة إفراغ العقار المذكور." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المرجو منكم إخلاء العقار وتسليم المفاتيح في أجل أقصاه" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المكري" }
+        ]
+    }
+  ]
+}

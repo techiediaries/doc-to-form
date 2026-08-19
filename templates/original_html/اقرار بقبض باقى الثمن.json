@@ -1,0 +1,156 @@
+{
+  "id": "اقرار بقبض باقى الثمن",
+  "title": "اقرار بقبض باقى الثمن",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار بقبض باقى الثمن"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر أنا"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "بقبض باقى الثمن المنوه عنه بعقد البيع المبرم فيما بينى وبين السيد/"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "والمتعلق بالعقار رقم"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "الكائن"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "وقدره"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "جنيه ، وبذلك يكون السيد المذكور قد قام بالوفاء لى بكامل الثمن ، وهذه مخالصة نهائية بذلك ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

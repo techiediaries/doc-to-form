@@ -1,0 +1,148 @@
+{
+  "id": "اقرار بتنحى وكيل",
+  "title": "اقرار بتنحى وكيل",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار بتنحى وكيل"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر أنا"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "\" الوكيل\" بأننى لا أرغب فى الاستمرار فى أعمال الوكالة التى أناطها بى السيد /"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "\" الموكل\" بموجب عقد الوكالة الموثق بمكتب"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "تحت رقم"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "وقد أخطرته بذلك اليوم على أن ينفذ التنحى اعتبارا من"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "ملاحظة : يجب أن يتم التنحى فى وقت مناسب بعد انجاز الاعمال المعلقة ، ولا يجوز التنحى اذا كانت الوكالة لصالح أجنبى عن الطرفين الا اذا وجدت اسباب جدية مع اخطار الاجنبى ومنحه الوقت الكافى لتدبير أموره ."
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "id": "صيغة اقرار مصدق عليه بمحو قيد رهن حيازى عقارى وتخالص",
+  "title": "صيغة اقرار مصدق عليه بمحو قيد رهن حيازى عقارى وتخالص",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f9",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f14",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f15",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f16",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f17",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f18",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f19",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f20",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f21",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f22",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f23",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f24",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f25",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f26",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f27",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f28",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f29",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f30",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f31",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f32",
+      "type": "text",
+      "label": "المقر"
+    },
+    {
+      "id": "f33",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f34",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f35",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f36",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f37",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f38",
+      "type": "text",
+      "label": "الموثق"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار مصدق عليه بمحو قيد رهن حيازى عقارى وتخالص"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر أنا"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "مصرى الجنسية ومهنتى"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "مقيم"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "بطاقة عائلية رقم"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "مسلسل رقم"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "سجل مدنى"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "بأننى أقبل محو قيد الرهن الحيازى العقارى المقيد بمكتب الشهر العقارى بمدينة"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        },
+        {
+          "type": "text",
+          "value": "تحت رقم"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "والمتعلق بعقد الرهن الحيازى المبرم بين المقر والسيد/"
+        },
+        {
+          "type": "field",
+          "id": "f12"
+        },
+        {
+          "type": "text",
+          "value": "بصفته راهنا والمصدق على التوقيعات الواردة به بمكتب توثيق"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        },
+        {
+          "type": "text",
+          "value": "تحت رقم"
+        },
+        {
+          "type": "field",
+          "id": "f14"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "text",
+          "value": "والذى رهن الاخير بموجبه عقاره رقم"
+        },
+        {
+          "type": "field",
+          "id": "f15"
+        },
+        {
+          "type": "text",
+          "value": "تنظيم الكائن بشارع"
+        },
+        {
+          "type": "field",
+          "id": "f16"
+        },
+        {
+          "type": "text",
+          "value": "قسم"
+        },
+        {
+          "type": "field",
+          "id": "f17"
+        },
+        {
+          "type": "text",
+          "value": "حافظة"
+        },
+        {
+          "type": "field",
+          "id": "f18"
+        },
+        {
+          "type": "text",
+          "value": "والمكون من"
+        },
+        {
+          "type": "field",
+          "id": "f19"
+        },
+        {
+          "type": "text",
+          "value": "والبالغ مساحته"
+        },
+        {
+          "type": "field",
+          "id": "f20"
+        },
+        {
+          "type": "text",
+          "value": "مترا مربعا ، واذلى يحده من الناحية البحرية"
+        },
+        {
+          "type": "field",
+          "id": "f21"
+        },
+        {
+          "type": "text",
+          "value": "والقبلية"
+        },
+        {
+          "type": "field",
+          "id": "f22"
+        },
+        {
+          "type": "text",
+          "value": "والشرقية"
+        },
+        {
+          "type": "field",
+          "id": "f23"
+        },
+        {
+          "type": "text",
+          "value": "والغربية"
+        },
+        {
+          "type": "field",
+          "id": "f24"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "\"إذا كان العقار المرهون من الاراضى الزراعية ، وجب ذكر اسم الناحية والحوض ورقم القطعة فضلا عن اسلالحة والحدود والتكليف \""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وذلك ضمانا للوفاء بالدين الذى نشأ فى ذمته ومقداره"
+        },
+        {
+          "type": "field",
+          "id": "f25"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f26"
+        },
+        {
+          "type": "text",
+          "value": "جنيها كأصل للدين فضلا عن المصروفات وقدرها"
+        },
+        {
+          "type": "field",
+          "id": "f27"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f28"
+        },
+        {
+          "type": "text",
+          "value": "والفوائد وجملتها"
+        },
+        {
+          "type": "field",
+          "id": "f29"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f30"
+        },
+        {
+          "type": "text",
+          "value": "ز جنيها ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وقد قام السيد /"
+        },
+        {
+          "type": "field",
+          "id": "f31"
+        },
+        {
+          "type": "text",
+          "value": "الراهن بالوفاء لى بهذه المبالغ كاملة ويعتبر هذا الاقرار مخالصة بذلك ، ويصبح الرهن منقضيا وتسلم سيادته العقار محل الرهن وانتقلت له حيازته مما يستتبع محو القيد الخاص بهذا الرهن ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بانقضاء الرهن وقبولى محو القد ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f32"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "محضر تصديق رقم      لسنة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "انه فى يوم \t\tالموافق     /  /"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "حضر أمامنا نحن      الموثق بالمكتب المذكور للسيد/"
+        },
+        {
+          "type": "field",
+          "id": "f34"
+        },
+        {
+          "type": "text",
+          "value": "مصرى الجنسية مسلم الديانة يقيم"
+        },
+        {
+          "type": "field",
+          "id": "f35"
+        },
+        {
+          "type": "text",
+          "value": "يوحمل بطاقة عائلية رقم"
+        },
+        {
+          "type": "field",
+          "id": "f36"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f33"
+        },
+        {
+          "type": "text",
+          "value": "سجل مدنى"
+        },
+        {
+          "type": "field",
+          "id": "f37"
+        },
+        {
+          "type": "text",
+          "value": "ووقع على التوكيل عاليه ، وبذلك ، فقد تم التصديق ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f38"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "ملاحظة :"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اذا الغى المحو عادت للقيد مرتبته الاصلية ولا يكون لالغاء أثر رجعى بالنسبة للقيود والتسجيلات التى اجريت فى الفقرة ما بين المحو والغاء المحو ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "يتم المحو بتدوين بيان به فى هامش البندج ، وتعطى شهادة بذلك لمن يجطلبها من المتعاقدين ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "رهن المنقول"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "هناك منقولات بطبيعتها تطلب القانون أن يكون رهنها بموجب عقد رسمى ومنقولات اخرى اكتفى فى رهنها بالعقد العرفى ، وعلى هذا النهج نورد النماذج المتعلقة برهن المنقول وفقا للشكل المقرر قانونا ."
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

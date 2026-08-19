@@ -1,0 +1,101 @@
+
+{
+  "id": "commercial-agent-contract",
+  "title": "عقد وكيل تجاري",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل (الشركة)" },
+    { "id": "f2", "type": "text", "label": "اسم الوكيل التجاري" },
+    { "id": "f3", "type": "textarea", "label": "المنتجات أو الخدمات موضوع الوكالة" },
+    { "id": "f4", "type": "text", "label": "المنطقة الجغرافية" },
+    { "id": "f5", "type": "text", "label": "نسبة العمولة" },
+    { "id": "f6", "type": "text", "label": "مدة العقد" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد وكالة تجارية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الموكل:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الوكيل التجاري:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: موضوع العقد" },
+        { "type": "text", "value": "يعين الموكل الوكيل التجاري لترويج وبيع المنتجات/الخدمات التالية:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: النطاق الجغرافي" },
+        { "type": "text", "value": "يمارس الوكيل مهامه في المنطقة الجغرافية التالية:" },
+        { "type": "field", "id": "f4" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: العمولة" },
+        { "type": "text", "value": "يستحق الوكيل عمولة بنسبة" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "% من قيمة المبيعات المحصلة." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "المادة 4: مدة العقد" },
+          { "type": "text", "value": "أبرم هذا العقد لمدة" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": " قابلة للتجديد." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الوكيل" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+
+{
+  "id": "declaration-of-non-activity-for-company",
+  "title": "تصريح بتوقف الشركة عن النشاط",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة" },
+    { "id": "f2", "type": "text", "label": "رقم السجل التجاري" },
+    { "id": "f3", "type": "text", "label": "اسم المسير" },
+    { "id": "f4", "type": "date", "label": "تاريخ التوقف عن النشاط" },
+    { "id": "f5", "type": "textarea", "label": "أسباب التوقف" },
+    { "id": "f6", "type": "text", "label": "الجهة التي سيقدم لها التصريح" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بتوقف الشركة عن النشاط" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، بصفتي المسير(ة) لشركة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، المسجلة بالسجل التجاري تحت رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بأن الشركة قد توقفت عن مزاولة جميع أنشطتها التجارية اعتباراً من تاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وذلك للأسباب التالية:" },
+          { "type": "field", "id": "f5" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذا التصريح قصد تقديمه إلى" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": " لترتيب الآثار القانونية." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المسير" }
+        ]
+    }
+  ]
+}

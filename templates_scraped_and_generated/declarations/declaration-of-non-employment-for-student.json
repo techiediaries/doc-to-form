@@ -1,0 +1,64 @@
+
+{
+  "id": "declaration-of-non-employment-for-student",
+  "title": "تصريح بعدم العمل (خاص بالطلبة)",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الطالب(ة)" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف الوطنية" },
+    { "id": "f3", "type": "text", "label": "المؤسسة التعليمية" },
+    { "id": "f4", "type": "text", "label": "رقم الطالب" },
+    { "id": "f5", "type": "text", "label": "الجهة التي سيقدم لها التصريح" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بالشرف بعدم العمل" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، طالب(ة) مسجل(ة) في" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": " تحت رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بشرفي أنني لا أزاول أي عمل أو وظيفة مدرة للدخل وأعتمد كلياً على مساعدة عائلتي." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذا التصريح قصد تقديمه إلى" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

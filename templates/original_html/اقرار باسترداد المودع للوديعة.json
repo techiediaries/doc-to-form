@@ -1,0 +1,104 @@
+{
+  "id": "اقرار باسترداد المودع للوديعة",
+  "title": "اقرار باسترداد المودع للوديعة",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار باسترداد المودع للوديعة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر أنا"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "\" المودع\" بأننى تسلمت اليوم"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "\" الوديعة \" من السيد/"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "\" المودع لديه \" وكانت حالتها جيدة وليست لى ثمت ملاحظات على ذلك وقد قام الأخير بتنفيذ التزامه بالحفظ على نحو ما تضمنه عقد الوديعة ولا يحق من بعد الرجوع عليه بشئ يتعلق بهذا الالتزام ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

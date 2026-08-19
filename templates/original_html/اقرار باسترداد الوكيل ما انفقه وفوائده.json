@@ -1,0 +1,169 @@
+{
+  "id": "اقرار باسترداد الوكيل ما انفقه وفوائده",
+  "title": "اقرار باسترداد الوكيل ما انفقه وفوائده",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار باسترداد الوكيل ما انفقه وفوائده"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر انا"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "\" الوكيل\" بأننى قبضت مبلغ"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "جينه  من السيد /"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "قيمة ما انفقته على"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "أثناء تنفيذى لعقدى الوكالة الصادر منه لى بتاريخ   /   / والموثق بمكتب"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "تحت رقم"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "\" والفوائد المستحقة عليه منذ تاريخ الانفاق وحتى اليوم وقدرها"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "بسعر 4% \" أن كانت الوكالة مدنية \" أو بسعر 5% \" أن كانت الوكالة تجارية \" وهذه مخالصة بذلك حتى تاريخ تحرير هذا الاقرار ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

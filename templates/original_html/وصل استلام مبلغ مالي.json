@@ -1,0 +1,229 @@
+{
+  "id": "وصل استلام مبلغ مالي",
+  "title": "وصل استلام مبلغ مالي",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وصل استلام مبلغ مالي"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أنا الموقع أدناه السيد/ة:"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "، ب.ت.و رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أُقِرُّ باستلامي من السيد/ة:"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "، ب.ت.و رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "مبلغاً مالياً قدره:"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "درهماً مغربياً ("
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": ")"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وذلك بصفته:"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وأُقِرُّ بأن هذا المبلغ قد استُلم كاملاً دون أي نقص، وبراءة ذمة الدافع من هذا المبلغ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "حُرِّر بـ"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "توقيع المُقِر:"
+        },
+        {
+          "type": "field",
+          "id": "f12"
+        },
+        {
+          "type": "text",
+          "value": "توقيع الشاهد:"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        }
+      ]
+    }
+  ]
+}

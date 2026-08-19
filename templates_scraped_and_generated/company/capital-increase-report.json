@@ -1,0 +1,96 @@
+
+{
+  "id": "capital-increase-report",
+  "title": "محضر اجتماع لزيادة رأس المال",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة" },
+    { "id": "f2", "type": "date", "label": "تاريخ الاجتماع" },
+    { "id": "f3", "type": "textarea", "label": "قائمة الحاضرين" },
+    { "id": "f4", "type": "number", "label": "رأس المال الحالي" },
+    { "id": "f5", "type": "number", "label": "مبلغ الزيادة" },
+    { "id": "f6", "type": "number", "label": "رأس المال الجديد" },
+    { "id": "f7", "type": "textarea", "label": "كيفية تغطية الزيادة" },
+    { "id": "f8", "type": "text", "label": "المادة المعدلة في النظام الأساسي" },
+    { "id": "f9", "type": "text", "label": "المدينة" },
+    { "id": "f10", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "محضر اجتماع الجمعية العامة غير العادية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لشركة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "في يوم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، عقدت الجمعية العامة غير العادية اجتماعها بحضور:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وبعد التداول، تقرر بالإجماع ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "1. زيادة رأس مال الشركة: تقرر زيادة رأس مال الشركة من" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "درهم إلى" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "درهم، أي بزيادة قدرها" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "درهم." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "2. كيفية التغطية: سيتم تغطية هذه الزيادة عن طريق:" },
+        { "type": "field", "id": "f7" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "3. تعديل النظام الأساسي: بناءً على ما سبق، يتم تعديل المادة" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "من النظام الأساسي للشركة لتعكس رأس المال الجديد." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "رفعت الجلسة بعد إتمام جدول الأعمال." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f9" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f10" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع رئيس الجلسة" }
+        ]
+    }
+  ]
+}

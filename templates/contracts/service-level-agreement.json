@@ -1,0 +1,92 @@
+
+{
+  "id": "service-level-agreement",
+  "title": "اتفاقية مستوى الخدمة (SLA)",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم مقدم الخدمة" },
+    { "id": "f2", "type": "text", "label": "اسم العميل" },
+    { "id": "f3", "type": "textarea", "label": "وصف الخدمات المقدمة" },
+    { "id": "f4", "type": "textarea", "label": "مقاييس الأداء (Uptime, Response Time...)" },
+    { "id": "f5", "type": "textarea", "label": "مسؤوليات مقدم الخدمة" },
+    { "id": "f6", "type": "textarea", "label": "مسؤوليات العميل" },
+    { "id": "f7", "type": "textarea", "label": "التعويضات في حالة الإخلال بالاتفاقية" },
+    { "id": "f8", "type": "text", "label": "مدة الاتفاقية" },
+    { "id": "f9", "type": "date", "label": "تاريخ التوقيع" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "اتفاقية مستوى الخدمة (SLA)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين مقدم الخدمة:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "والعميل:" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "1. وصف الخدمات:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "2. مقاييس الأداء المتفق عليها:" },
+          { "type": "field", "id": "f4" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "3. مسؤوليات مقدم الخدمة:" },
+          { "type": "field", "id": "f5" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "4. مسؤوليات العميل:" },
+          { "type": "field", "id": "f6" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "5. التعويضات عند الإخلال:" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "6. مدة الاتفاقية:" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تاريخ التوقيع:" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع مقدم الخدمة" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع العميل" }
+        ]
+    }
+  ]
+}

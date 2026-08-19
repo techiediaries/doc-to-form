@@ -1,0 +1,91 @@
+
+{
+  "id": "property-valuation-request",
+  "title": "طلب تقييم عقار",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم طالب التقييم" },
+    { "id": "f2", "type": "text", "label": "صفة طالب التقييم (مالك, مشتري...)" },
+    { "id": "f3", "type": "text", "label": "اسم الخبير العقاري" },
+    { "id": "f4", "type": "textarea", "label": "عنوان ووصف العقار" },
+    { "id": "f5", "type": "text", "label": "رقم الرسم العقاري (إن وجد)" },
+    { "id": "f6", "type": "text", "label": "الغرض من التقييم (بيع, رهن...)" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ الطلب" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "طلب تقييم عقاري" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، بصفته(ا)" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى الخبير العقاري، السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: طلب تقييم عقار" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يشرفني أن أطلب من سيادتكم إجراء تقييم للعقار التالي:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "العقار:" },
+        { "type": "field", "id": "f4" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الرسم العقاري:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الغرض من هذا التقييم هو" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع طالب التقييم" }
+        ]
+    }
+  ]
+}

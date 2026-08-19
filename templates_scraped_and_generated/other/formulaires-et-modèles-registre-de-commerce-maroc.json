@@ -1,0 +1,25 @@
+{
+  "id": "formulaires-et-modèles-registre-de-commerce-maroc",
+  "title": "Formulaires et modèles registre de commerce Maroc",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Télécharger"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Télécharger"
+        }
+      ]
+    }
+  ]
+}

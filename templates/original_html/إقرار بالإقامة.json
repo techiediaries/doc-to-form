@@ -1,0 +1,260 @@
+{
+  "id": "إقرار بالإقامة",
+  "title": "إقرار بالإقامة",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f14",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f15",
+      "type": "text",
+      "label": ""
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "إقرار بالإقامة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أنا الموقع أدناه السيد/ة:"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الحامل/ة لبطاقة التعريف الوطنية رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "الصادرة بتاريخ:"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أُقِرُّ بأنني مقيم/ة فعلياً في العنوان التالي:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "زنقة/شارع:"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "حي:"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "مدينة:"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "إقليم:"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "الرقم البريدي:"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وأُقِرُّ بصحة هذه المعلومات وبمسؤوليتي القانونية عن كل ادعاء مخالف للحقيقة."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "حُرِّر بـ"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f12"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "توقيع المُقِر:"
+        },
+        {
+          "type": "field",
+          "id": "f14"
+        },
+        {
+          "type": "text",
+          "value": "توقيع الشاهد:"
+        },
+        {
+          "type": "field",
+          "id": "f15"
+        }
+      ]
+    }
+  ]
+}

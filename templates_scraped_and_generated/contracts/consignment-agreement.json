@@ -1,0 +1,98 @@
+
+{
+  "id": "consignment-agreement",
+  "title": "عقد بيع بالعمولة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المودع (المالك)" },
+    { "id": "f2", "type": "text", "label": "اسم المودع لديه (البائع)" },
+    { "id": "f3", "type": "textarea", "label": "وصف البضاعة" },
+    { "id": "f4", "type": "number", "label": "أدنى سعر للبيع" },
+    { "id": "f5", "type": "text", "label": "نسبة العمولة (%)" },
+    { "id": "f6", "type": "text", "label": "مدة العقد" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد بيع بالعمولة (Consignment)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المودع: السيد/ة" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المودع لديه: السيد/ة" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يسلم المودع للمودع لديه البضاعة التالية لبيعها:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يلتزم المودع لديه ببيع البضاعة بسعر لا يقل عن" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "درهم." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يستحق المودع لديه عمولة بنسبة" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "% من ثمن البيع." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "مدة هذا العقد هي" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المودع" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المودع لديه" }
+        ]
+    }
+  ]
+}

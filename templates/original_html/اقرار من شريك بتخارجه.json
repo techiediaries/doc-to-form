@@ -1,0 +1,287 @@
+{
+  "id": "اقرار من شريك بتخارجه",
+  "title": "اقرار من شريك بتخارجه",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": "المقر"
+    },
+    {
+      "id": "f11",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f14",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f15",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f16",
+      "type": "text",
+      "label": "الموثق"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار من شريك بتخارجه"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر انا"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "اشلريك الموصى بشركة"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "بتخارجى منها اعتبارا من اليوم ، وقد استوفيت كافة حقوقى المستحقة فى ذمتها والمتمثلة فى حصتى وقيمتها"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "جنيه والارباح وفقا لما تضمنه الميزاينة الاخيرة وقدرها"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "جنيه ، وبذلك فقد أصبحت الشركة قاصرة على باقى الشركاء الواردة اسماؤهم بعقد تأسيسها المؤرخ"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "والمشهر برقم"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ     /   /"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "محضر تصديق رقم      لسنة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "انه فى يوم \t\tالموافق     /  /"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "حضر أمامنا نحن      الموثق بالمكتب المذكور للسيد/"
+        },
+        {
+          "type": "field",
+          "id": "f12"
+        },
+        {
+          "type": "text",
+          "value": "مصرى الجنسية مسلم الديانة يقيم"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        },
+        {
+          "type": "text",
+          "value": "يوحمل بطاقة عائلية رقم"
+        },
+        {
+          "type": "field",
+          "id": "f14"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        },
+        {
+          "type": "text",
+          "value": "سجل مدنى"
+        },
+        {
+          "type": "field",
+          "id": "f15"
+        },
+        {
+          "type": "text",
+          "value": "ووقع على التوكيل عاليه ، وبذلك ، فقد تم التصديق ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f16"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "والتصديق هنا لامكان تعديل عقد الشركة بموجبه باخراج الشريك المتخارج وتعديل رأس المال أو توزيع حصة المتخارج على باقى الشركاء بالنسب التى تم الاتفاق عليها ويتضمنها عقد التعديل\""
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

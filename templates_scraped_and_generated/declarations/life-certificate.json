@@ -1,0 +1,75 @@
+
+{
+  "id": "life-certificate",
+  "title": "شهادة الحياة الفردية",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المصرح" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف الوطنية" },
+    { "id": "f3", "type": "date", "label": "تاريخ الميلاد" },
+    { "id": "f4", "type": "text", "label": "مكان الميلاد" },
+    { "id": "f5", "type": "text", "label": "العنوان" },
+    { "id": "f6", "type": "text", "label": "الجهة التي ستقدم لها الشهادة" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "شهادة الحياة الفردية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المزداد(ة) بتاريخ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "بـ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، والساكن(ة) بـ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "أصرح بشرفي أنني على قيد الحياة حتى تاريخه." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذه الشهادة قصد تقديمها إلى" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+
+{
+  "id": "acknowledgement-of-receipt-of-keys",
+  "title": "إقرار باستلام مفاتيح",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المستلم" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للمستلم" },
+    { "id": "f3", "type": "text", "label": "اسم المسلم" },
+    { "id": "f4", "type": "text", "label": "عنوان العقار" },
+    { "id": "f5", "type": "number", "label": "عدد المفاتيح" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ الاستلام" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إقرار باستلام مفاتيح" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أقر بأنني قد استلمت من السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، ما مجموعه" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "مفاتيح خاصة بالعقار الكائن بـ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وهذا إقرار مني بذلك." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المستلم" }
+        ]
+    }
+  ]
+}

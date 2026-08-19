@@ -1,0 +1,95 @@
+
+{
+  "id": "loan-guarantee",
+  "title": "عقد كفالة دين",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الكفيل" },
+    { "id": "f2", "type": "text", "label": "اسم الدائن" },
+    { "id": "f3", "type": "text", "label": "اسم المدين الأصلي" },
+    { "id": "f4", "type": "number", "label": "مبلغ الدين" },
+    { "id": "f5", "type": "text", "label": "مصدر الدين (عقد القرض الأصلي)" },
+    { "id": "f6", "type": "date", "label": "تاريخ عقد القرض الأصلي" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد كفالة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الكفيل: السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الدائن: السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بموجب هذا العقد، يكفل الكفيل المذكور أعلاه، المدين السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، في أداء الدين البالغ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "درهم." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "هذا الدين ناتج عن" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "المؤرخ في" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يلتزم الكفيل بأداء الدين في حالة عدم وفاء المدين الأصلي بالتزامه." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الكفيل" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الدائن" }
+        ]
+    }
+  ]
+}

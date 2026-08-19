@@ -1,0 +1,107 @@
+
+{
+  "id": "declaration-of-loss",
+  "title": "تصريح بضياع",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "الاسم الكامل للمصرح" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف الوطنية" },
+    { "id": "f3", "type": "text", "label": "العنوان" },
+    { "id": "f4", "type": "text", "label": "الوثيقة (أو الأشياء) المفقودة" },
+    { "id": "f5", "type": "date", "label": "تاريخ الضياع التقريبي" },
+    { "id": "f6", "type": "text", "label": "مكان الضياع التقريبي" },
+    { "id": "f7", "type": "textarea", "label": "ظروف الضياع" },
+    { "id": "f8", "type": "text", "label": "حرر بـ (المدينة)" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بضياع" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "السيد/ة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الحامل(ة) لبطاقة التعريف الوطنية رقم:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الساكن(ة) بـ:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "أصرح بموجب هذا، وأتحمل كامل المسؤولية القانونية عن صحة تصريحي، بأنني قد أضعت الوثيقة التالية:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الوثيقة/الأشياء المفقودة:" },
+        { "type": "field", "id": "f4" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تاريخ الضياع التقريبي:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "مكان الضياع التقريبي:" },
+        { "type": "field", "id": "f6" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "ظروف الضياع:" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد حررت هذا التصريح للإدلاء به لدى السلطات المختصة." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح" }
+        ]
+    }
+  ]
+}

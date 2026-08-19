@@ -1,0 +1,363 @@
+{
+  "id": "عقد إيجار سكني",
+  "title": "عقد إيجار سكني",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f14",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f15",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f16",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f17",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f18",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f19",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f20",
+      "type": "text",
+      "label": ""
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "عقد إيجار للاستخدام السكني"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "بين الطرفين:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الطرف الأول (المُكري): السيد/ة"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "، ب.ت.و رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المقيم/ة بـ:"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الطرف الثاني (المُكتري): السيد/ة"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "، ب.ت.و رقم:"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المقيم/ة بـ:"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اتُّفق على ما يلي:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المادة 1 — موضوع العقد: يؤجر الطرف الأول للطرف الثاني المحل السكني الكائن بـ:"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الحي:"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        },
+        {
+          "type": "text",
+          "value": "المدينة:"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "text",
+          "value": "الرقم البريدي:"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المادة 2 — مدة الإيجار: تبدأ من تاريخ:"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f12"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        },
+        {
+          "type": "text",
+          "value": "وتنتهي في:"
+        },
+        {
+          "type": "field",
+          "id": "f14"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f15"
+        },
+        {
+          "type": "text",
+          "value": "/"
+        },
+        {
+          "type": "field",
+          "id": "f16"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المادة 3 — الوجيبة الكرائية: حدد الطرفان الكراء الشهري بمبلغ:"
+        },
+        {
+          "type": "field",
+          "id": "f17"
+        },
+        {
+          "type": "text",
+          "value": "درهماً مغربياً"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "يُؤدَّى في مطلع كل شهر."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المادة 4 — الضمان: يدفع المُكتري مبلغ ضمان قدره:"
+        },
+        {
+          "type": "field",
+          "id": "f18"
+        },
+        {
+          "type": "text",
+          "value": "درهماً يُسترد عند انتهاء العقد."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "توقيع المُكري:                                        توقيع المُكتري:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f19"
+        },
+        {
+          "type": "field",
+          "id": "f20"
+        }
+      ]
+    }
+  ]
+}

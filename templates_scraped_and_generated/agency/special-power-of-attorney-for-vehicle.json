@@ -1,0 +1,87 @@
+
+{
+  "id": "special-power-of-attorney-for-vehicle",
+  "title": "وكالة خاصة ببيع سيارة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للموكل" },
+    { "id": "f3", "type": "text", "label": "اسم الوكيل" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للوكيل" },
+    { "id": "f5", "type": "text", "label": "نوع السيارة" },
+    { "id": "f6", "type": "text", "label": "ماركة السيارة" },
+    { "id": "f7", "type": "text", "label": "رقم التسجيل (اللوحة)" },
+    { "id": "f8", "type": "text", "label": "رقم الهيكل (VIN)" },
+    { "id": "f9", "type": "text", "label": "المدينة" },
+    { "id": "f10", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة ببيع سيارة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أوكل بموجب هذه الوكالة الخاصة، السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "لينوب عني في بيع السيارة التالية:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "النوع:" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، الماركة:" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، رقم التسجيل:" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "، ورقم الهيكل:" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "ولهذا الغرض، للوكيل الحق في البحث عن مشترٍ، والتفاوض على الثمن، وتوقيع عقد البيع، وقبض الثمن، والتوقيع على جميع الوثائق اللازمة لنقل الملكية لدى المصالح المختصة." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f9" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f10" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

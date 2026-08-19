@@ -1,0 +1,101 @@
+
+{
+  "id": "termination-of-lease",
+  "title": "فسخ عقد كراء",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المكري (المالك)" },
+    { "id": "f2", "type": "text", "label": "اسم المكتري (المستأجر)" },
+    { "id": "f3", "type": "text", "label": "عنوان العقار" },
+    { "id": "f4", "type": "date", "label": "تاريخ عقد الكراء الأصلي" },
+    { "id": "f5", "type": "date", "label": "تاريخ إخلاء العقار" },
+    { "id": "f6", "type": "textarea", "label": "حالة العقار عند التسليم" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "اتفاق فسخ عقد كراء بالتراضي" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (المكري): السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (المكتري): السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق بالتراضي على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بموجب هذا الاتفاق، يقر الطرفان بفسخ عقد الكراء المتعلق بالعقار الكائن بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، والذي تم توقيعه بتاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يقر المكتري بأنه قد أفرغ العقار وأعاده إلى المكري بتاريخ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يقر المكري بأنه قد تسلم عقاره وهو في الحالة التالية:" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "يبرئ كل طرف الطرف الآخر من جميع الالتزامات المترتبة عن عقد الكراء المذكور، ويعتبر هذا الاتفاق نهائياً." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المكري" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المكتري" }
+        ]
+    }
+  ]
+}

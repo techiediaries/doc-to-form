@@ -1,0 +1,59 @@
+
+{
+  "id": "authorization-to-sign-documents",
+  "title": "وكالة للتوقيع على وثائق",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل" },
+    { "id": "f2", "type": "text", "label": "اسم الوكيل" },
+    { "id": "f3", "type": "textarea", "label": "الوثائق المسموح بالتوقيع عليها" },
+    { "id": "f4", "type": "text", "label": "المدينة" },
+    { "id": "f5", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة للتوقيع" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، أوكل بموجب هذه الوكالة السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لينوب عني في التوقيع على الوثائق التالية:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "ويعتبر توقيعه ملزماً لي كما لو صدر مني شخصياً." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f4" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f5" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

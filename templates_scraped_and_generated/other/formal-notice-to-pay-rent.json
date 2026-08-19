@@ -1,0 +1,85 @@
+
+{
+  "id": "formal-notice-to-pay-rent",
+  "title": "إنذار بأداء واجبات الكراء",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المكري (المالك)" },
+    { "id": "f2", "type": "text", "label": "اسم المكتري (المستأجر)" },
+    { "id": "f3", "type": "text", "label": "عنوان المكتري" },
+    { "id": "f4", "type": "textarea", "label": "الفترة أو الشهور غير المؤداة" },
+    { "id": "f5", "type": "number", "label": "المبلغ الإجمالي المستحق" },
+    { "id": "f6", "type": "number", "label": "المدة الممنوحة للأداء (بالأيام)" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ الإنذار" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إنذار بأداء واجبات الكراء" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": " (المكري)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، وعنوانه(ا):" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: إنذار بأداء واجبات الكراء" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بناء على عقد الكراء الذي يربطنا، نخبركم بأنكم لم تؤدوا واجبات الكراء عن الفترة التالية:" },
+        { "type": "field", "id": "f4" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "مما يجعلكم مدينين بمبلغ إجمالي قدره" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "درهم." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "لذا، ننذركم بضرورة أداء هذا المبلغ في أجل أقصاه" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "أيام، وإلا سنضطر لاتخاذ الإجراءات القانونية لفسخ العقد والمطالبة بالمستحقات." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المكري" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+
+{
+  "id": "freelance-agreement",
+  "title": "عقد تقديم خدمات حرة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم العميل" },
+    { "id": "f2", "type": "text", "label": "عنوان العميل" },
+    { "id": "f3", "type": "text", "label": "اسم مقدم الخدمة (المستقل)" },
+    { "id": "f4", "type": "text", "label": "عنوان مقدم الخدمة" },
+    { "id": "f5", "type": "textarea", "label": "وصف الخدمات" },
+    { "id": "f6", "type": "date", "label": "تاريخ بدء المشروع" },
+    { "id": "f7", "type": "date", "label": "تاريخ تسليم المشروع" },
+    { "id": "f8", "type": "number", "label": "المقابل المادي الإجمالي" },
+    { "id": "f9", "type": "textarea", "label": "شروط الدفع" },
+    { "id": "f10", "type": "text", "label": "المدينة" },
+    { "id": "f11", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد تقديم خدمات حرة (Freelance)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (العميل):" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، وعنوانه:" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (مقدم الخدمة):" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، وعنوانه:" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: موضوع العقد" },
+        { "type": "text", "value": "يلتزم مقدم الخدمة بتقديم الخدمات التالية للعميل:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: مدة العقد" },
+        { "type": "text", "value": "يبدأ العمل على المشروع بتاريخ" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، على أن يتم التسليم النهائي في موعد أقصاه" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: المقابل المادي" },
+        { "type": "text", "value": "تم تحديد المقابل المادي الإجمالي للخدمات في مبلغ" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "درهم." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "المادة 4: شروط الدفع" },
+          { "type": "text", "value": "يتم الدفع وفق الشروط التالية:" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "المادة 5: الملكية الفكرية" },
+          { "type": "text", "value": "بعد سداد كامل المبلغ، تنتقل ملكية جميع الأعمال المنجزة إلى العميل." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f10" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f11" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع العميل" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع مقدم الخدمة" }
+        ]
+    }
+  ]
+}

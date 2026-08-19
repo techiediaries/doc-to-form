@@ -1,0 +1,80 @@
+
+{
+  "id": "company-dissolution-report",
+  "title": "محضر اجتماع لحل وتصفية الشركة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة" },
+    { "id": "f2", "type": "date", "label": "تاريخ الاجتماع" },
+    { "id": "f3", "type": "textarea", "label": "قائمة الشركاء الحاضرين" },
+    { "id": "f4", "type": "text", "label": "سبب حل الشركة" },
+    { "id": "f5", "type": "text", "label": "اسم المصفي" },
+    { "id": "f6", "type": "text", "label": "عنوان المصفي" },
+    { "id": "f7", "type": "textarea", "label": "صلاحيات المصفي" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "محضر اجتماع الجمعية العامة غير العادية لحل وتصفية شركة" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "في يوم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": ", اجتمع الشركاء:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وبعد التداول، تقرر بالإجماع ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "1. حل الشركة: تقرر حل الشركة حلاً مسبقاً اعتباراً من تاريخ هذا الاجتماع، وذلك بسبب:" },
+        { "type": "field", "id": "f4" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "2. التصفية: تدخل الشركة في طور التصفية. تم تعيين السيد/ة" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، وعنوانه(ا)" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، كمصفٍ للشركة." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "3. صلاحيات المصفي: يتمتع المصفي بأوسع الصلاحيات لإنهاء أعمال الشركة، وهي كالتالي:" },
+        { "type": "field", "id": "f7" }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الشركاء" }
+        ]
+    }
+  ]
+}

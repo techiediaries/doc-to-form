@@ -1,0 +1,66 @@
+
+{
+  "id": "notice-of-general-meeting",
+  "title": "دعوة لحضور جمع عام",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة" },
+    { "id": "f2", "type": "text", "label": "نوع الجمع العام (عادي/غير عادي)" },
+    { "id": "f3", "type": "date", "label": "تاريخ الاجتماع" },
+    { "id": "f4", "type": "text", "label": "ساعة الاجتماع" },
+    { "id": "f5", "type": "text", "label": "مكان الاجتماع" },
+    { "id": "f6", "type": "textarea", "label": "جدول الأعمال" },
+    { "id": "f7", "type": "text", "label": "اسم رئيس مجلس الإدارة/المسير" },
+    { "id": "f8", "type": "date", "label": "تاريخ الدعوة" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "دعوة لحضور الجمع العام ال" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": " لشركة" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "السادة الشركاء/المساهمون،" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يشرفنا دعوتكم لحضور اجتماع الجمع العام الذي سينعقد بتاريخ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": " على الساعة" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": " في" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وذلك للتداول في جدول الأعمال التالي:" },
+          { "type": "field", "id": "f6" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تاريخ الدعوة:" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "رئيس مجلس الإدارة/المسير،" },
+          { "type": "field", "id": "f7" }
+        ]
+    }
+  ]
+}

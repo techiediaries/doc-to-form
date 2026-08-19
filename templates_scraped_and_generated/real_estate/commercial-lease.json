@@ -1,0 +1,118 @@
+
+{
+  "id": "commercial-lease",
+  "title": "عقد كراء تجاري",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المكري (المالك)" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للمكري" },
+    { "id": "f3", "type": "text", "label": "اسم المكتري (المستأجر)" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للمكتري" },
+    { "id": "f5", "type": "text", "label": "عنوان العقار المكترى" },
+    { "id": "f6", "type": "text", "label": "طبيعة النشاط التجاري" },
+    { "id": "f7", "type": "date", "label": "تاريخ بداية الكراء" },
+    { "id": "f8", "type": "text", "label": "مدة الكراء (بالسنوات)" },
+    { "id": "f9", "type": "number", "label": "مبلغ الكراء الشهري (بالأرقام)" },
+    { "id": "f10", "type": "text", "label": "مبلغ الكراء بالحروف" },
+    { "id": "f11", "type": "number", "label": "مبلغ الضمان (التسبيق)" },
+    { "id": "f12", "type": "date", "label": "تاريخ تحرير العقد" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد كراء تجاري" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الموقعين أسفله:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (المكري): السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (المكتري): السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقع الاتفاق والتراضي على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل الأول: موضوع العقد" },
+        { "type": "text", "value": "بموجب هذا العقد، أكرى الطرف الأول للطرف الثاني العقار الكائن بـ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، وذلك لاستخدامه في نشاط تجاري وهو" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل الثاني: مدة الكراء" },
+        { "type": "text", "value": "تبدأ مدة هذا الكراء من تاريخ" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "لمدة" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "سنوات، قابلة للتجديد باتفاق الطرفين." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الفصل الثالث: السومة الكرائية" },
+        { "type": "text", "value": "تم تحديد السومة الكرائية الشهرية في مبلغ" },
+        { "type": "field", "id": "f9" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f10" },
+        { "type": "text", "value": ")، تؤدى في بداية كل شهر." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الفصل الرابع: الضمان" },
+          { "type": "text", "value": "دفع المكتري للمكري مبلغ" },
+          { "type": "field", "id": "f11" },
+          { "type": "text", "value": "درهم كضمان، لا ينتج أي فوائد ويُرد عند انتهاء العقد بعد خصم أي مصاريف إصلاح ضرورية." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "text", "value": " بتاريخ" },
+          { "type": "field", "id": "f12" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المكري" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المكتري" }
+        ]
+    }
+  ]
+}

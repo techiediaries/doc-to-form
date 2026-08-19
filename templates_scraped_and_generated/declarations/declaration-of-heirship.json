@@ -1,0 +1,76 @@
+
+{
+  "id": "declaration-of-heirship",
+  "title": "شهادة إثبات الورثة (شهادة عدلية)",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المتوفى" },
+    { "id": "f2", "type": "date", "label": "تاريخ الوفاة" },
+    { "id": "f3", "type": "text", "label": "مكان الوفاة" },
+    { "id": "f4", "type": "textarea", "label": "قائمة الورثة وصلة قرابتهم" },
+    { "id": "f5", "type": "text", "label": "اسم الشاهد الأول" },
+    { "id": "f6", "type": "text", "label": "اسم الشاهد الثاني" },
+    { "id": "f7", "type": "text", "label": "اسم العدلين" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "شهادة إثبات الورثة (شهادة عدلية)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "نحن العدلان الموقعان أسفله" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": ", نشهد ونحن على تمام المعرفة بأن المرحوم(ة)" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": ", قد توفي(ت) بتاريخ" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": " بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وبناء على شهادة الشاهدين، السيد" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": " والسيد" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، فإن المتوفى(ة) المذكور(ة) قد ترك(ت) خلفه(ا) الورثة التالية أسماؤهم:" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "field", "id": "f4" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "ولا نعلم له(ا) وارثاً آخر سواهم." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع العدلين" }
+        ]
+    }
+  ]
+}

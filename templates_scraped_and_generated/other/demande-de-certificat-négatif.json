@@ -1,0 +1,25 @@
+{
+  "id": "demande-de-certificat-négatif",
+  "title": "Demande de certificat négatif",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "La dénomination commerciale est un document qui atteste que la dénomination, sigle ou enseigne demandé peut être utilisé pour l’immatriculation au Registre du Commerce. Le certificat négatif est délivré par l’OMPIC pour une durée d’un an. Si vous immatriculez l’entreprise, la dénomination devient sa propriété jusqu’à sa radiation du Registre de Commerce. Si vous n’immatriculez pas votre entreprise pendant cette durée, la dénomination, sigle ou enseigne redeviendra disponible pour d’autres personnes."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Comment peut-on faire la demande du certificat négatif pour la création d’une entreprise au Maroc ?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+
+{
+  "id": "merger-agreement",
+  "title": "مشروع عقد الاندماج",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة الدامجة" },
+    { "id": "f2", "type": "text", "label": "اسم الشركة المندمجة" },
+    { "id": "f3", "type": "textarea", "label": "أسباب ودوافع الاندماج" },
+    { "id": "f4", "type": "textarea", "label": "شروط وكيفيات الاندماج" },
+    { "id": "f5", "type": "date", "label": "تاريخ سريان الاندماج" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "مشروع عقد الاندماج عن طريق الضم" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الشركتين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الشركة الدامجة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الشركة المندمجة:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على مشروع الاندماج التالي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "1. أسباب الاندماج:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "2. شروط الاندماج:" },
+        { "type": "field", "id": "f4" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "3. تاريخ سريان الاندماج:" },
+        { "type": "text", "value": "يسري الاندماج قانونياً ابتداءً من تاريخ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": ", حيث تنقل جميع أصول وخصوم الشركة المندمجة إلى الشركة الدامجة." }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع ممثل الشركة الدامجة" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع ممثل الشركة المندمجة" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "tarifs-dannonces-légales-au-bulletin-officiel",
+  "title": "Tarifs d’annonces légales au Bulletin Officiel",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Application de l’arrêté conjoint du Secrétaire Général du Gouvernement et du Ministre de l’Economie et des Finances n° 119-14 du 10 Joumada I 1435 (12 mars 2014)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Constitution d’une société anonyme 950,00 تأسيس شركة المساهمة\nConstitution de sociétés: en nom collectif/ en commandite simple/ en commandite par actions/ à responsabilité limitée/ en participation 400,00 تأسيس شركة التضامن/شركة التوصية البسيطة/ شركة التوصية بالأسهم/ الشركة ذات المسؤولية المحدودة/ شركة المحاصة\nTransformation de la forme juridique de la société 170,00 تحويل الشكل القانوني للشركة\nModification de dénomination 150,00 تغيير تسمية الشركة\nModification d’activité 220,00 تغييرنشاط الشركة\nType d’annonce بالدرهم التعريفة\nTarif en Dh نوع الإعلان\nExtension d’activité 200,00 توسيع نشاط الشركة\nRéduction d’activité 180,00 تقليص هدف الشركة\nTransfert de siège social 160,00 للشركة الإجتماعي المقر تحويل\nAugmentation de capital 150,00 رفع رأسمال الشركة\nRéduction de capital 150,00 خفض رأسمال الشركة\nCession de parts 280,00 تفويت حصص\nNomination d’un nouveau gérant 160,00 تعيين مسير جديد للشركة\nDécès d’un associé 160,00 وفاة شريك\nCréation d’une succursale 210,00 إنشاء فرع تابع للشركة\nScission ou fusion 560,00 انفصال أوإدماج\nContrat de gérance libre d’un fonds de commerce (personnes physiques) 200,00 (الأشخاص الطبيعيون) عقد تسيير حر لأصل تجاري"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Contrat de gérance libre d’un fonds de commerce (personnes morales) 200,00 (الأشخاص المعنويون) عقد تسيير حر لأصل تجاري"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Résiliation de contrat de gérance libre d’un fonds de commerce 230,00 فسخ عقد تسيير حر لأصل تجاري\nExpiration du contrat de gérance libre d’un fonds de commerce 230,00 انتهاء عقد تسيير حرلأصل تجاري\nDissolution de société 180,00 حل شركة\nClôture de la liquidation 180,00 قفل التصفية\nConvocation aux assemblées générales 2400,00\nبما فيها البياض للصفحة استدعاء للجموع العامة\nErratum 100,00 استدراك خطإٍ"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "8 Dirhams la ligne"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "Tableau traité sur une page entière y compris signes et espaces 2400,00 الجدول المصفف على صفحة كاملة بما فيها البياض\nTableau traité sur 3/4 de page y compris signes et espaces 1800,00 الجدول المصفف على 4/3 الصفحة بما فيها البياض\nTableau traité sur 1/2 page y compris signes et espaces 1200,00 الجدول المصفف على 2/1 صفحة بما فيها البياض\nTableau traité sur 1/4 de page y compris signes et espaces 600,00 الجدول المصفف على 4/1 صفحة بما فيها البياض"
+        }
+      ]
+    }
+  ]
+}

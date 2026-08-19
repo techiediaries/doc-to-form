@@ -1,0 +1,68 @@
+
+{
+  "id": "appointment-of-auditor",
+  "title": "محضر تعيين مراقب الحسابات",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الشركة" },
+    { "id": "f2", "type": "date", "label": "تاريخ الجمعية العامة" },
+    { "id": "f3", "type": "text", "label": "اسم مراقب الحسابات" },
+    { "id": "f4", "type": "text", "label": "عنوان مراقب الحسابات" },
+    { "id": "f5", "type": "number", "label": "مدة التعيين (بالسنوات)" },
+    { "id": "f6", "type": "date", "label": "تاريخ بداية المهمة" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "محضر اجتماع الجمعية العامة العادية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لشركة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "في يوم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": ", قررت الجمعية العامة العادية تعيين السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": ", الكائن مكتبه(ا) بـ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": ", بصفته(ا) مراقباً لحسابات الشركة." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم هذا التعيين لمدة" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "سنوات، تبدأ من تاريخ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع رئيس الجلسة" }
+        ]
+    }
+  ]
+}

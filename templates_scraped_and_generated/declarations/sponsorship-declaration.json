@@ -1,0 +1,75 @@
+
+{
+  "id": "sponsorship-declaration",
+  "title": "تصريح بالتحمل العائلي",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المصرح (الكفيل)" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للمصرح" },
+    { "id": "f3", "type": "text", "label": "عنوان المصرح" },
+    { "id": "f4", "type": "text", "label": "اسم الشخص المكفول" },
+    { "id": "f5", "type": "text", "label": "صلة القرابة" },
+    { "id": "f6", "type": "text", "label": "الجهة التي سيقدم لها التصريح" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بالشرف بالتحمل العائلي" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، والساكن(ة) بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بشرفي أنني أتحمل مسؤولية النفقة والرعاية الكاملة للسيد/ة" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، الذي(التي) تربطني به(ا) صلة قرابة وهي" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وألتزم بتغطية جميع مصاريفه(ا) من مأكل وملبس وعلاج وغيرها." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذا التصريح قصد تقديمه إلى" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

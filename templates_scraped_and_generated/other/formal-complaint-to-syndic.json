@@ -1,0 +1,79 @@
+
+{
+  "id": "formal-complaint-to-syndic",
+  "title": "شكاية إلى وكيل الاتحاد (السانديك)",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المشتكي (الساكن)" },
+    { "id": "f2", "type": "text", "label": "عنوان الشقة/المحل" },
+    { "id": "f3", "type": "text", "label": "اسم وكيل الاتحاد (السانديك)" },
+    { "id": "f4", "type": "text", "label": "اسم الإقامة/العمارة" },
+    { "id": "f5", "type": "textarea", "label": "موضوع الشكاية" },
+    { "id": "f6", "type": "textarea", "label": "تفاصيل الشكاية" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ تقديم الشكاية" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "شكاية إلى السيد وكيل اتحاد الملاك المشتركين" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، القاطن(ة) بـ" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، بصفته وكيل اتحاد ملاك إقامة" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: شكاية بخصوص" },
+          { "type": "field", "id": "f5" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يشرفني أن أتقدم إلى سيادتكم بشكايتي هذه، والتي أعرض فيها ما يلي:" },
+        { "type": "field", "id": "f6" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "لذا، ألتمس منكم التدخل العاجل لحل هذا المشكل." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المشتكي" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "نموذج-تغيير-تسمية-الشركة",
+  "title": "نموذج تغيير تسمية الشركة",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "شركة  «  CH. L SECURITE SARL AU «"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "شركة ذات مسؤولية محدودة ذات الشريك الوحيد برأسمال 000 100   درهم"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المقر الإجتماعي تجزئة القدس رقم 311 د – تيفلت"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "رقم السجل التجاري : 1017"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": ":بمقتضى محضر جمع عام استثنائي  بتاريخ 2021.10.11 تم تغيير تسمية الشركة إلى"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "SOCIETE CHERRAJ LAHCEN GARDIENNAGE SARL AU « S.C.L.G »"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تم الإيداع القانوني بكتابة الضبط بالمحكمة الإبتدائية بتيفلت ، تحت رقم 242  بتاريخ 2021.10.13"
+        }
+      ]
+    }
+  ]
+}

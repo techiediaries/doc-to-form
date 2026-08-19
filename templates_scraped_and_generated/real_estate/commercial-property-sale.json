@@ -1,0 +1,112 @@
+
+{
+  "id": "commercial-property-sale",
+  "title": "عقد بيع أصل تجاري",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم البائع" },
+    { "id": "f2", "type": "text", "label": "رقم السجل التجاري للبائع" },
+    { "id": "f3", "type": "text", "label": "اسم المشتري" },
+    { "id": "f4", "type": "text", "label": "عنوان المشتري" },
+    { "id": "f5", "type": "text", "label": "عنوان الأصل التجاري" },
+    { "id": "f6", "type": "textarea", "label": "العناصر المادية والمعنوية للأصل التجاري" },
+    { "id": "f7", "type": "number", "label": "ثمن البيع الإجمالي" },
+    { "id": "f8", "type": "text", "label": "ثمن البيع (بالحروف)" },
+    { "id": "f9", "type": "textarea", "label": "طريقة الأداء" },
+    { "id": "f10", "type": "text", "label": "المدينة" },
+    { "id": "f11", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد بيع أصل تجاري" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (البائع): السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، المسجل(ة) بالسجل التجاري تحت رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (المشتري): السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، الساكن(ة) بـ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: موضوع البيع" },
+        { "type": "text", "value": "باع الطرف الأول للطرف الثاني الأصل التجاري الكائن بـ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، بجميع عناصره المادية والمعنوية، وهي كالتالي:" },
+        { "type": "field", "id": "f6" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: الثمن" },
+        { "type": "text", "value": "تم هذا البيع بثمن إجمالي قدره" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": ")." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: طريقة الأداء" },
+        { "type": "text", "value": "يقر البائع بتسلمه الثمن كاملاً، أو يتم الأداء كالتالي:" },
+        { "type": "field", "id": "f9" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "المادة 4: الالتزامات" },
+          { "type": "text", "value": "يضمن البائع للمشتري الأصل التجاري من كل تعرض أو استحقاق." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f10" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f11" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع البائع" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المشتري" }
+        ]
+    }
+  ]
+}

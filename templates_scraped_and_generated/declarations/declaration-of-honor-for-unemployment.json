@@ -1,0 +1,63 @@
+
+{
+  "id": "declaration-of-honor-for-unemployment",
+  "title": "تصريح بالشرف بعدم العمل",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "الاسم الكامل للمصرح" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف الوطنية" },
+    { "id": "f3", "type": "text", "label": "العنوان" },
+    { "id": "f4", "type": "text", "label": "الجهة التي سيقدم لها التصريح" },
+    { "id": "f5", "type": "text", "label": "المدينة" },
+    { "id": "f6", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بالشرف بعدم مزاولة أي عمل" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، والساكن(ة) بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بشرفي أنني لا أزاول أي عمل أو وظيفة أو نشاط مهني مدر للدخل في الوقت الحالي." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذا التصريح قصد تقديمه إلى" },
+          { "type": "field", "id": "f4" },
+          { "type": "text", "value": "، وأتحمل المسؤولية القانونية في حالة ثبوت عكس ذلك." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f6" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

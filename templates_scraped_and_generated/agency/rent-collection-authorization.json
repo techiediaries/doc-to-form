@@ -1,0 +1,74 @@
+
+{
+  "id": "rent-collection-authorization",
+  "title": "وكالة خاصة بقبض الكراء",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل (المالك)" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للموكل" },
+    { "id": "f3", "type": "text", "label": "اسم الوكيل" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للوكيل" },
+    { "id": "f5", "type": "text", "label": "اسم المكتري (المستأجر)" },
+    { "id": "f6", "type": "text", "label": "عنوان العقار" },
+    { "id": "f7", "type": "number", "label": "مبلغ الكراء الشهري" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة بقبض الكراء" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، بصفتي مالك(ة) العقار، أوكل بموجب هذه الوكالة السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وذلك لينوب عني في قبض واجبات الكراء من المكتري، السيد/ة" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، المتعلقة بالعقار الكائن بـ" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "مبلغ الكراء الشهري هو" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "درهم." }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وللوكيل الحق في توقيع وصولات الكراء وتسليمها للمكتري، واتخاذ أي إجراء ضروري لتحصيل المبلغ." }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

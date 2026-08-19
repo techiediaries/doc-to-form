@@ -1,0 +1,249 @@
+{
+  "id": "اقرار بحل شركة قبل انقضاء اجلها",
+  "title": "اقرار بحل شركة قبل انقضاء اجلها",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": "المقر"
+    },
+    {
+      "id": "f9",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f14",
+      "type": "text",
+      "label": "الموثق"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار بحل شركة قبل انقضاء اجلها"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "نقر نحن"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "و"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "و"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "الرشكاء \" جميع الشركاء \" فى شركة"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "بأنه نظرا لاجماعنا على عدم الرغبة فى استمرار الشركة سالفة الذكر والمحدد لانقضائها يوم"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "فقد تم الاتفاق فيما بيننا جميعا على حلها قبل الاجل المحدد لها وادخالها فى دور التصفية فى اليوم التالى من تاريخ التصديق على هذا الاقرار وتعيين جميع الشركاء مصفيين لها على ان تصدر التصرفات المتعلقة بالتصفية بأغلبية الانصباء على أن يكون السيد /"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "مديرا للتصفية وبدون أجر ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منا بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "محضر تصديق رقم      لسنة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "انه فى يوم \t\tالموافق     /  /"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "حضر أمامنا نحن      الموثق بالمكتب المذكور للسيد/"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        },
+        {
+          "type": "text",
+          "value": "مصرى الجنسية مسلم الديانة يقيم"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        },
+        {
+          "type": "text",
+          "value": "يوحمل بطاقة عائلية رقم"
+        },
+        {
+          "type": "field",
+          "id": "f12"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "text",
+          "value": "سجل مدنى"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        },
+        {
+          "type": "text",
+          "value": "ووقع على التوكيل عاليه ، وبذلك ، فقد تم التصديق ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "field",
+          "id": "f14"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

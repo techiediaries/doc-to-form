@@ -1,0 +1,82 @@
+
+{
+  "id": "warning-before-legal-action",
+  "title": "إنذار قبل اتخاذ الإجراءات القانونية",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المنذر (الدائن)" },
+    { "id": "f2", "type": "text", "label": "اسم المنذر إليه (المدين)" },
+    { "id": "f3", "type": "text", "label": "عنوان المنذر إليه" },
+    { "id": "f4", "type": "textarea", "label": "موضوع الإنذار (الدين, الالتزام...)" },
+    { "id": "f5", "type": "number", "label": "المدة الممنوحة للأداء (بالأيام)" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ الإنذار" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إنذار قبل اتخاذ الإجراءات القانونية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، وعنوانه(ا):" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: إنذار بالأداء" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بناء على" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، فإنكم مدينون لنا بالتزام لم يتم الوفاء به." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لذا، ننذركم بضرورة الوفاء بالتزامكم في أجل أقصاه" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "أيام من تاريخ استلام هذا الإنذار." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وفي حالة عدم استجابتكم، فإننا سنكون مضطرين لاتخاذ كافة الإجراءات القانونية اللازمة للحفاظ على حقوقنا." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المنذر" }
+        ]
+    }
+  ]
+}

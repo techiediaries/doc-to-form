@@ -1,0 +1,71 @@
+
+{
+  "id": "authorization-to-manage-business",
+  "title": "وكالة لتسيير محل تجاري",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل (مالك المحل)" },
+    { "id": "f2", "type": "text", "label": "اسم الوكيل (المسير)" },
+    { "id": "f3", "type": "text", "label": "عنوان المحل التجاري" },
+    { "id": "f4", "type": "textarea", "label": "صلاحيات المسير" },
+    { "id": "f5", "type": "text", "label": "مدة الوكالة" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة لتسيير محل تجاري" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، أوكل بموجب هذه الوكالة السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لينوب عني في تسيير محلي التجاري الكائن بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وللوكيل الصلاحيات الكاملة للقيام بما يلي:" },
+          { "type": "field", "id": "f4" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "هذه الوكالة صالحة لمدة" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

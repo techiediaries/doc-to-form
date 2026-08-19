@@ -1,0 +1,117 @@
+
+{
+  "id": "work-contract",
+  "title": "عقد عمل محدد المدة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المشغل" },
+    { "id": "f2", "type": "text", "label": "عنوان مقر العمل" },
+    { "id": "f3", "type": "text", "label": "اسم الأجير" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للأجير" },
+    { "id": "f5", "type": "text", "label": "عنوان الأجير" },
+    { "id": "f6", "type": "text", "label": "المنصب أو الوظيفة" },
+    { "id": "f7", "type": "date", "label": "تاريخ بداية العقد" },
+    { "id": "f8", "type": "date", "label": "تاريخ نهاية العقد" },
+    { "id": "f9", "type": "number", "label": "الأجر الشهري (بالأرقام)" },
+    { "id": "f10", "type": "text", "label": "الأجر الشهري (بالحروف)" },
+    { "id": "f11", "type": "text", "label": "المدينة" },
+    { "id": "f12", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد عمل محدد المدة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (المشغل):" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الكائن مقره بـ" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (الأجير): السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، والساكن بـ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: موضوع العقد" },
+        { "type": "text", "value": "يشغل الطرف الثاني لدى الطرف الأول وظيفة" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: مدة العقد" },
+        { "type": "text", "value": "أبرم هذا العقد لمدة محددة تبدأ من" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "وتنتهي في" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: الأجر" },
+        { "type": "text", "value": "يتقاضى الطرف الثاني أجراً شهرياً قدره" },
+        { "type": "field", "id": "f9" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f10" },
+        { "type": "text", "value": ")." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "المادة 4: الالتزامات" },
+          { "type": "text", "value": "يلتزم الأجير بأداء مهامه بإخلاص وأمانة، ويلتزم المشغل بتوفير ظروف عمل لائقة واحترام قانون الشغل." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f11" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f12" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المشغل" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الأجير" }
+        ]
+    }
+  ]
+}

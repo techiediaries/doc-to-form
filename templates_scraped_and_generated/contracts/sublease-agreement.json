@@ -1,0 +1,97 @@
+
+{
+  "id": "sublease-agreement",
+  "title": "عقد كراء من الباطن",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المكتري الأصلي" },
+    { "id": "f2", "type": "text", "label": "اسم المكتري الفرعي" },
+    { "id": "f3", "type": "text", "label": "عنوان العقار" },
+    { "id": "f4", "type": "date", "label": "تاريخ بداية الكراء الفرعي" },
+    { "id": "f5", "type": "date", "label": "تاريخ نهاية الكراء الفرعي" },
+    { "id": "f6", "type": "number", "label": "مبلغ الكراء الشهري" },
+    { "id": "f7", "type": "text", "label": "موافقة المالك الأصلي (نعم/لا)" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد كراء من الباطن" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المكتري الأصلي: السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المكتري الفرعي: السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يكري المكتري الأصلي للمكتري الفرعي، العقار الكائن بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": ", وذلك لمدة تبدأ من" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": " وتنتهي في" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تم تحديد مبلغ الكراء الشهري في" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "درهم." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يقر المكتري الأصلي بحصوله على موافقة المالك الأصلي على هذا الكراء من الباطن:" },
+        { "type": "field", "id": "f7" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المكتري الأصلي" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المكتري الفرعي" }
+        ]
+    }
+  ]
+}

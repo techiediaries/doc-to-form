@@ -1,0 +1,70 @@
+
+{
+  "id": "collective-life-certificate",
+  "title": "شهادة الحياة الجماعية",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المصرح" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للمصرح" },
+    { "id": "f3", "type": "textarea", "label": "قائمة الأشخاص الذين على قيد الحياة" },
+    { "id": "f4", "type": "text", "label": "صلة القرابة بالمصرح" },
+    { "id": "f5", "type": "text", "label": "الجهة التي ستقدم لها الشهادة" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "شهادة الحياة الجماعية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بشرفي أن الأشخاص التالية أسماؤهم، والذين تربطني بهم صلة قرابة (" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": ")، هم على قيد الحياة حتى تاريخه:" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "field", "id": "f3" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد أدليت بهذه الشهادة قصد تقديمها إلى" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

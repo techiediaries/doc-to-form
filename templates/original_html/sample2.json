@@ -1,0 +1,91 @@
+{
+  "id": "sample2",
+  "title": "sample2",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار باجراء الترميمات الضرورية"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر انا ....\"المؤجر\" بأن الترميمات التى تتطلب اصلاح تنحصر فى"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "التزم بالقيام بها فى خلال اسبوعين من تاريخه ، وفى حالة تأخرى عن هذا الموعد يكون للمستأجر السيد/"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "المطالبة بذلك قضاء واستصدار حكم باجرائها بمعرفته خصما من الاجرة ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

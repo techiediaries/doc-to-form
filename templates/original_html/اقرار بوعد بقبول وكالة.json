@@ -1,0 +1,143 @@
+{
+  "id": "اقرار بوعد بقبول وكالة",
+  "title": "اقرار بوعد بقبول وكالة",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": "المقر"
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اقرار بوعد بقبول وكالة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "أقر أنا"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "\" الوكيل\" بأننى أقبل الوكالة التى قد تصدر لى من السيد/"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        },
+        {
+          "type": "text",
+          "value": "للقيام بـ"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "ويعتبر هذا الوعد قائما لمدة أقصاها يوم"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "بحيث ان انقضت دون توثيق سند الوكالة يعتبر هذا الوعد لاغيا ما لم أر قبوله ، على أن يكون اجرى مبلغا نقديا قدره"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "فقط"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        },
+        {
+          "type": "text",
+          "value": "جنيه يستحق كاملا عند تقويم سند الوكالة وفى حالة الاخلال بهذا الالتزام يكون من حقى رفض الوكالة ولا أكون مسئولا عن عدم قيامى بهذه الاعمال"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وهذا اقرار منى بذلك ،"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تحريرا فى"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

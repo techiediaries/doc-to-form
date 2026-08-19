@@ -1,0 +1,102 @@
+
+{
+  "id": "publishing-agreement",
+  "title": "عقد نشر",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المؤلف" },
+    { "id": "f2", "type": "text", "label": "اسم الناشر" },
+    { "id": "f3", "type": "text", "label": "عنوان العمل الأدبي/الفني" },
+    { "id": "f4", "type": "text", "label": "نسبة حقوق المؤلف (%)" },
+    { "id": "f5", "type": "number", "label": "عدد النسخ في الطبعة الأولى" },
+    { "id": "f6", "type": "text", "label": "مدة العقد (بالسنوات)" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد نشر" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المؤلف: السيد/ة" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الناشر: شركة" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: موضوع العقد" },
+        { "type": "text", "value": "يفوض المؤلف للناشر حق نشر وتوزيع العمل المعنون بـ:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: حقوق المؤلف" },
+        { "type": "text", "value": "يستحق المؤلف نسبة" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "% من سعر بيع كل نسخة." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: الطبعة الأولى" },
+        { "type": "text", "value": "عدد نسخ الطبعة الأولى هو" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": " نسخة." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "المادة 4: مدة العقد" },
+          { "type": "text", "value": "مدة هذا العقد هي" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": " سنوات." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المؤلف" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الناشر" }
+        ]
+    }
+  ]
+}

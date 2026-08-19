@@ -1,0 +1,499 @@
+{
+  "id": "صيغة اشهار وصية",
+  "title": "صيغة اشهار وصية",
+  "fields": [
+    {
+      "id": "f1",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f4",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f5",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f6",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f7",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f8",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f9",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f10",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f11",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f12",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f13",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f14",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f15",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f16",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f17",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f18",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f19",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f20",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f21",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f22",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f23",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f24",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f25",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f26",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f27",
+      "type": "text",
+      "label": ""
+    },
+    {
+      "id": "f28",
+      "type": "date",
+      "label": "تاريخ"
+    },
+    {
+      "id": "f29",
+      "type": "text",
+      "label": ""
+    }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "اشهار وصية"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "عن أطيان زراعية كائنة بناحية"
+        },
+        {
+          "type": "field",
+          "id": "f1"
+        },
+        {
+          "type": "text",
+          "value": "مركز"
+        },
+        {
+          "type": "field",
+          "id": "f2"
+        },
+        {
+          "type": "text",
+          "value": "محافظة"
+        },
+        {
+          "type": "field",
+          "id": "f3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "المسطح      اسم الحوض ورقمه \tرقم اللوحة \t\tرقم القطعة\tالحدود"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "س  ط   ف                                                     مفرزة أو مشاعا فى القطعة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "رقم"
+        },
+        {
+          "type": "field",
+          "id": "f4"
+        },
+        {
+          "type": "text",
+          "value": "البالغ مساحتها"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الحد البحرى : القطعة رقم"
+        },
+        {
+          "type": "field",
+          "id": "f5"
+        },
+        {
+          "type": "text",
+          "value": "باسم"
+        },
+        {
+          "type": "field",
+          "id": "f6"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الحد القبلى : القطعة رقم"
+        },
+        {
+          "type": "field",
+          "id": "f7"
+        },
+        {
+          "type": "text",
+          "value": "باسم"
+        },
+        {
+          "type": "field",
+          "id": "f8"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الحد الشرقى : القطعة رقم"
+        },
+        {
+          "type": "field",
+          "id": "f9"
+        },
+        {
+          "type": "text",
+          "value": "باسم"
+        },
+        {
+          "type": "field",
+          "id": "f10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "الحد الغربى : القطعة رقم"
+        },
+        {
+          "type": "field",
+          "id": "f11"
+        },
+        {
+          "type": "text",
+          "value": "باسم"
+        },
+        {
+          "type": "field",
+          "id": "f12"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "-   -   4 فقط أربعة أفدنة ضمن المكلفة رقم"
+        },
+        {
+          "type": "field",
+          "id": "f13"
+        },
+        {
+          "type": "text",
+          "value": "بالكشف الرسمى رقم"
+        },
+        {
+          "type": "field",
+          "id": "f14"
+        },
+        {
+          "type": "text",
+          "value": "والضريبة المقررة مبلغ"
+        },
+        {
+          "type": "field",
+          "id": "f15"
+        },
+        {
+          "type": "text",
+          "value": "جنيها سنويا ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "بيانات الوصية :"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "توفى المرحوم"
+        },
+        {
+          "type": "field",
+          "id": "f16"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ   /  / وقد أوصى بهذه الاطيان للطالب"
+        },
+        {
+          "type": "field",
+          "id": "f17"
+        },
+        {
+          "type": "text",
+          "value": "بموجب وصية مصدق على توقيع الموصى فيها بمحضر التوثيق رقم"
+        },
+        {
+          "type": "field",
+          "id": "f18"
+        },
+        {
+          "type": "text",
+          "value": "لسنة"
+        },
+        {
+          "type": "field",
+          "id": "f19"
+        },
+        {
+          "type": "text",
+          "value": "توثيق"
+        },
+        {
+          "type": "field",
+          "id": "f20"
+        },
+        {
+          "type": "text",
+          "value": "بتاريخ    /  /   ، وتخرج هذه الاطيان من ثلث التركة وفقا للاقرار الصادر من ورثة الموصى الذين تضمنهم اعلام الوراثة رقم"
+        },
+        {
+          "type": "field",
+          "id": "f21"
+        },
+        {
+          "type": "text",
+          "value": "لسنة      وراثات"
+        },
+        {
+          "type": "field",
+          "id": "f22"
+        },
+        {
+          "type": "text",
+          "value": "المرفق ضمن مستندات الطالب وهم"
+        },
+        {
+          "type": "field",
+          "id": "f23"
+        },
+        {
+          "type": "text",
+          "value": "،"
+        },
+        {
+          "type": "field",
+          "id": "f24"
+        },
+        {
+          "type": "text",
+          "value": "،"
+        },
+        {
+          "type": "field",
+          "id": "f25"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وقد تملك الموصى هذا القدر بالعقد المسجل رقم"
+        },
+        {
+          "type": "field",
+          "id": "f26"
+        },
+        {
+          "type": "text",
+          "value": "لسنة        توثيق"
+        },
+        {
+          "type": "field",
+          "id": "f27"
+        },
+        {
+          "type": "text",
+          "value": "ولم ترد فى شأنه اية حقوق عينية تبعية ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "وتم الافراج عنه بموجب شهادة افراج صادرة من مأمورية ضرائب التركات المختصة بتاريخ"
+        },
+        {
+          "type": "field",
+          "id": "f28"
+        },
+        {
+          "type": "text",
+          "value": "برقم"
+        },
+        {
+          "type": "field",
+          "id": "f29"
+        },
+        {
+          "type": "text",
+          "value": "ومرفقة ضمن مستندات الطالب ، وذلك بعد سداد الضريب المستحقة وقدرها ...."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "ملاحظة : يتعين تقديم طالب الى مأمورية الشهر العقارى الكئان بدائرتها الاطيان الموصى بها متضمنا البيانات السابقة للحصول على البيانات المساحية اللازمة لاشهار الوصية ."
+        }
+      ]
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

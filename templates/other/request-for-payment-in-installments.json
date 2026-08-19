@@ -1,0 +1,90 @@
+
+{
+  "id": "request-for-payment-in-installments",
+  "title": "طلب أداء دين على أقساط",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المدين" },
+    { "id": "f2", "type": "text", "label": "اسم الدائن" },
+    { "id": "f3", "type": "number", "label": "المبلغ الإجمالي للدين" },
+    { "id": "f4", "type": "text", "label": "مصدر الدين" },
+    { "id": "f5", "type": "number", "label": "عدد الأقساط" },
+    { "id": "f6", "type": "number", "label": "مبلغ كل قسط" },
+    { "id": "f7", "type": "text", "label": "تاريخ أول قسط" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ الطلب" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "طلب أداء دين على أقساط" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": " (المدين)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": " (الدائن)" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: طلب جدولة دين" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "نظراً للدين المترتب بذمتي لفائدتكم، والبالغ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "درهم، الناتج عن" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، ونظراً لظروفي الحالية، ألتمس منكم الموافقة على سداده على أقساط." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أقترح سداد الدين على" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "أقساط شهرية، قيمة كل قسط" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "درهم، ابتداءً من تاريخ" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وفي انتظار موافقتكم، تقبلوا فائق التقدير." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المدين" }
+        ]
+    }
+  ]
+}

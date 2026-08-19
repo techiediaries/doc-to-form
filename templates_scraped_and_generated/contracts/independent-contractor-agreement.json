@@ -1,0 +1,99 @@
+
+{
+  "id": "independent-contractor-agreement",
+  "title": "عقد مقاولة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم رب العمل" },
+    { "id": "f2", "type": "text", "label": "اسم المقاول" },
+    { "id": "f3", "type": "textarea", "label": "وصف المشروع" },
+    { "id": "f4", "type": "number", "label": "الأجر الإجمالي للمقاولة" },
+    { "id": "f5", "type": "textarea", "label": "مراحل الدفع" },
+    { "id": "f6", "type": "date", "label": "تاريخ بدء الأشغال" },
+    { "id": "f7", "type": "date", "label": "تاريخ التسليم النهائي" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد مقاولة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "رب العمل: السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المقاول: السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: موضوع العقد" },
+        { "type": "text", "value": "يلتزم المقاول بإنجاز الأشغال التالية لفائدة رب العمل:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: الأجر" },
+        { "type": "text", "value": "حدد الأجر الإجمالي لهذه المقاولة في مبلغ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "درهم، يتم دفعه على النحو التالي:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: مدة الإنجاز" },
+        { "type": "text", "value": "تبدأ الأشغال بتاريخ" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، على أن يتم التسليم النهائي في موعد أقصاه" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع رب العمل" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المقاول" }
+        ]
+    }
+  ]
+}

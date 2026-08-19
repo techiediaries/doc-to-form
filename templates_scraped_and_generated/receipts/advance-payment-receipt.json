@@ -1,0 +1,69 @@
+
+{
+  "id": "advance-payment-receipt",
+  "title": "وصل تسبيق (عربون)",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المستلم (البائع/المكري)" },
+    { "id": "f2", "type": "text", "label": "اسم الدافع (المشتري/المكتري)" },
+    { "id": "f3", "type": "number", "label": "مبلغ التسبيق (بالأرقام)" },
+    { "id": "f4", "type": "text", "label": "مبلغ التسبيق (بالحروف)" },
+    { "id": "f5", "type": "textarea", "label": "موضوع العقد (بيع, كراء...)" },
+    { "id": "f6", "type": "number", "label": "المبلغ المتبقي" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وصل تسبيق (عربون)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، أشهد بأنني تسلمت من السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، مبلغاً وقدره" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": ")." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وذلك كتسبيق بخصوص" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "المبلغ المتبقي هو" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "درهم." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المستلم" }
+        ]
+    }
+  ]
+}

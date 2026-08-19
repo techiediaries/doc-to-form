@@ -1,0 +1,98 @@
+
+{
+  "id": "complaint-form",
+  "title": "نموذج شكاية",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "المدينة" },
+    { "id": "f2", "type": "date", "label": "تاريخ تقديم الشكاية" },
+    { "id": "f3", "type": "text", "label": "الاسم الكامل للمشتكي" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للمشتكي" },
+    { "id": "f5", "type": "text", "label": "عنوان المشتكي" },
+    { "id": "f6", "type": "text", "label": "الجهة المشتكى بها" },
+    { "id": "f7", "type": "textarea", "label": "موضوع الشكاية" },
+    { "id": "f8", "type": "textarea", "label": "تفاصيل الشكاية والوقائع" },
+    { "id": "f9", "type": "textarea", "label": "الطلبات" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "شكاية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المدينة:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، بتاريخ:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، والساكن(ة) بـ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/السيدة:" },
+        { "type": "field", "id": "f6" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: شكاية بخصوص" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "سلام تام بوجود مولانا الإمام،" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وبعد،" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يشرفني أن أتقدم إلى سيادتكم بشكايتي هذه، والتي أعرض فيها الوقائع التالية:" },
+        { "type": "field", "id": "f8" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "لهذه الأسباب، ألتمس من سيادتكم ما يلي:" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وفي انتظار ردكم، تقبلوا فائق التقدير والاحترام." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المشتكي" }
+        ]
+    }
+  ]
+}

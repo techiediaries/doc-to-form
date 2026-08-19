@@ -1,0 +1,69 @@
+
+{
+  "id": "rent-receipt",
+  "title": "وصل كراء",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المكري (المالك)" },
+    { "id": "f2", "type": "text", "label": "اسم المكتري (المستأجر)" },
+    { "id": "f3", "type": "number", "label": "المبلغ المؤدى (بالأرقام)" },
+    { "id": "f4", "type": "text", "label": "المبلغ المؤدى (بالحروف)" },
+    { "id": "f5", "type": "text", "label": "الشهر/الفترة المتعلقة بالأداء" },
+    { "id": "f6", "type": "text", "label": "عنوان العقار" },
+    { "id": "f7", "type": "text", "label": "حرر بـ (المدينة)" },
+    { "id": "f8", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وصل كراء" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، بصفتي مالك(ة) العقار، أشهد بأنني تسلمت من السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، مبلغاً وقدره" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": ")." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وذلك عن واجب الكراء المتعلق بالفترة:" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، للعقار الكائن بـ" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "هذا الوصل يعتبر إبراءً لذمة المكتري من المبلغ المذكور عن الفترة المحددة." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المكري" }
+        ]
+    }
+  ]
+}

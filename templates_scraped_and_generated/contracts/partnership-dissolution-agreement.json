@@ -1,0 +1,76 @@
+
+{
+  "id": "partnership-dissolution-agreement",
+  "title": "عقد فسخ شراكة",
+  "fields": [
+    { "id": "f1", "type": "textarea", "label": "أسماء الشركاء" },
+    { "id": "f2", "type": "text", "label": "اسم الشراكة" },
+    { "id": "f3", "type": "date", "label": "تاريخ عقد الشراكة الأصلي" },
+    { "id": "f4", "type": "date", "label": "تاريخ الفسخ" },
+    { "id": "f5", "type": "textarea", "label": "بنود تصفية الحسابات" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد فسخ شراكة بالتراضي" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الشركاء الموقعين أسفله:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تم الاتفاق على فسخ عقد الشراكة المسمى" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، والمبرم بتاريخ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "يسري هذا الفسخ اعتباراً من تاريخ" },
+          { "type": "field", "id": "f4" },
+          { "type": "text", "value": "." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وقد اتفق الشركاء على تصفية جميع الحسابات والالتزامات المتعلقة بالشراكة وفق البنود التالية:" },
+          { "type": "field", "id": "f5" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "ويبرئ كل طرف ذمة الآخرين من أي مطالبة مستقبلية." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الشركاء" }
+        ]
+    }
+  ]
+}

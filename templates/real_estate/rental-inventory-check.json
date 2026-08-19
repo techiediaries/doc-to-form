@@ -1,0 +1,103 @@
+
+{
+  "id": "rental-inventory-check",
+  "title": "محضر معاينة حالة الأماكن",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المكري (المالك)" },
+    { "id": "f2", "type": "text", "label": "اسم المكتري (المستأجر)" },
+    { "id": "f3", "type": "text", "label": "عنوان العقار" },
+    { "id": "f4", "type": "date", "label": "تاريخ المعاينة" },
+    { "id": "f5", "type": "textarea", "label": "حالة الغرف (جدران, أرضيات...)" },
+    { "id": "f6", "type": "textarea", "label": "حالة المطبخ (خزائن, صنابير...)" },
+    { "id": "f7", "type": "textarea", "label": "حالة الحمام (مرافق صحية...)" },
+    { "id": "f8", "type": "textarea", "label": "حالة التجهيزات (سخان ماء, مكيف...)" },
+    { "id": "f9", "type": "textarea", "label": "ملاحظات إضافية" },
+    { "id": "f10", "type": "text", "label": "المدينة" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "محضر معاينة حالة الأماكن (عند الدخول)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "(المكري) و" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "(المكتري)." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بخصوص العقار الكائن بـ" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": ", تم في تاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "معاينة حالة العقار وكانت كالتالي:" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "1. حالة الغرف:" },
+          { "type": "field", "id": "f5" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "2. حالة المطبخ:" },
+          { "type": "field", "id": "f6" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "3. حالة الحمام:" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "4. حالة التجهيزات:" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "5. ملاحظات إضافية:" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "يقر الطرفان بصحة ما ورد في هذا المحضر." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f10" },
+          { "type": "text", "value": "في نفس تاريخ المعاينة." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المكري" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع المكتري" }
+        ]
+    }
+  ]
+}

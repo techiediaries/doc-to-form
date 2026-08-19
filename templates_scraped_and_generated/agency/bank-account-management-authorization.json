@@ -1,0 +1,73 @@
+
+{
+  "id": "bank-account-management-authorization",
+  "title": "وكالة خاصة بتسيير حساب بنكي",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للموكل" },
+    { "id": "f3", "type": "text", "label": "اسم الوكيل" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للوكيل" },
+    { "id": "f5", "type": "text", "label": "اسم البنك" },
+    { "id": "f6", "type": "text", "label": "رقم الحساب البنكي (RIB)" },
+    { "id": "f7", "type": "textarea", "label": "الصلاحيات الممنوحة للوكيل" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة بتسيير حساب بنكي" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، أوكل بموجب هذه الوكالة السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لينوب عني في تسيير حسابي البنكي المفتوح لدى بنك" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "، تحت رقم" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وللوكيل الصلاحيات التالية:" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "(أمثلة: سحب الأموال، إيداع الأموال، طلب دفتر الشيكات، الاطلاع على كشف الحساب...)" }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

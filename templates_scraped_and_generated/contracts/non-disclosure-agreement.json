@@ -1,0 +1,101 @@
+
+{
+  "id": "non-disclosure-agreement",
+  "title": "اتفاقية عدم إفشاء",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الطرف الأول (المفصح)" },
+    { "id": "f2", "type": "text", "label": "اسم الطرف الثاني (المتلقي)" },
+    { "id": "f3", "type": "textarea", "label": "وصف المعلومات السرية" },
+    { "id": "f4", "type": "text", "label": "الغرض من إفشاء المعلومات" },
+    { "id": "f5", "type": "text", "label": "مدة سريان الاتفاقية (بالسنوات)" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التوقيع" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "اتفاقية عدم إفشاء المعلومات السرية (NDA)" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (الطرف المفصح):" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (الطرف المتلقي):" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 1: المعلومات السرية" },
+        { "type": "text", "value": "يوافق الطرف الأول على أن يفصح للطرف الثاني عن معلومات سرية تتعلق بـ:" },
+        { "type": "field", "id": "f3" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 2: الغرض" },
+        { "type": "text", "value": "الغرض من هذا الإفشاء هو:" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المادة 3: التزام السرية" },
+        { "type": "text", "value": "يلتزم الطرف الثاني بالحفاظ على سرية المعلومات وعدم إفشائها لأي طرف ثالث دون موافقة خطية من الطرف الأول." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "المادة 4: مدة الاتفاقية" },
+          { "type": "text", "value": "تسري هذه الاتفاقية لمدة" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "سنوات من تاريخ التوقيع عليها." }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الطرف الأول" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الطرف الثاني" }
+        ]
+    }
+  ]
+}

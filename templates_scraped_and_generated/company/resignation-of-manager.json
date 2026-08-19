@@ -1,0 +1,71 @@
+
+{
+  "id": "resignation-of-manager",
+  "title": "استقالة مسير شركة",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المسير المستقيل" },
+    { "id": "f2", "type": "text", "label": "اسم الشركة" },
+    { "id": "f3", "type": "date", "label": "تاريخ تقديم الاستقالة" },
+    { "id": "f4", "type": "date", "label": "تاريخ سريان الاستقالة" },
+    { "id": "f5", "type": "text", "label": "المدينة" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "رسالة استقالة" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى شركاء شركة" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الموضوع: استقالة من منصب مسير" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "السادة الشركاء،" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، أتقدم بموجب هذه الرسالة باستقالتي من منصبي كمسير للشركة، وذلك اعتباراً من تاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أرجو منكم قبول الاستقالة واتخاذ الإجراءات اللازمة لتعيين مسير جديد." }
+      ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f5" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f3" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المسير المستقيل" }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+
+{
+  "id": "authorization-to-complete-inheritance-formalities",
+  "title": "وكالة لإتمام إجراءات الإرث",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم الموكل (الوارث)" },
+    { "id": "f2", "type": "text", "label": "اسم الوكيل" },
+    { "id": "f3", "type": "text", "label": "اسم المتوفى" },
+    { "id": "f4", "type": "date", "label": "تاريخ الوفاة" },
+    { "id": "f5", "type": "textarea", "label": "الإجراءات الموكل بها" },
+    { "id": "f6", "type": "text", "label": "المدينة" },
+    { "id": "f7", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "وكالة خاصة بإجراءات الإرث" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، بصفتي وارث(ة) للمرحوم(ة)" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، المتوفى(ة) بتاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أوكل بموجب هذه الوكالة، السيد/ة" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "، لينوب عني في القيام بجميع الإجراءات المتعلقة بالتركة، ومنها:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "(أمثلة: إعداد شهادة إثبات الورثة، حصر التركة، تمثيل الموكل أمام الإدارات...)" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الموكل" }
+        ]
+    }
+  ]
+}

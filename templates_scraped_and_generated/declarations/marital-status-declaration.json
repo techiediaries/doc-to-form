@@ -1,0 +1,82 @@
+
+{
+  "id": "marital-status-declaration",
+  "title": "تصريح بالحالة العائلية (للمتزوجين)",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المصرح" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف الوطنية" },
+    { "id": "f3", "type": "text", "label": "اسم الزوج/الزوجة" },
+    { "id": "f4", "type": "date", "label": "تاريخ عقد الزواج" },
+    { "id": "f5", "type": "text", "label": "مكان عقد الزواج" },
+    { "id": "f6", "type": "number", "label": "عدد الأطفال" },
+    { "id": "f7", "type": "textarea", "label": "أسماء الأطفال" },
+    { "id": "f8", "type": "text", "label": "المدينة" },
+    { "id": "f9", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تصريح بالشرف خاص بالحالة العائلية" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أنا الموقع(ة) أسفله، السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، الحامل(ة) لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "أصرح بشرفي أنني متزوج(ة) بالسيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، بموجب عقد زواج مبرم بتاريخ" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "في" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وأن عدد أطفالي هو" },
+          { "type": "field", "id": "f6" },
+          { "type": "text", "value": "، وأسماؤهم كالتالي:" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "field", "id": "f7" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وهذا تصريحي أدلي به وأنا في كامل قواي العقلية." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f8" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f9" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المصرح(ة)" }
+        ]
+    }
+  ]
+}

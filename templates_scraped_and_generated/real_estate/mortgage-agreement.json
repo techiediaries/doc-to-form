@@ -1,0 +1,98 @@
+
+{
+  "id": "mortgage-agreement",
+  "title": "عقد رهن رسمي",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم المدين الراهن" },
+    { "id": "f2", "type": "text", "label": "رقم بطاقة التعريف للمدين" },
+    { "id": "f3", "type": "text", "label": "اسم الدائن المرتهن" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للدائن" },
+    { "id": "f5", "type": "number", "label": "مبلغ الدين المضمون" },
+    { "id": "f6", "type": "text", "label": "مصدر الدين" },
+    { "id": "f7", "type": "date", "label": "تاريخ استحقاق الدين" },
+    { "id": "f8", "type": "textarea", "label": "وصف العقار المرهون" },
+    { "id": "f9", "type": "text", "label": "رقم الرسم العقاري" },
+    { "id": "f10", "type": "text", "label": "المدينة" },
+    { "id": "f11", "type": "date", "label": "تاريخ التحرير" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد رهن رسمي" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين الطرفين:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "المدين الراهن: السيد/ة" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f2" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الدائن المرتهن: السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، ب.ت.و رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "يقر المدين الراهن بأنه مدين للدائن المرتهن بمبلغ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "درهم، ناتج عن" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، ويستحق الأداء بتاريخ" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "لضمان سداد هذا الدين، يرهن المدين الراهن لفائدة الدائن المرتهن، رهناً رسمياً، العقار التالي:" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "، ذو الرسم العقاري عدد" },
+        { "type": "field", "id": "f9" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f10" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f11" }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع المدين الراهن" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الدائن المرتهن" }
+        ]
+    }
+  ]
+}

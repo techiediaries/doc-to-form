@@ -1,0 +1,124 @@
+
+{
+  "id": "loan-agreement",
+  "title": "عقد قرض",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "المدينة" },
+    { "id": "f2", "type": "date", "label": "تاريخ العقد" },
+    { "id": "f3", "type": "text", "label": "اسم الطرف الأول (المُقرِض)" },
+    { "id": "f4", "type": "text", "label": "رقم بطاقة التعريف للمُقرِض" },
+    { "id": "f5", "type": "text", "label": "عنوان المُقرِض" },
+    { "id": "f6", "type": "text", "label": "اسم الطرف الثاني (المُقترِض)" },
+    { "id": "f7", "type": "text", "label": "رقم بطاقة التعريف للمُقترِض" },
+    { "id": "f8", "type": "text", "label": "عنوان المُقترِض" },
+    { "id": "f9", "type": "number", "label": "مبلغ القرض بالأرقام" },
+    { "id": "f10", "type": "text", "label": "مبلغ القرض بالحروف" },
+    { "id": "f11", "type": "date", "label": "تاريخ استحقاق القرض" },
+    { "id": "f12", "type": "number", "label": "نسبة الفائدة (إن وجدت)" },
+    { "id": "f13", "type": "textarea", "label": "شروط إضافية" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "عقد قرض" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "تم تحرير هذا العقد في" },
+        { "type": "field", "id": "f1" },
+        { "type": "text", "value": "بتاريخ" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "بين كل من:" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الأول (المُقرِض): السيد/ة" },
+        { "type": "field", "id": "f3" },
+        { "type": "text", "value": "، الحامل لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f4" },
+        { "type": "text", "value": "، والساكن بـ" },
+        { "type": "field", "id": "f5" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "الطرف الثاني (المُقترِض): السيد/ة" },
+        { "type": "field", "id": "f6" },
+        { "type": "text", "value": "، الحامل لبطاقة التعريف الوطنية رقم" },
+        { "type": "field", "id": "f7" },
+        { "type": "text", "value": "، والساكن بـ" },
+        { "type": "field", "id": "f8" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "تم الاتفاق على ما يلي:" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "البند الأول: موضوع العقد" },
+        { "type": "text", "value": "أقرض الطرف الأول للطرف الثاني مبلغاً وقدره" },
+        { "type": "field", "id": "f9" },
+        { "type": "text", "value": "درهم (" },
+        { "type": "field", "id": "f10" },
+        { "type": "text", "value": ")، وقد استلم الطرف الثاني المبلغ كاملاً." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "البند الثاني: مدة السداد" },
+        { "type": "text", "value": "يلتزم الطرف الثاني بسداد المبلغ كاملاً في موعد أقصاه" },
+        { "type": "field", "id": "f11" },
+        { "type": "text", "value": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "البند الثالث: الفائدة" },
+        { "type": "text", "value": "تم الاتفاق على نسبة فائدة سنوية قدرها" },
+        { "type": "field", "id": "f12" },
+        { "type": "text", "value": "% (إن وجدت)." }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "البند الرابع: شروط إضافية" },
+          { "type": "field", "id": "f13" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "وهذا إقرار من الطرفين وهما بكامل أهليتهما القانونية." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع الطرف الأول" },
+          { "type": "text", "value": " " },
+          { "type": "text", "value": "توقيع الطرف الثاني" }
+        ]
+    }
+  ]
+}

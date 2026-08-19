@@ -1,0 +1,82 @@
+
+{
+  "id": "request-for-rectification-of-material-error",
+  "title": "طلب إصلاح خطأ مادي",
+  "fields": [
+    { "id": "f1", "type": "text", "label": "اسم مقدم الطلب" },
+    { "id": "f2", "type": "text", "label": "الجهة التي يقدم لها الطلب" },
+    { "id": "f3", "type": "text", "label": "مرجع الوثيقة الأصلية (حكم, قرار...)" },
+    { "id": "f4", "type": "date", "label": "تاريخ الوثيقة الأصلية" },
+    { "id": "f5", "type": "textarea", "label": "وصف الخطأ المادي" },
+    { "id": "f6", "type": "textarea", "label": "الصواب المطلوب" },
+    { "id": "f7", "type": "text", "label": "المدينة" },
+    { "id": "f8", "type": "date", "label": "تاريخ الطلب" }
+  ],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "طلب إصلاح خطأ مادي" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "من السيد/ة:" },
+        { "type": "field", "id": "f1" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "إلى السيد/ة:" },
+        { "type": "field", "id": "f2" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "الموضوع: طلب إصلاح خطأ مادي في" },
+          { "type": "field", "id": "f3" },
+          { "type": "text", "value": " الصادر بتاريخ" },
+          { "type": "field", "id": "f4" }
+        ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "حيث إن الوثيقة المذكورة أعلاه قد شابها خطأ مادي يتمثل في:" },
+        { "type": "field", "id": "f5" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "value": "والصواب هو:" },
+        { "type": "field", "id": "f6" }
+      ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "لذا، ألتمس منكم إصدار قرار بإصلاح الخطأ المادي المذكور." }
+        ]
+    },
+    { "type": "break" },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "حرر بـ" },
+          { "type": "field", "id": "f7" },
+          { "type": "text", "value": "بتاريخ" },
+          { "type": "field", "id": "f8" }
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "value": "توقيع مقدم الطلب" }
+        ]
+    }
+  ]
+}

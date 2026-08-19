@@ -1,0 +1,79 @@
+{
+  "id": "نموذج-تعيين-متصرفين",
+  "title": "نموذج تعيين متصرفين",
+  "fields": [],
+  "structure": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "CLINIQUE VILLE VERTE"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "شركة المساهمة"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "رقم التقييد التجاري :366157 الدار البيضاء"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "مقرها الاجتماعي:مصحة المدينة الخضراء الغابة الخضراء بوسكورة الدار البيضاء"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": ":بمقتضى اجتماع مجلس الادارة المؤرخ بتاريخ 31 دجنبر 2021 تم اتخاد القرارات التالية"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "من منصبه كمتصرف  Pierre-Antoine QUICHAUD استقالة السيد –"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "استقالة السيدة خديجة الشرايبي من منصبها كمتصرفة –"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "value": "تم الإيداع القانوني بالمحكمة التجارية بالدار البيضاء بتاريخ 25 ماي 2022 تحت رقم 825290"
+        }
+      ]
+    }
+  ]
+}
