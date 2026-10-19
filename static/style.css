@@ -1,184 +1,314 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* Mobile-first, direction-agnostic: logical properties only (inline = text direction,
+   block = vertical), so the same rules work for dir="rtl" and dir="ltr". */
 
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f5f5;
-  color: #222;
-  font-size: 16px;
-  line-height: 1.8;
+:root {
+  --bg: #f4f5f7;
+  --surface: #fff;
+  --text: #1f2328;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --heading: #1a1a2e;
+  --accent: #2563eb;
+  --accent-strong: #1d4ed8;
+  --accent-text: #1e40af;
+  --field-bg: #eff6ff;
+  --field-bg-focus: #dbeafe;
+  --radius: 10px;
+  --gutter: 1rem;
+  --font: "Noto Naskh Arabic", "Segoe UI", Tahoma, "Geeza Pro", system-ui, sans-serif;
+  color-scheme: light;
 }
 
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.9;
+  min-block-size: 100dvh;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Layout (phone first: edge-to-edge card) ---------- */
+
 .container {
-  max-width: 860px;
-  margin: 40px auto;
-  background: white;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  inline-size: 100%;
+  max-inline-size: 860px;
+  margin-inline: auto;
+  background: var(--surface);
+  padding: var(--gutter);
+  padding-block-end: calc(var(--gutter) + env(safe-area-inset-bottom));
+  min-block-size: 100dvh;
+}
+
+h1 {
+  font-size: clamp(1.3rem, 1.1rem + 1.2vw, 1.7rem);
+  line-height: 1.4;
+  color: var(--heading);
+  margin-block-end: 0.5rem;
+  text-wrap: balance;
 }
 
 h1.doc-title {
-  font-size: 1.4rem;
-  margin-bottom: 24px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 12px;
-  color: #1a1a2e;
+  font-size: clamp(1.15rem, 1rem + 1vw, 1.45rem);
+  margin-block-end: 1.25rem;
+  padding-block-end: 0.75rem;
+  border-block-end: 2px solid var(--line);
 }
 
-h1 { font-size: 1.6rem; margin-bottom: 8px; color: #1a1a2e; }
+h2.category-title {
+  font-size: 1.1rem;
+  color: var(--heading);
+  margin-block: 1.5rem 0.25rem;
+  padding-block-end: 0.25rem;
+  border-block-end: 1px solid var(--line);
+}
 
-.doc-body { margin-bottom: 32px; }
+/* ---------- Document body ---------- */
+
+.doc-body { margin-block-end: 2rem; }
 
 .doc-line {
-  margin: 8px 0;
-  text-align: right;
+  margin-block: 0.5rem;
+  text-align: start;
+  text-wrap: pretty;
 }
 
+/* Inline blanks inside the legal text. 16px minimum stops iOS zooming on focus. */
 .field {
   display: inline-block;
-  border: none;
-  border-bottom: 2px solid #2563eb;
-  background: #eff6ff;
-  padding: 2px 8px;
-  font-size: 15px;
-  font-family: inherit;
-  color: #1e40af;
-  min-width: 120px;
-  outline: none;
-  border-radius: 2px;
   vertical-align: baseline;
+  inline-size: auto;
+  min-inline-size: min(7.5rem, 100%);
+  max-inline-size: 100%;
+  margin-inline: 0.15em;
+  padding-block: 0.1em;
+  padding-inline: 0.5em;
+  font: inherit;
+  font-size: max(16px, 0.95rem);
+  color: var(--accent-text);
+  background: var(--field-bg);
+  border: 0;
+  border-block-end: 2px solid var(--accent);
+  border-radius: 3px 3px 0 0;
+  outline: none;
+  transition: background-color 0.15s, border-color 0.15s;
 }
 
-.field:focus {
-  background: #dbeafe;
-  border-color: #1d4ed8;
+.field:focus-visible {
+  background: var(--field-bg-focus);
+  border-color: var(--accent-strong);
+  box-shadow: 0 2px 0 var(--accent-strong);
 }
 
-.date-field { min-width: 160px; }
+.date-field { min-inline-size: min(10rem, 100%); }
+
+/* Tables scroll sideways on narrow screens instead of breaking the page. */
+.doc-table {
+  display: block;
+  inline-size: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin-block: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.doc-table td {
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.5rem;
+  vertical-align: top;
+  min-inline-size: 6rem;
+}
+
+.cell-field { inline-size: 100%; min-inline-size: 0; margin-inline: 0; }
+
+/* ---------- Actions: sticky bar on phones, thumb-reachable ---------- */
 
 .actions {
+  position: sticky;
+  inset-block-end: 0;
   display: flex;
-  gap: 12px;
-  justify-content: flex-end;
-  align-items: center;
-  border-top: 1px solid #eee;
-  padding-top: 20px;
-  margin-top: 24px;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-inline: calc(var(--gutter) * -1);
+  padding: 0.75rem var(--gutter);
+  padding-block-end: calc(0.75rem + env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(6px);
+  border-block-start: 1px solid var(--line);
 }
 
 button {
-  background: #2563eb;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
+  flex: 1 1 8rem;
+  min-block-size: 44px;
+  padding-inline: 1.25rem;
+  font: inherit;
+  font-size: 0.95rem;
+  color: #fff;
+  background: var(--accent);
+  border: 0;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
-  font-family: inherit;
+  touch-action: manipulation;
 }
 
-button:hover { background: #1d4ed8; }
+button:hover { background: var(--accent-strong); }
+button:focus-visible { outline: 3px solid var(--field-bg-focus); outline-offset: 2px; }
 
 .actions a {
-  color: #555;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.actions a:hover { color: #111; }
-
-/* Index page */
-.form-list {
-  list-style: none;
-  margin-top: 16px;
-}
-
-.form-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
+  flex-basis: 100%;
+  min-block-size: 44px;
+  display: inline-flex;
   align-items: center;
-}
-
-.form-list a {
-  color: #2563eb;
+  justify-content: center;
+  color: var(--muted);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 0.95rem;
 }
 
-.form-list a:hover { text-decoration: underline; }
+.actions a:hover { color: var(--text); }
 
-.field-count { color: #888; font-size: 13px; }
+/* ---------- Index / list pages ---------- */
+
+.form-list,
+.form-list-category {
+  list-style: none;
+  margin-block-start: 0.5rem;
+}
+
+.form-list li,
+.form-list-category li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+  border-block-end: 1px solid var(--line);
+}
+
+.form-list a,
+.form-list-category a {
+  flex: 1 1 auto;
+  display: block;
+  padding-block: 0.8rem;   /* full-row tap target */
+  color: var(--accent);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.form-list a:hover,
+.form-list-category a:hover { text-decoration: underline; }
+
+.field-count,
+.template-source {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* ---------- Tablet and up: floating card, inline actions ---------- */
+
+@media (min-width: 40rem) {
+  :root { --gutter: 2rem; }
+
+  .container {
+    min-block-size: auto;
+    margin-block: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 12px rgb(0 0 0 / 0.08);
+  }
+
+  .actions {
+    position: static;
+    justify-content: flex-end;
+    margin-inline: 0;
+    padding-inline: 0;
+    padding-block: 1.25rem 0;
+    margin-block-start: 1.5rem;
+    background: none;
+    backdrop-filter: none;
+  }
+
+  button { flex: 0 0 auto; }
+
+  .actions a { flex-basis: auto; margin-inline-start: auto; }
+
+  .doc-table { display: table; }
+}
+
+@media (min-width: 64rem) {
+  :root { --gutter: 2.5rem; }
+  .container { margin-block: 3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* ---------- Print: A4, standard paper in Morocco ---------- */
 
 @media print {
-  /* A4: 210×297mm — standard paper in Morocco */
   @page {
     size: A4 portrait;
-    margin: 2.5cm 2cm 2.5cm 2cm;
+    margin: 2.5cm 2cm;
   }
 
   body {
-    background: white;
+    background: #fff;
+    color: #000;
     font-size: 13pt;
     line-height: 2;
-    color: #000;
+    min-block-size: 0;
   }
 
   .container {
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
+    max-inline-size: none;
+    min-block-size: 0;
     margin: 0;
-    max-width: 100%;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   h1.doc-title {
     font-size: 14pt;
-    border-bottom: 1pt solid #000;
-    margin-bottom: 16pt;
-    padding-bottom: 8pt;
+    border-block-end: 1pt solid #000;
+    margin-block-end: 16pt;
+    padding-block-end: 8pt;
   }
 
   /* Hide all UI chrome */
-  .actions { display: none !important; }
-  button { display: none !important; }
+  .actions, button { display: none !important; }
 
-  /* Fields: look like underlines, not interactive inputs */
+  /* Fields print as plain underlines */
   .field {
-    border: none;
-    border-bottom: 1pt solid #000;
-    background: transparent;
     color: #000;
+    background: transparent;
     font-size: 13pt;
-    font-family: inherit;
+    border: 0;
+    border-block-end: 1pt solid #000;
     border-radius: 0;
-    padding: 0 4pt;
-    min-width: 80pt;
+    box-shadow: none;
+    padding-inline: 4pt;
+    min-inline-size: 80pt;
     -webkit-appearance: none;
     appearance: none;
   }
 
-  /* Hide date picker icon and spin buttons */
-  input[type="date"]::-webkit-calendar-picker-indicator { display: none; }
-  input[type="date"]::-webkit-inner-spin-button { display: none; }
-  input[type="date"] { -webkit-appearance: textfield; }
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="date"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button,
   input[type="number"]::-webkit-inner-spin-button { display: none; }
+  input[type="date"] { -webkit-appearance: textfield; }
 
-  /* Tables: keep borders visible for printed forms */
-  .doc-table { border-collapse: collapse; width: 100%; }
-  .doc-table td {
-    border: 0.5pt solid #555;
-    padding: 4pt 6pt;
-    min-height: 20pt;
-  }
-  .cell-field { border-bottom: none; min-width: 0; width: 100%; }
+  .doc-table { display: table; overflow: visible; }
+  .doc-table td { border: 0.5pt solid #555; padding: 4pt 6pt; }
+  .cell-field { border-block-end: none; min-inline-size: 0; }
 
-  /* Avoid page breaks inside a paragraph */
-  .doc-line { page-break-inside: avoid; }
-
-  /* Signature area: push to bottom of last page */
-  .doc-body { margin-bottom: 0; }
+  .doc-line { break-inside: avoid; }
+  .doc-body { margin-block-end: 0; }
 }

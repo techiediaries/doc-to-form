@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
             actions.innerHTML = `
                 <button type="button" id="export-btn">تصدير كنص</button>
                 <button type="button" id="print-btn">طباعة</button>
-                <a href="#" id="back-btn">← العودة للقائمة</a>
+                <a href="#" id="back-btn">→ العودة للقائمة</a>
             `;
             
             form.appendChild(docBody);

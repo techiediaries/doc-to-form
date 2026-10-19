@@ -150,7 +150,7 @@ def doc_to_html(doc_path, output_dir):
     <div class="actions">
       <button type="button" onclick="exportForm('{name}')">تصدير كنص</button>
       <button type="button" onclick="window.print()">طباعة</button>
-      <a href="../index.html">← العودة للقائمة</a>
+      <a href="../index.html">→ العودة للقائمة</a>
     </div>
   </form>
 </div>
@@ -191,6 +191,7 @@ def build_index(forms_dir, entries):
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>النماذج القانونية</title>
 <link rel="stylesheet" href="static/style.css">
 </head>
