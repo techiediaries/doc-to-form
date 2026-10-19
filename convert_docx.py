@@ -350,6 +350,7 @@ def main():
     if not docx_files:
         print("No .docx files found in converted/. Run LibreOffice conversion first:")
         print("  libreoffice --headless --convert-to docx downloaded/*.doc --outdir converted/")
+        print("  (Windows: .\\batch_convert.ps1 does both steps)")
         return
 
     entries = []

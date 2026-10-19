@@ -1,5 +1,14 @@
 ## Current
 
+### State check — 2026-10-19
+- Pipeline done: download → LibreOffice → convert_docx.py → 61 static forms in `forms/` (index.html works)
+- Dynamic app (`app.html` + `static/app.js`) exists but is broken: manifest has 255 entries,
+  **194 point to missing files** (paths say `templates/scraped_and_generated/...`, files live in
+  root `templates_scraped_and_generated/`) and **40 are duplicate ids**
+- Backlog below: 0 items done (architecture, validation, print, UX, NLP, deploy all open)
+- Windows: no Python installed — scripts can't run here yet; `batch_convert.ps1` added for LibreOffice step
+- Next step: fix manifest paths + dedupe, then shell renderer / validation
+
 ## Backlog
 
 ### ARCHITECTURE — fix before adding features (structural, expensive to change later)
