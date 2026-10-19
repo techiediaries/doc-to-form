@@ -1,0 +1,17 @@
+.git
+.gitignore
+.gitattributes
+.assetsignore
+wrangler.jsonc
+.wrangler
+node_modules
+*.py
+*.sh
+*.ps1
+*.md
+requirements.txt
+converted
+decisions
+responses
+scraped_analysis_content
+downloaded

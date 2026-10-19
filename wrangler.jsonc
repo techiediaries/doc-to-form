@@ -1,0 +1,7 @@
+{
+  // Static site served by Cloudflare Workers assets — no server code.
+  "name": "doc-to-form",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "." },
+  "routes": [{ "pattern": "namadij.ahmedbouchefra.com", "custom_domain": true }]
+}
