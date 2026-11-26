@@ -1,5 +1,29 @@
 ## Current
 
+### Minimalist UI — 2026-11-26
+Backup: tag `backup/2026-11-26-pre-minimal-ui` + branch `backup/pre-minimal-ui` (both on GitHub).
+Restore: `git checkout backup/pre-minimal-ui -- .` then `npx wrangler deploy`.
+- [x] Quiet visual style: white page, one accent colour, underline-only blanks, dark mode
+- [x] Index: search box (Arabic-normalised) + category chips, hide test samples
+      (samples removed from index.html only — generators still list converted/sample*.docx)
+- [x] Forms: small back link on top, one primary action (طباعة), export as secondary
+- [x] Forms: progress counter (filled / total) + jump to next empty blank
+- [x] Forms: auto-save draft per form (localStorage `dtf:v1:draft:<form>`), clear button
+- [x] Same markup in generators (convert.py, convert_docx.py, restore_static_index.py)
+- [x] Test in headed Edge: phone 375px + desktop, search, chips, progress, draft restore, print
+      27/27 checks pass (Playwright + Edge, headed); print checked by computed style, not on paper
+- [x] Deploy + push
+
+### Next — bilingual templates (AR + FR) — proposed 2026-11-26, not started
+- [ ] Template format v2: fields once (`label: {ar, fr}`, `perLang` for names/addresses), `body: {ar, fr}`
+- [ ] One shell page `form.html?id=…&lang=fr` with AR | FR switch; print AR, FR or both
+- [ ] Per-language dates + amounts in words (تفقيط / en lettres)
+- [ ] Node build script (no Python on this PC): manifest + search index
+- [ ] First batch, Moroccan wording, AR + FR: تصريح بالشرف, وكالة, استقالة, شهادة العمل,
+      شهادة الأجر, طلب إجازة, شهادة الإيواء, التزام, وصل استلام, عقد كراء سكني
+- [ ] "Not legally reviewed" badge until a lawyer checks each template
+- [ ] Migrate the 61 old forms (Egyptian sources: جنيه, wording) → Moroccan v2, then retire them + app.html
+
 ### State check — 2026-10-19
 - Pipeline done: download → LibreOffice → convert_docx.py → 61 static forms in `forms/` (index.html works)
 - Dynamic app (`app.html` + `static/app.js`) exists but is broken: manifest has 255 entries,

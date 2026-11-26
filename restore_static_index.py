@@ -52,15 +52,16 @@ def restore_static_index():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>النماذج القانونية</title>
 <link rel="stylesheet" href="static/style.css">
+<link rel="icon" href="static/icon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="container">
   <h1>النماذج القانونية</h1>
-  <p>{total_forms} نموذج متاح</p>
   <ul class="form-list">
 {''.join(links_html)}
   </ul>
 </div>
+<script src="static/index.js" defer></script>
 </body>
 </html>
 """

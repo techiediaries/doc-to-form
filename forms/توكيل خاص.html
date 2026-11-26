@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>توكيل خاص</title>
 <link rel="stylesheet" href="../static/style.css">
+<link rel="icon" href="../static/icon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="container">
+  <a class="back" href="../index.html">→ كل النماذج</a>
   <h1 class="doc-title">توكيل خاص</h1>
   <form id="doc-form" autocomplete="off">
     <div class="doc-body">
@@ -25,9 +27,8 @@
 <p class="doc-line" dir="rtl">توقيع المُقِر: <input type="text" id="f13" name="f13" class="field">                 توقيع الشاهد: <input type="text" id="f14" name="f14" class="field"></p>
     </div>
     <div class="actions">
-      <button type="button" onclick="exportForm('توكيل خاص')">تصدير كنص</button>
-      <button type="button" onclick="window.print()">طباعة</button>
-      <a href="../index.html">→ العودة للقائمة</a>
+      <button type="button" class="btn-ghost" onclick="exportForm('توكيل خاص')">تصدير كنص</button>
+      <button type="button" class="primary" onclick="window.print()">طباعة</button>
     </div>
   </form>
 </div>
@@ -47,5 +48,6 @@ function exportForm(name) {
   a.click();
 }
 </script>
+<script src="../static/form.js" defer></script>
 </body>
 </html>

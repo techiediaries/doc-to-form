@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>إقرار بالحالة العائلية</title>
 <link rel="stylesheet" href="../static/style.css">
+<link rel="icon" href="../static/icon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="container">
+  <a class="back" href="../index.html">→ كل النماذج</a>
   <h1 class="doc-title">إقرار بالحالة العائلية</h1>
   <form id="doc-form" autocomplete="off">
     <div class="doc-body">
@@ -24,9 +26,8 @@
 <p class="doc-line" dir="rtl">توقيع المُقِر: <input type="text" id="f11" name="f11" class="field">                 توقيع الشاهد: <input type="text" id="f12" name="f12" class="field"></p>
     </div>
     <div class="actions">
-      <button type="button" onclick="exportForm('إقرار بالحالة العائلية')">تصدير كنص</button>
-      <button type="button" onclick="window.print()">طباعة</button>
-      <a href="../index.html">→ العودة للقائمة</a>
+      <button type="button" class="btn-ghost" onclick="exportForm('إقرار بالحالة العائلية')">تصدير كنص</button>
+      <button type="button" class="primary" onclick="window.print()">طباعة</button>
     </div>
   </form>
 </div>
@@ -46,5 +47,6 @@ function exportForm(name) {
   a.click();
 }
 </script>
+<script src="../static/form.js" defer></script>
 </body>
 </html>

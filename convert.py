@@ -139,18 +139,19 @@ def doc_to_html(doc_path, output_dir):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <link rel="stylesheet" href="../static/style.css">
+<link rel="icon" href="../static/icon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="container">
+  <a class="back" href="../index.html">→ كل النماذج</a>
   <h1 class="doc-title">{title}</h1>
   <form id="doc-form" autocomplete="off">
     <div class="doc-body">
 {body_html}
     </div>
     <div class="actions">
-      <button type="button" onclick="exportForm('{name}')">تصدير كنص</button>
-      <button type="button" onclick="window.print()">طباعة</button>
-      <a href="../index.html">→ العودة للقائمة</a>
+      <button type="button" class="btn-ghost" onclick="exportForm('{name}')">تصدير كنص</button>
+      <button type="button" class="primary" onclick="window.print()">طباعة</button>
     </div>
   </form>
 </div>
@@ -171,6 +172,7 @@ function exportForm(name) {{
   a.click();
 }}
 </script>
+<script src="../static/form.js" defer></script>
 </body>
 </html>"""
 
@@ -194,15 +196,16 @@ def build_index(forms_dir, entries):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>النماذج القانونية</title>
 <link rel="stylesheet" href="static/style.css">
+<link rel="icon" href="static/icon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="container">
   <h1>النماذج القانونية</h1>
-  <p>{len(entries)} نموذج متاح</p>
   <ul class="form-list">
 {items}
   </ul>
 </div>
+<script src="static/index.js" defer></script>
 </body>
 </html>"""
     with open(os.path.join(forms_dir, '..', 'index.html'), 'w', encoding='utf-8') as f:
