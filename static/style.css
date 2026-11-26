@@ -124,6 +124,9 @@ h1.doc-title {
 
 .date-field { min-inline-size: min(10rem, 100%); }
 
+/* Plain-text twin of each blank, used only when printing (see form.js). */
+.pv { display: none; unicode-bidi: isolate; }
+
 .doc-table {
   display: block;
   inline-size: 100%;
@@ -328,11 +331,11 @@ h2.category-title {
 /* ---------- Print: A4, standard paper in Morocco ---------- */
 
 @media print {
-  @page { size: A4 portrait; margin: 2.5cm 2cm; }
+  @page { size: A4 portrait; margin: 2cm 1.8cm; }
 
   :root { --text: #000; --bg: #fff; }
 
-  body { background: #fff; color: #000; font-size: 13pt; line-height: 2; min-block-size: 0; }
+  body { background: #fff; color: #000; font-size: 12.5pt; line-height: 1.85; min-block-size: 0; }
 
   .container { max-inline-size: none; margin: 0; padding: 0; }
 
@@ -364,10 +367,27 @@ h2.category-title {
   input[type="number"]::-webkit-inner-spin-button { display: none; }
   input[type="date"] { -webkit-appearance: textfield; }
 
+  /* With JS: print the text twin — filled = plain text, empty = dotted line to write on. */
+  .has-print-twins .field { display: none !important; }
+  .has-print-twins .pv { display: inline; }
+  .has-print-twins .pv:empty {
+    display: inline-block;
+    inline-size: 8em;
+    block-size: 1em;
+    vertical-align: baseline;
+    border-block-end: 1pt dotted #000;
+    margin-inline: 0.2em;
+  }
+  .has-print-twins .date-field + .pv:empty { inline-size: 6em; }
+  .has-print-twins .cell-field + .pv:empty { display: block; inline-size: 100%; border: 0; }
+
   .doc-table { display: table; overflow: visible; }
   .doc-table td { border: 0.5pt solid #555; padding: 4pt 6pt; }
   .cell-field { border-block-end: none; min-inline-size: 0; }
 
   .doc-line { break-inside: avoid; }
+  .keep-together { break-inside: avoid; }
+  .doc-line { margin-block: 0.35em; }
+  .keep-together .doc-line:last-child { margin-block-start: 1.2em; }
   .doc-body { margin-block-end: 0; }
 }

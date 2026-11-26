@@ -10,6 +10,35 @@
 
   const isFilled = (el) => (el.type === 'checkbox' ? el.checked : el.value.trim() !== '');
 
+  // Closing lines (usually the signature labels + signature blanks) print on one page.
+  const lines = form.querySelectorAll('.doc-body > .doc-line');
+  if (lines.length > 3) {
+    const keep = document.createElement('div');
+    keep.className = 'keep-together';
+    lines[lines.length - 2].before(keep);
+    keep.append(lines[lines.length - 2], lines[lines.length - 1]);
+  }
+
+  // ---- Print copy: each blank gets a plain-text twin. Print shows the twin, not the
+  // input, so filled values flow as normal text (no box, no underline, no gaps) and
+  // only empty blanks keep a dotted line for handwriting.
+  document.documentElement.classList.add('has-print-twins');
+  const fmtDate = (v) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v); return m ? `${m[3]}/${m[2]}/${m[1]}` : v; };
+  const twins = new Map();
+  for (const el of fields) {
+    const t = document.createElement('span');
+    t.className = 'pv';
+    t.dir = 'auto'; // Latin names inside Arabic text keep their own direction
+    el.after(t);
+    twins.set(el, t);
+  }
+  function syncTwins() {
+    for (const [el, t] of twins) {
+      t.textContent = el.type === 'checkbox' ? (el.checked ? '☑' : '☐')
+        : el.type === 'date' ? fmtDate(el.value) : el.value.trim();
+    }
+  }
+
   // ---- Storage (may throw in private mode — never break the form) ----
   const store = {
     get() { try { return JSON.parse(localStorage.getItem(key) || 'null'); } catch { return null; } },
@@ -32,6 +61,7 @@
   }
 
   function render() {
+    syncTwins();
     let n = 0;
     for (const el of fields) {
       const f = isFilled(el);
