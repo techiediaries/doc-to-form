@@ -14,6 +14,17 @@ Restore: `git checkout backup/pre-minimal-ui -- .` then `npx wrangler deploy`.
       27/27 checks pass (Playwright + Edge, headed); print checked by computed style, not on paper
 - [x] Deploy + push
 
+### Edit mode + Arabic keyboard — 2026-11-26 (not deployed)
+- [x] New templates: تصريح بالشرف, استقالة (Arabic, Moroccan wording, old static format)
+- [x] Edit mode (`static/editor.js`, loaded by form.js): edit any text + bold/underline/italic/align/size/undo
+      before print; saved per form (`dtf:v1:edit:<form>`), restored by form.js; "الأصل" resets (values kept)
+- [x] Arabic phonetic keyboard (table from doua-reminder keyboard.html): works with the installed layout
+      (letters by e.key, number row → harakat and ء by key position); on-screen panel with hints read from
+      the real layout (navigator.keyboard); Ctrl+Space; hidden on touch-only devices
+- [x] Tests: tests/edge-editor.js 31/31, tests/edge-ui.js 29/29 (Edge, headed off)
+- [ ] Deploy + push
+- AI search/generation research: decisions/ai-template-generation.md (not planned yet)
+
 ### Next — bilingual templates (AR + FR) — proposed 2026-11-26, not started
 - [ ] Template format v2: fields once (`label: {ar, fr}`, `perLang` for names/addresses), `body: {ar, fr}`
 - [ ] One shell page `form.html?id=…&lang=fr` with AR | FR switch; print AR, FR or both

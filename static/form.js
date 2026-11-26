@@ -3,6 +3,28 @@
 (function () {
   const form = document.getElementById('doc-form');
   if (!form) return;
+  const scriptSrc = document.currentScript && document.currentScript.src;
+
+  // Text edited in edit mode (editor.js) replaces the original body — before the blanks are collected.
+  try {
+    const edited = localStorage.getItem('dtf:v1:edit:' + decodeURIComponent(location.pathname.split('/').pop()));
+    const docBody = form.querySelector('.doc-body');
+    if (edited && docBody) docBody.innerHTML = edited;
+  } catch {}
+
+  // Print footer: our own @page margin boxes replace the browser's header/footer (Chrome/Edge 131+),
+  // so the paper shows only the site's domain, never a full path or localhost.
+  const SITE = 'namadij.ahmedbouchefra.com';
+  const host = location.hostname;
+  const local = !host || location.protocol === 'file:' || host === 'localhost' || host === '::1' || host === '[::1]' ||
+    /^127\./.test(host) || /^(10|192\.168)\./.test(host) || host.endsWith('.local');
+  const domain = (local ? SITE : host).replace(/["\\]/g, '');
+  const pageStyle = document.createElement('style');
+  pageStyle.textContent = '@media print { @page {' +
+    ' @bottom-left { content: "' + domain + '"; font: 8.5pt "Segoe UI", system-ui, sans-serif; color: #666; }' +
+    ' @bottom-right { content: counter(page) " / " counter(pages); font: 8.5pt "Segoe UI", system-ui, sans-serif; color: #666; }' +
+    ' } }';
+  document.head.append(pageStyle);
 
   const fields = Array.from(form.querySelectorAll('.field'));
   const actions = form.querySelector('.actions');
@@ -130,4 +152,9 @@
   });
 
   render();
+
+  // Edit mode + Arabic keyboard live in their own file.
+  const ed = document.createElement('script');
+  ed.src = scriptSrc ? new URL('editor.js', scriptSrc).href : '../static/editor.js';
+  document.body.append(ed);
 })();

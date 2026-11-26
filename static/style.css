@@ -314,6 +314,117 @@ h2.category-title {
   margin-block: 1.75rem 0.25rem;
 }
 
+/* ---------- Edit mode + Arabic keyboard (editor.js) ---------- */
+
+.btn-ghost[aria-pressed="true"] { color: var(--accent); }
+
+.edit-bar {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 5;
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem;
+  margin-block-end: 1rem;
+  padding: 0.3rem;
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--faint);
+  border-radius: var(--radius);
+}
+.editing .edit-bar { display: flex; }
+.edit-bar button {
+  flex: 0 0 auto;
+  min-block-size: 36px;
+  min-inline-size: 36px;
+  padding-inline: 0.5rem;
+  color: var(--text);
+  background: transparent;
+  border-radius: 8px;
+}
+.edit-bar button:hover { background: var(--faint); filter: none; }
+.edit-bar .sep { inline-size: 1px; block-size: 22px; background: var(--faint); margin-inline: 0.2rem; }
+.edit-bar .done { margin-inline-start: auto; padding-inline: 1rem; color: var(--on-accent); background: var(--accent); }
+.edit-bar .done:hover { background: var(--accent); filter: brightness(1.08); }
+
+.editing .doc-body {
+  outline: 1.5px dashed var(--accent);
+  outline-offset: 0.6rem;
+  border-radius: 2px;
+  caret-color: var(--accent);
+}
+.editing .doc-body:focus-within { outline-style: solid; }
+
+/* The action bar stays visible above the keyboard panel. */
+.kb-on .actions { inset-block-end: var(--kb-h, 0px); }
+.kb-on body { padding-block-end: var(--kb-h, 0px); }
+
+.kb {
+  position: fixed;
+  inset-inline: 0;
+  inset-block-end: 0;
+  z-index: 20;
+  display: none;
+  padding: 0.35rem 0.5rem calc(0.4rem + env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--bg) 96%, transparent);
+  backdrop-filter: blur(8px);
+  border-block-start: 1px solid var(--faint);
+  box-shadow: 0 -4px 16px rgb(0 0 0 / 0.06);
+}
+.kb-on .kb { display: block; }
+.kb-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-inline-size: 52rem;
+  margin-inline: auto;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.kb-head span { flex: 1; }
+.kb-head kbd { font: inherit; padding: 0 0.3em; border: 1px solid var(--faint); border-radius: 4px; }
+.kb-head button {
+  flex: 0 0 auto;
+  min-block-size: 30px;
+  min-inline-size: 30px;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+}
+.kb-head button:hover { color: var(--text); filter: none; }
+.kb.min .kb-keys { display: none; }
+.kb-keys { max-inline-size: 52rem; margin-inline: auto; }
+.kb-row { display: flex; gap: 3px; margin-block-start: 3px; }
+.kb-key {
+  flex: 1 1 0;
+  min-inline-size: 0;
+  min-block-size: 40px;
+  padding: 0.1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.15;
+  color: var(--text);
+  background: var(--faint);
+  border-radius: 6px;
+}
+.kb-key:hover { filter: none; background: var(--accent-soft); }
+.kb-key:active { background: var(--accent); color: var(--on-accent); }
+.kb-key span { font-size: 1.15rem; }
+.kb-key small { font-size: 0.62rem; color: var(--muted); direction: ltr; font-family: "Segoe UI", system-ui, sans-serif; }
+.kb-key small:empty { display: none; }
+.kb-key.wide { flex-grow: 2; }
+.kb-harakat .kb-key span { font-size: 1.3rem; }
+
+/* Phones and tablets have their own Arabic keyboard; the panel is for physical keyboards. */
+@media (hover: none) and (pointer: coarse) {
+  .kb-toggle, .kb-on .kb { display: none; }
+  .kb-on .actions { inset-block-end: 0; }
+  .kb-on body { padding-block-end: 0; }
+}
+
 /* ---------- Wider screens: more air, same structure ---------- */
 
 @media (min-width: 40rem) {
@@ -341,7 +452,9 @@ h2.category-title {
 
   h1.doc-title { font-size: 14pt; margin-block-end: 16pt; }
 
-  .actions, .back, .search, button { display: none !important; }
+  .actions, .back, .search, button, .edit-bar, .kb { display: none !important; }
+  .editing .doc-body { outline: none; }
+  .kb-on body { padding-block-end: 0; }
 
   .field,
   .field.filled,
