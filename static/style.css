@@ -340,13 +340,18 @@ h2.category-title {
 
   .actions, .back, .search, button { display: none !important; }
 
-  .field {
+  .field,
+  .field.filled,
+  .field:focus-visible {
     color: #000;
     background: transparent;
     font-size: 13pt;
     border: 0;
     border-block-end: 1pt solid #000;
     border-radius: 0;
+    box-shadow: none;
+    animation: none;
+    transition: none;
     padding-inline: 4pt;
     min-inline-size: 80pt;
     -webkit-appearance: none;

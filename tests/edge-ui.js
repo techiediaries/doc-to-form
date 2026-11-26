@@ -95,6 +95,9 @@ const check = (name, ok, extra = '') => { results.push(`${ok ? 'PASS' : 'FAIL'} 
 
     // Print layout: UI chrome hidden.
     await page.emulateMedia({ media: 'print' });
+    await page.evaluate(() => document.querySelector('#doc-form .field').classList.add('filled'));
+    const ink = await page.evaluate(() => getComputedStyle(document.querySelector('#doc-form .field')).borderBottomColor);
+    check(`${vp.name}: filled blanks print with black ink`, ink === 'rgb(0, 0, 0)', ink);
     const chromeHidden = await page.evaluate(() =>
       ['.actions', '.back'].every((s) => getComputedStyle(document.querySelector(s)).display === 'none'));
     check(`${vp.name}: print hides action bar + back link`, chromeHidden);
