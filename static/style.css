@@ -83,6 +83,30 @@ h1.doc-title {
 }
 .back:hover { color: var(--text); }
 
+/* Link to the same form in the other language; sits on the far side of the back link. */
+.lang-switch {
+  float: inline-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding-inline: 0.75rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid var(--faint);
+  border-radius: 999px;
+  min-block-size: 32px;
+  margin-block-start: 0.4rem;
+  &:hover { background: var(--accent-soft); }
+  &::before { content: "⇄"; color: var(--muted); }
+}
+
+/* French (and any Latin-script) pages: Latin font first, a bit tighter line height. */
+:root:lang(fr) {
+  --font: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  & body { line-height: 1.8; }
+}
+
 /* ---------- Document ---------- */
 
 .doc-body { margin-block-end: 2rem; }
@@ -452,7 +476,7 @@ h2.category-title {
 
   h1.doc-title { font-size: 14pt; margin-block-end: 16pt; }
 
-  .actions, .back, .search, button, .edit-bar, .kb { display: none !important; }
+  .actions, .back, .lang-switch, .search, button, .edit-bar, .kb { display: none !important; }
   .editing .doc-body { outline: none; }
   .kb-on body { padding-block-end: 0; }
 

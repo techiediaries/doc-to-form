@@ -11,6 +11,25 @@
   const actions = form && form.querySelector('.actions');
   if (!body || !actions) return;
 
+  const fr = document.documentElement.lang === 'fr';
+  const T = fr ? {
+    edit: 'Modifier le texte', editTitle: 'Modifier et mettre en forme le texte avant impression',
+    bar: 'Mise en forme', b: ['<b>G</b>', 'Gras'], u: ['<u>S</u>', 'Souligné'], i: ['<i>I</i>', 'Italique'],
+    right: 'Aligner à droite', center: 'Centrer', left: 'Aligner à gauche', justify: 'Justifier',
+    smaller: ['A−', 'Réduire le texte'], bigger: ['A+', 'Agrandir le texte'], undo: 'Annuler', redo: 'Rétablir',
+    orig: ['Original', 'Revenir au texte d’origine (les valeurs saisies restent)'], done: ['OK', 'Terminer la modification'],
+    confirm: 'Revenir au texte d’origine ? Les modifications du texte et de la mise en forme seront supprimées ; les valeurs saisies restent.',
+    applied: 'Vos modifications du texte sont appliquées',
+  } : {
+    edit: 'تحرير النص', editTitle: 'تحرير نص الوثيقة وتنسيقه قبل الطباعة',
+    bar: 'تنسيق النص', b: ['<b>غ</b>', 'غامق'], u: ['<u>س</u>', 'تسطير'], i: ['<i>م</i>', 'مائل'],
+    right: 'محاذاة لليمين', center: 'توسيط', left: 'محاذاة لليسار', justify: 'ضبط',
+    smaller: ['أ−', 'تصغير الخط'], bigger: ['أ+', 'تكبير الخط'], undo: 'تراجع', redo: 'إعادة',
+    orig: ['الأصل', 'استرجاع النص الأصلي (تبقى القيم المكتوبة)'], done: ['تم', 'إنهاء التحرير'],
+    confirm: 'استرجاع النص الأصلي؟ ستُحذف تعديلات النص والتنسيق، وتبقى القيم المكتوبة في الفراغات.',
+    applied: 'تم تطبيق تعديلاتك على النص',
+  };
+
   const name = decodeURIComponent(location.pathname.split('/').pop());
   const EDIT_KEY = 'dtf:v1:edit:' + name;
   const KB_KEY = 'dtf:v1:kb';
@@ -30,33 +49,33 @@
   };
 
   // ================= 1. Edit mode =================
-  const editBtn = btn('تحرير النص', 'تحرير نص الوثيقة وتنسيقه قبل الطباعة', 'btn-ghost edit-toggle');
+  const editBtn = btn(T.edit, T.editTitle, 'btn-ghost edit-toggle');
   const kbBtn = btn('⌨ عربي', 'لوحة المفاتيح العربية (Ctrl+Space)', 'btn-ghost kb-toggle');
   const exportBtn = actions.querySelector('.btn-ghost:not(.next)');
-  actions.insertBefore(kbBtn, exportBtn || null);
-  actions.insertBefore(editBtn, kbBtn);
+  actions.insertBefore(editBtn, exportBtn || null);
+  if (!fr) actions.insertBefore(kbBtn, exportBtn || null); // French pages need no Arabic keyboard
 
   const bar = document.createElement('div');
   bar.className = 'edit-bar';
   bar.setAttribute('role', 'toolbar');
-  bar.setAttribute('aria-label', 'تنسيق النص');
+  bar.setAttribute('aria-label', T.bar);
   const tools = [
-    ['<b>غ</b>', 'غامق', () => cmd('bold')],
-    ['<u>س</u>', 'تسطير', () => cmd('underline')],
-    ['<i>م</i>', 'مائل', () => cmd('italic')],
+    [...T.b, () => cmd('bold')],
+    [...T.u, () => cmd('underline')],
+    [...T.i, () => cmd('italic')],
     0,
-    ['⇥', 'محاذاة لليمين', () => cmd('justifyRight')],
-    ['≡', 'توسيط', () => cmd('justifyCenter')],
-    ['⇤', 'محاذاة لليسار', () => cmd('justifyLeft')],
-    ['☰', 'ضبط', () => cmd('justifyFull')],
+    ['⇥', T.right, () => cmd('justifyRight')],
+    ['≡', T.center, () => cmd('justifyCenter')],
+    ['⇤', T.left, () => cmd('justifyLeft')],
+    ['☰', T.justify, () => cmd('justifyFull')],
     0,
-    ['أ−', 'تصغير الخط', () => size(-1)],
-    ['أ+', 'تكبير الخط', () => size(1)],
+    [...T.smaller, () => size(-1)],
+    [...T.bigger, () => size(1)],
     0,
-    ['↶', 'تراجع', () => cmd('undo')],
-    ['↷', 'إعادة', () => cmd('redo')],
+    ['↶', T.undo, () => cmd('undo')],
+    ['↷', T.redo, () => cmd('redo')],
     0,
-    ['الأصل', 'استرجاع النص الأصلي (تبقى القيم المكتوبة)', resetOriginal],
+    [...T.orig, resetOriginal],
   ];
   for (const t of tools) {
     if (!t) { const s = document.createElement('span'); s.className = 'sep'; bar.append(s); continue; }
@@ -65,7 +84,7 @@
     b.addEventListener('click', () => { body.focus(); t[2](); saveSoon(); });
     bar.append(b);
   }
-  const done = btn('تم', 'إنهاء التحرير', 'done');
+  const done = btn(T.done[0], T.done[1], 'done');
   done.addEventListener('click', () => setEditing(false));
   bar.append(done);
   body.before(bar);
@@ -93,7 +112,7 @@
 
   function resetOriginal() {
     if (!ls.get(EDIT_KEY)) return;
-    if (!confirm('استرجاع النص الأصلي؟ ستُحذف تعديلات النص والتنسيق، وتبقى القيم المكتوبة في الفراغات.')) return;
+    if (!confirm(T.confirm)) return;
     clearTimeout(saveTimer);
     ls.del(EDIT_KEY);
     location.reload();
@@ -120,7 +139,7 @@
   editBtn.setAttribute('aria-pressed', 'false');
   if (ls.get(EDIT_KEY)) {
     const n = actions.querySelector('.draft-note');
-    if (n && !n.textContent) n.textContent = 'تم تطبيق تعديلاتك على النص';
+    if (n && !n.textContent) n.textContent = T.applied;
   }
 
   // ================= 2. Arabic phonetic keyboard =================
@@ -135,7 +154,7 @@
   const HARAKAT = ['َ', 'ً', 'ُ', 'ٌ', 'ِ', 'ٍ', 'ْ', 'ّ', 'ٰ', 'ٓ']; // number row 1…0, when it does not type digits
   const DIGRAPH = { 'ت': 'ث', 'د': 'ذ', 'س': 'ش', 'ش': 'ش', 'ك': 'خ', 'غ': 'غ' };
 
-  let kbOn = ls.get(KB_KEY) === '1';
+  let kbOn = !fr && ls.get(KB_KEY) === '1';
   const touchOnly = matchMedia('(hover: none) and (pointer: coarse)').matches; // phone keyboards are already Arabic
   let last = null; // where our last letter ended — a following "h" may turn it into a pair
 
@@ -164,7 +183,7 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && !e.altKey && e.code === 'Space') { e.preventDefault(); setKb(!kbOn); return; }
+    if (!fr && e.ctrlKey && !e.altKey && e.code === 'Space') { e.preventDefault(); setKb(!kbOn); return; }
     if (!kbOn || touchOnly || !isTarget(e.target)) return;
     if (e.ctrlKey || e.altKey || e.metaKey || e.isComposing) return; // AltGr = Ctrl+Alt: leave it alone
     const el = e.target;
@@ -270,7 +289,7 @@
   function setKb(on) {
     kbOn = on;
     last = null;
-    ls.set(KB_KEY, on ? '1' : '0');
+    if (!fr) ls.set(KB_KEY, on ? '1' : '0'); // a French page must not switch off the Arabic preference
     kbBtn.setAttribute('aria-pressed', String(on));
     document.documentElement.classList.toggle('kb-on', on);
     fit();

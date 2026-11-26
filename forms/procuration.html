@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Procuration</title>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="icon" href="../static/icon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="ar" href="توكيل خاص.html">
+</head>
+<body>
+<div class="container">
+  <a class="back" href="../index.html">← Tous les modèles</a>
+  <a class="lang-switch" href="توكيل خاص.html" hreflang="ar" lang="ar" dir="rtl">النسخة العربية</a>
+  <h1 class="doc-title">Procuration</h1>
+  <form id="doc-form" autocomplete="off">
+    <div class="doc-body">
+<p class="doc-line">Procuration spéciale</p>
+<p class="doc-line">Je soussigné(e), M./Mme : <input type="text" id="f1" name="f1" class="field">, titulaire de la CIN n° : <input type="text" id="f2" name="f2" class="field"></p>
+<p class="doc-line">demeurant à : <input type="text" id="f3" name="f3" class="field"></p>
+<p class="doc-line">donne par la présente procuration à M./Mme : <input type="text" id="f4" name="f4" class="field">, titulaire de la CIN n° : <input type="text" id="f5" name="f5" class="field"></p>
+<p class="doc-line">demeurant à : <input type="text" id="f6" name="f6" class="field"></p>
+<p class="doc-line">pour, en mon nom et pour mon compte :</p>
+<p class="doc-line"><input type="text" id="f7" name="f7" class="field"></p>
+<p class="doc-line"><input type="text" id="f8" name="f8" class="field"></p>
+<p class="doc-line">À cet effet, le mandataire pourra signer tous actes, registres et pièces, faire toutes déclarations et, en général, accomplir toutes les démarches nécessaires à l’exécution du présent mandat, sans pouvoir en dépasser les limites.</p>
+<p class="doc-line">La présente procuration est valable jusqu’au : <input type="date" id="f9" name="f9" class="field"></p>
+<p class="doc-line">Fait à : <input type="text" id="f10" name="f10" class="field">, le : <input type="date" id="f11" name="f11" class="field"></p>
+<p class="doc-line">Signature légalisée du mandant : <input type="text" id="f12" name="f12" class="field">   Le mandataire (« Bon pour acceptation ») : <input type="text" id="f13" name="f13" class="field"></p>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn-ghost" onclick="exportForm('Procuration')">Exporter en texte</button>
+      <button type="button" class="primary" onclick="window.print()">Imprimer</button>
+    </div>
+  </form>
+</div>
+<script>
+const fields = [{"id": "f1", "type": "text", "label": "Mandant"}, {"id": "f2", "type": "text", "label": "CIN du mandant"}, {"id": "f3", "type": "text", "label": "Adresse du mandant"}, {"id": "f4", "type": "text", "label": "Mandataire"}, {"id": "f5", "type": "text", "label": "CIN du mandataire"}, {"id": "f6", "type": "text", "label": "Adresse du mandataire"}, {"id": "f7", "type": "text", "label": "Objet (1)"}, {"id": "f8", "type": "text", "label": "Objet (2)"}, {"id": "f9", "type": "date", "label": "Valable jusqu’au"}, {"id": "f10", "type": "text", "label": "Fait à"}, {"id": "f11", "type": "date", "label": "Date"}, {"id": "f12", "type": "text", "label": "Signature du mandant"}, {"id": "f13", "type": "text", "label": "Signature du mandataire"}];
+function exportForm(name) {
+  let out = '';
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    const val = el ? (el.type === 'checkbox' ? (el.checked ? '✓' : '☐') : el.value) : '';
+    out += (f.label || f.id) + ': ' + val + '\n';
+  });
+  const blob = new Blob([out], {type: 'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name + '-filled.txt';
+  a.click();
+}
+</script>
+<script src="../static/form.js" defer></script>
+</body>
+</html>

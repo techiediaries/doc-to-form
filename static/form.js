@@ -5,6 +5,19 @@
   if (!form) return;
   const scriptSrc = document.currentScript && document.currentScript.src;
 
+  // UI text follows the page language (<html lang="ar|fr">); the layout follows dir via logical CSS.
+  const T = {
+    ar: {
+      next: 'الفراغ التالي', all: 'اكتملت كل الفراغات ✓', of: (n, t) => n + ' من ' + t, clear: 'مسح الكل',
+      restored: 'تمت استعادة مسودتك المحفوظة على هذا الجهاز', autosave: 'تُحفظ المسودة تلقائيًا على هذا الجهاز',
+    },
+    fr: {
+      next: 'Blanc suivant', all: 'Tous les blancs sont remplis ✓', of: (n, t) => n + ' sur ' + t, clear: 'Tout effacer',
+      restored: 'Votre brouillon enregistré sur cet appareil a été restauré',
+      autosave: 'Le brouillon est enregistré automatiquement sur cet appareil',
+    },
+  }[document.documentElement.lang === 'fr' ? 'fr' : 'ar'];
+
   // Text edited in edit mode (editor.js) replaces the original body — before the blanks are collected.
   try {
     const edited = localStorage.getItem('dtf:v1:edit:' + decodeURIComponent(location.pathname.split('/').pop()));
@@ -74,7 +87,7 @@
   progress.setAttribute('aria-live', 'polite');
   progress.innerHTML =
     '<span class="count"></span><span class="bar"><i></i></span>' +
-    '<button type="button" class="btn-ghost next">الفراغ التالي</button>';
+    '<button type="button" class="btn-ghost next">' + T.next + '</button>';
   const note = document.createElement('div');
   note.className = 'draft-note';
   if (actions && fields.length) {
@@ -91,7 +104,7 @@
       if (f) n++;
     }
     const total = fields.length;
-    progress.querySelector('.count').textContent = n === total ? 'اكتملت كل الفراغات ✓' : n + ' من ' + total;
+    progress.querySelector('.count').textContent = n === total ? T.all : T.of(n, total);
     progress.querySelector('.bar i').style.inlineSize = (total ? (n / total) * 100 : 0) + '%';
     progress.querySelector('.next').hidden = n === total;
     progress.classList.toggle('done', n === total);
@@ -120,7 +133,7 @@
     if (withClear) {
       const b = document.createElement('button');
       b.type = 'button';
-      b.textContent = 'مسح الكل';
+      b.textContent = T.clear;
       b.addEventListener('click', () => {
         form.reset();
         store.clear();
@@ -138,7 +151,7 @@
       if (el.type === 'checkbox') el.checked = !!saved.data[el.id];
       else el.value = saved.data[el.id];
     }
-    showNote('تمت استعادة مسودتك المحفوظة على هذا الجهاز', true);
+    showNote(T.restored, true);
   }
 
   let timer;
@@ -147,7 +160,7 @@
     clearTimeout(timer);
     timer = setTimeout(() => {
       save();
-      if (!note.textContent) showNote('تُحفظ المسودة تلقائيًا على هذا الجهاز', true);
+      if (!note.textContent) showNote(T.autosave, true);
     }, 400);
   });
 
