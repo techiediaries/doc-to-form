@@ -14,6 +14,19 @@ Restore: `git checkout backup/pre-minimal-ui -- .` then `npx wrangler deploy`.
       27/27 checks pass (Playwright + Edge, headed); print checked by computed style, not on paper
 - [x] Deploy + push
 
+### Wizard mode (step by step) — 2026-11-27 (not deployed)
+Backup: tag `backup/2026-11-27-pre-wizard` + branch `backup/pre-wizard` (both on GitHub).
+- [x] `static/wizard.js` (loaded by form.js after editor.js): one line with its blanks per step, a short
+      blank-less line just before it shown as context; labels as placeholders where the form has them
+- [x] Prev / Next (says "skip — fill by hand" when empty), Enter / Shift+Enter, quick taps add up,
+      View Transitions slide in the reading direction (off with reduced motion)
+- [x] Review step: whole document, blanks left counted, touch a value → its step, Print
+- [x] Print = full A4: every wizard hiding rule is inside `@media screen`, so print never sees them
+- [x] On by default on phones (no keyboard popping up on load), off on desktop; choice kept (`dtf:v1:wizard`);
+      wizard and edit mode exclude each other; French UI on French pages
+- [x] tests/edge-wizard.js 36/36; edge-ui 29/29, edge-editor 31/31, edge-lang 16/16 (phone checks opt out of wizard)
+- [ ] Deploy + push
+
 ### LTR + first French form — 2026-11-26 (not deployed)
 Backup: tag `backup/2026-11-26-pre-ltr` + branch `backup/pre-ltr` (both on GitHub).
 - [x] form.js + editor.js UI text follows `<html lang>` (ar | fr); layout already logical CSS (flips with dir)

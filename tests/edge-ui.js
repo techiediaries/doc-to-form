@@ -33,6 +33,7 @@ const check = (name, ok, extra = '') => { results.push(`${ok ? 'PASS' : 'FAIL'} 
 
   for (const vp of [{ name: 'phone', width: 375, height: 760, mobile: true }, { name: 'desktop', width: 1280, height: 860, mobile: false }]) {
     const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, isMobile: vp.mobile, hasTouch: vp.mobile, deviceScaleFactor: 1 });
+  await ctx.addInitScript(() => localStorage.setItem('dtf:v1:wizard', '0')); // these checks are for the full view
     const page = await ctx.newPage();
     page.on('response', (r) => r.status() >= 400 && errors.push(vp.name + ' ' + r.status() + ' ' + r.url()));
     page.on('pageerror', (e) => errors.push(`${vp.name}: ${e.message}`));

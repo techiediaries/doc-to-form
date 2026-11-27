@@ -449,6 +449,68 @@ h2.category-title {
   .kb-on body { padding-block-end: 0; }
 }
 
+/* ---------- Wizard mode (wizard.js): one line at a time ----------
+   Every hiding rule is inside @media screen, so print never sees them and always gets the full A4 page. */
+
+.wz-head, .wz-nav { display: none; }
+
+@media screen {
+  .wizard {
+    & .wz-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 1rem;
+      margin-block-end: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+      & .bar { flex: 1 1 100%; order: 3; block-size: 4px; border-radius: 2px; background: var(--faint); overflow: hidden; }
+      & .bar i { display: block; block-size: 100%; inline-size: 0; background: var(--accent); transition: inline-size 0.25s; }
+      & .wz-exit { margin-inline-start: auto; min-block-size: 36px; font-size: 0.9rem; }
+      &[data-hint]:not([data-hint=""])::after { content: attr(data-hint); flex: 1 1 100%; order: 4; font-size: 0.85rem; }
+    }
+
+    /* Only the current line (and its short context line) is on screen. */
+    & .doc-body {
+      view-transition-name: wz-step;
+      & .wz-context { color: var(--muted); font-size: 0.95rem; margin-block-end: 0.25rem; }
+      & .wz-current { font-size: 1.25rem; line-height: 2.1; }
+      & .wz-current .field { font-size: max(18px, 1.15rem); min-inline-size: min(12rem, 100%); }
+    }
+
+    /* The action bar shows only Previous / Next (and Print on the review step). */
+    & .actions > :not(.wz-nav) { display: none; }
+    & .wz-nav { display: flex; flex: 1 1 100%; gap: 0.75rem; }
+    & .wz-nav .wz-next { flex: 1 1 auto; }
+    & .wz-nav .wz-next.wz-skip { color: var(--accent); background: var(--accent-soft); }
+    & .wz-nav .wz-prev:disabled { visibility: hidden; }
+    & .wz-print { display: none; }
+  }
+
+  /* Review: the whole document again; values can be touched to go back to their step. */
+  .wizard.wz-review {
+    & .doc-body .field { cursor: pointer; }
+    & .wz-next { display: none; }
+    & .wz-print { display: block; flex: 1 1 auto; }
+  }
+
+  /* Phones: Previous / Next pinned at the thumb, even when the step is short. */
+  @media (max-width: 40rem) {
+    .wizard .actions { position: fixed; inset-inline: 0; margin-inline: 0; z-index: 5; }
+    .wizard body { padding-block-end: 6rem; }
+  }
+
+  .wizard:not(.wz-review) :is(.doc-body, .keep-together) > :not(.keep-together, .wz-current, .wz-context) { display: none; }
+
+  .wz-toggle[aria-pressed="true"] { color: var(--accent); }
+}
+
+/* Slide toward the reading direction; --wz-from is ±1, set by wizard.js (flipped for RTL). */
+::view-transition-old(wz-step) { animation: wz-out 0.18s ease-in both; }
+::view-transition-new(wz-step) { animation: wz-in 0.24s ease-out both; }
+@keyframes wz-out { to { opacity: 0; translate: calc(var(--wz-from, 1) * -2rem) 0; } }
+@keyframes wz-in { from { opacity: 0; translate: calc(var(--wz-from, 1) * 2rem) 0; } }
+
 /* ---------- Wider screens: more air, same structure ---------- */
 
 @media (min-width: 40rem) {

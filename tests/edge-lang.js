@@ -44,7 +44,7 @@ const R = []; const ok = (n, c, x = '') => R.push(`${c ? 'PASS' : 'FAIL'}  ${n}$
   await p.click('.chip[data-cat="وكالات"]');
   ok('FR form in وكالات chip', (await p.locator('.form-list li:visible').allTextContents()).includes('Procuration (FR)'));
 
-  const m = await b.newPage({ viewport: { width: 375, height: 800 } });
+  const m = await b.newPage({ viewport: { width: 375, height: 800 } }); await m.addInitScript(() => localStorage.setItem('dtf:v1:wizard', '0'));
   await m.goto(BASE + '/forms/procuration.html'); await m.waitForSelector('.edit-toggle');
   ok('phone: no sideways scroll', await m.evaluate(() => document.documentElement.scrollWidth - innerWidth) <= 0);
   await m.screenshot({ path: 'tests/shots/fr-phone.png' });

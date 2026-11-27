@@ -166,8 +166,11 @@
 
   render();
 
-  // Edit mode + Arabic keyboard live in their own file.
-  const ed = document.createElement('script');
-  ed.src = scriptSrc ? new URL('editor.js', scriptSrc).href : '../static/editor.js';
-  document.body.append(ed);
+  // Edit mode + Arabic keyboard, then wizard mode, live in their own files (loaded in this order).
+  for (const file of ['editor.js', 'wizard.js']) {
+    const s = document.createElement('script');
+    s.src = scriptSrc ? new URL(file, scriptSrc).href : '../static/' + file;
+    s.async = false;
+    document.body.append(s);
+  }
 })();

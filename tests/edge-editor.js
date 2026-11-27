@@ -35,7 +35,7 @@ const R = []; const ok = (n, c, x='') => R.push(`${c ? 'PASS' : 'FAIL'}  ${n}${x
   ok('Ctrl+Space turns it off', !(await p.locator('.kb').isVisible()));
   await p.fill('#f1', 'Ahmed');
   ok('typing Latin when off', (await p.inputValue('#f1')) === 'Ahmed');
-  const actionsVisible = await p.locator('.actions .primary').isVisible();
+  const actionsVisible = await p.locator('.actions > .primary').isVisible();
   await p.keyboard.press('Control+Space');
   const [ab, kb] = await Promise.all([p.locator('.actions').boundingBox(), p.locator('.kb').boundingBox()]);
   ok('action bar above panel', ab.y + ab.height <= kb.y + 1, `actions bottom ${Math.round(ab.y+ab.height)} panel top ${Math.round(kb.y)}`);
@@ -76,7 +76,7 @@ const R = []; const ok = (n, c, x='') => R.push(`${c ? 'PASS' : 'FAIL'}  ${n}${x
   ok('values kept after reset', (await p.inputValue('#f1')) === 'Ahmed');
 
   // phone
-  const pctx = await b.newContext({ viewport: { width: 375, height: 800 }, isMobile: true, hasTouch: true }); const m = await pctx.newPage(); await m.addInitScript(() => localStorage.setItem('dtf:v1:kb','1'));
+  const pctx = await b.newContext({ viewport: { width: 375, height: 800 }, isMobile: true, hasTouch: true }); const m = await pctx.newPage(); await m.addInitScript(() => { localStorage.setItem('dtf:v1:kb','1'); localStorage.setItem('dtf:v1:wizard','0'); });
   await m.goto(url); await m.waitForSelector('.edit-toggle'); await m.click('.edit-toggle');
   ok('phone: no sideways scroll (kb + edit)', await m.evaluate(() => document.documentElement.scrollWidth - innerWidth) <= 0);
   ok('phone: keyboard panel + toggle hidden', !(await m.locator('.kb').isVisible()) && !(await m.locator('.kb-toggle').isVisible()));
