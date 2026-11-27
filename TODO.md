@@ -14,6 +14,12 @@ Restore: `git checkout backup/pre-minimal-ui -- .` then `npx wrangler deploy`.
       27/27 checks pass (Playwright + Edge, headed); print checked by computed style, not on paper
 - [x] Deploy + push
 
+### Wizard mode — fixes from first use (2026-11-27, open)
+- [ ] Wizard stays on across all forms once turned on (one global key `dtf:v1:wizard`) — decide:
+      per form (`dtf:v1:wizard:<form>`) or only for the current visit; phone default stays
+- [ ] Exit not findable: the only way out is the small grey "عرض الوثيقة كاملة" link in the step header —
+      make a clear exit (e.g. ✕ / "إنهاء الوضع" button, always visible, same place on every step + Esc key)
+
 ### Wizard mode (step by step) — 2026-11-27 (deployed)
 Backup: tag `backup/2026-11-27-pre-wizard` + branch `backup/pre-wizard` (both on GitHub).
 - [x] `static/wizard.js` (loaded by form.js after editor.js): one line with its blanks per step, a short
