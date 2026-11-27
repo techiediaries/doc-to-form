@@ -50,6 +50,16 @@ Make a backup tag + branch before starting.
       touch one → its step
 - [ ] Progress counter: invalid blanks don't count as filled
 - [ ] Edit mode must keep `data-v*` attributes (snapshot in editor.js)
+- [ ] Print must stay clean even if checks are slow:
+      - checks are synchronous and cheap (target < 50 ms on a low-end phone); no network, no `await` before
+        `window.print()` — print is called in the same click, or browsers may block it / lose the gesture
+      - nothing heavy in `beforeprint` (it can't cancel printing and runs while the page is frozen):
+        print twins are already in sync from `input` events, so the printed page is never half-updated
+      - one print at a time: ignore repeat clicks while the dialog is open (`afterprint` re-enables)
+      - the check-results panel / error highlights are hidden in `@media print` — never on paper
+      - if a check ever needs to be slow (e.g. tafqit on a long text), run it on blur, cache the result,
+        and the print button only reads the cache
+      - test: measure the click → `window.print()` delay; print with 0, 1 and many errors; double click
 
 **Step 4 — mark up the forms**
 - [ ] New forms: تصريح بالشرف, استقالة, توكيل خاص, procuration — CIN, dates, required
