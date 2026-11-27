@@ -20,6 +20,52 @@ Restore: `git checkout backup/pre-minimal-ui -- .` then `npx wrangler deploy`.
 - [ ] Exit not findable: the only way out is the small grey "عرض الوثيقة كاملة" link in the step header —
       make a clear exit (e.g. ✕ / "إنهاء الوضع" button, always visible, same place on every step + Esc key)
 
+### Field validation — implementation plan (2026-11-27, not started)
+Design: decisions/validation-architecture.md. Works on today's static forms first (rules on the inputs),
+then moves into template JSON with format v2 — same rule names, so nothing is thrown away.
+Make a backup tag + branch before starting.
+
+**Step 1 — rules and the checker (no form changes yet)**
+- [ ] Field types in `spec/field-spec.v1.json` (`field_types`): `cin`, `phone`, `currency`, `date`, `required`,
+      each with `error_ar` + `error_fr`
+- [ ] `static/validate.js` (loaded by form.js like editor.js / wizard.js): reads rules from the input
+      (`data-v="cin"`, `required`, `data-v-cross`…), nothing hardcoded per form
+- [ ] Normalise before checking: trim, upper-case CIN, Arabic-Indic digits ٠-٩ → 0-9, spaces in phone numbers
+- [ ] Check on blur (not on every key) — message under the blank, `aria-invalid`, `aria-describedby`
+- [ ] Unit tests for the rules alone (Node, no browser): valid / invalid CIN, phone, amount, date
+
+**Step 2 — cross-field checks**
+- [ ] `date_order` (end after start; signing date not in the future)
+- [ ] `parties_differ` (signer CIN ≠ receiver CIN)
+- [ ] `tafqit_match`: amount in digits ↔ in words, Arabic (dirham / centimes) + French (en lettres);
+      plus a "write it for me" button that fills the words from the digits
+- [ ] Declared per form: `<script type="application/json" id="cross-validators">` on today's forms,
+      `cross_validators` in template JSON with v2
+
+**Step 3 — before print**
+- [ ] Print button (and Ctrl+P via `beforeprint`) runs all checks: invalid fields listed, first one focused
+- [ ] Wrong format → block with "fix" + "print anyway" (paper may be filled by hand later);
+      empty required → warning only, never a hard block (blanks are meant for handwriting)
+- [ ] Wizard: a step with an invalid value shows the message there; review step lists all problems,
+      touch one → its step
+- [ ] Progress counter: invalid blanks don't count as filled
+- [ ] Edit mode must keep `data-v*` attributes (snapshot in editor.js)
+
+**Step 4 — mark up the forms**
+- [ ] New forms: تصريح بالشرف, استقالة, توكيل خاص, procuration — CIN, dates, required
+- [ ] Old 61 forms: script (Node, no Python here) that adds `data-v="cin"` next to "ب.ت.و" / "بطاقة",
+      `currency` next to "مبلغ" / "درهم" / "جنيه" — print a report, review by hand before committing
+- [ ] Generators (convert_docx.py, convert.py) emit the same attributes
+
+**Step 5 — trust signals**
+- [ ] `legal_review.status` per form (pending | reviewed | approved) + badge "⚠ لم يُراجَع من قِبَل محامٍ"
+- [ ] `content_version` per form; saved draft older than the form → "the template changed" notice
+
+**Tests**
+- [ ] tests/edge-validate.js: bad CIN blocked + message, Arabic-Indic digits accepted, end < start,
+      same CIN twice, tafqit mismatch + auto-fill, print anyway, wizard review lists errors, FR messages
+- [ ] Re-run edge-ui, edge-editor, edge-lang, edge-wizard
+
 ### Wizard mode (step by step) — 2026-11-27 (deployed)
 Backup: tag `backup/2026-11-27-pre-wizard` + branch `backup/pre-wizard` (both on GitHub).
 - [x] `static/wizard.js` (loaded by form.js after editor.js): one line with its blanks per step, a short
