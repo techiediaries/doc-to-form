@@ -14,7 +14,7 @@ Restore: `git checkout backup/pre-minimal-ui -- .` then `npx wrangler deploy`.
       27/27 checks pass (Playwright + Edge, headed); print checked by computed style, not on paper
 - [x] Deploy + push
 
-### Wizard mode (step by step) — 2026-11-27 (not deployed)
+### Wizard mode (step by step) — 2026-11-27 (deployed)
 Backup: tag `backup/2026-11-27-pre-wizard` + branch `backup/pre-wizard` (both on GitHub).
 - [x] `static/wizard.js` (loaded by form.js after editor.js): one line with its blanks per step, a short
       blank-less line just before it shown as context; labels as placeholders where the form has them
@@ -25,18 +25,18 @@ Backup: tag `backup/2026-11-27-pre-wizard` + branch `backup/pre-wizard` (both on
 - [x] On by default on phones (no keyboard popping up on load), off on desktop; choice kept (`dtf:v1:wizard`);
       wizard and edit mode exclude each other; French UI on French pages
 - [x] tests/edge-wizard.js 36/36; edge-ui 29/29, edge-editor 31/31, edge-lang 16/16 (phone checks opt out of wizard)
-- [ ] Deploy + push
+- [x] Deploy + push
 
-### LTR + first French form — 2026-11-26 (not deployed)
+### LTR + first French form — 2026-11-26 (deployed 2026-11-27)
 Backup: tag `backup/2026-11-26-pre-ltr` + branch `backup/pre-ltr` (both on GitHub).
 - [x] form.js + editor.js UI text follows `<html lang>` (ar | fr); layout already logical CSS (flips with dir)
 - [x] `:root:lang(fr)` Latin font; `.lang-switch` link (CSS nesting, `float: inline-end`), hidden in print
 - [x] forms/procuration.html (fr, ltr) ⇄ forms/توكيل خاص.html (link + `<link rel=alternate hreflang>`)
 - [x] Arabic keyboard off on French pages (and they don't overwrite the Arabic preference)
 - [x] Index: "Procuration (FR)" in وكالات; tests/edge-lang.js 16/16, edge-editor 31/31, edge-ui 29/29
-- [ ] Deploy + push
+- [x] Deploy + push
 
-### Edit mode + Arabic keyboard — 2026-11-26 (not deployed)
+### Edit mode + Arabic keyboard — 2026-11-26 (deployed 2026-11-27)
 - [x] New templates: تصريح بالشرف, استقالة (Arabic, Moroccan wording, old static format)
 - [x] Edit mode (`static/editor.js`, loaded by form.js): edit any text + bold/underline/italic/align/size/undo
       before print; saved per form (`dtf:v1:edit:<form>`), restored by form.js; "الأصل" resets (values kept)
@@ -44,7 +44,7 @@ Backup: tag `backup/2026-11-26-pre-ltr` + branch `backup/pre-ltr` (both on GitHu
       (letters by e.key, number row → harakat and ء by key position); on-screen panel with hints read from
       the real layout (navigator.keyboard); Ctrl+Space; hidden on touch-only devices
 - [x] Tests: tests/edge-editor.js 31/31, tests/edge-ui.js 29/29 (Edge, headed off)
-- [ ] Deploy + push
+- [x] Deploy + push
 - AI search/generation research: decisions/ai-template-generation.md (not planned yet)
 
 ### Next — bilingual templates (AR + FR) — proposed 2026-11-26, not started
